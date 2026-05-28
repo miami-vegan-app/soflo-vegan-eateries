@@ -7,10 +7,13 @@
   "scripts": {
     "build:data": "node scripts/build-data.mjs",
     "build:icons": "node scripts/build-icons.mjs",
-    "serve": "npx --yes serve public"
+    "serve": "npx --yes serve public",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev"
   },
   "devDependencies": {
     "playwright": "^1.60.0",
-    "sharp": "^0.33.5"
+    "sharp": "^0.33.5",
+    "wrangler": "^4.95.0"
   }
 }
