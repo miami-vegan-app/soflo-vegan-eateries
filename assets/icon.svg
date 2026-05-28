@@ -1,0 +1,36 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0fb8a8"/>
+      <stop offset="0.55" stop-color="#1aa6c4"/>
+      <stop offset="1" stop-color="#ff6f91"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7be08a"/>
+      <stop offset="1" stop-color="#2e9e4f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Full-bleed background so the icon also works as a maskable icon -->
+  <rect width="512" height="512" fill="url(#bg)"/>
+
+  <!-- Map pin (white) centered within the maskable safe zone -->
+  <path fill="#ffffff" d="M256 96
+    c-72 0 -130 56 -130 126
+    c0 92 130 198 130 198
+    s130 -106 130 -198
+    c0 -70 -58 -126 -130 -126 z"/>
+
+  <!-- Leaf inside the pin -->
+  <path fill="url(#leaf)" d="M256 150
+    c46 14 70 52 60 100
+    c-4 18 -16 34 -32 44
+    c-2 -40 -16 -78 -42 -108
+    c20 26 32 60 34 96
+    c-30 -8 -52 -30 -60 -58
+    c-12 -42 8 -64 40 -74 z"/>
+
+  <!-- Leaf midrib -->
+  <path stroke="#1f7d3a" stroke-width="6" stroke-linecap="round" fill="none"
+    d="M250 162 C 272 200 286 250 280 292"/>
+</svg>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>SoFlo Vegan Eateries</title>
+  <meta name="description" content="Find vegan and vegan-friendly restaurants across South Florida — Palm Beach, Broward, and Miami-Dade." />
+
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#0fb8a8" />
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png" />
+
+  <!-- iOS PWA support -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="SoFlo Vegan" />
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon-180.png" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================ ONE-TIME SETUP / INSTALL SCREEN ============================ -->
+  <section id="setup-screen" class="setup" hidden>
+    <div class="setup__inner">
+      <img class="setup__logo" src="icons/icon-192.png" alt="SoFlo Vegan Eateries icon" width="84" height="84" />
+      <h1 class="setup__title">SoFlo Vegan Eateries</h1>
+      <p class="setup__tagline">Add this app to your home screen so you can open it any time with one tap — just like a normal app.</p>
+
+      <div class="seg" role="tablist" aria-label="Choose your phone">
+        <button class="seg__btn" id="tab-ios" role="tab" data-platform="ios">🍏 iPhone / iPad</button>
+        <button class="seg__btn" id="tab-android" role="tab" data-platform="android">🤖 Android</button>
+      </div>
+
+      <!-- Android-only browser picker -->
+      <div class="browser-pick" id="browser-pick" hidden>
+        <label for="browser-select">Which browser are you using?</label>
+        <select id="browser-select">
+          <option value="chrome">Chrome</option>
+          <option value="samsung">Samsung Internet</option>
+          <option value="firefox">Firefox</option>
+          <option value="edge">Edge</option>
+        </select>
+      </div>
+
+      <ol class="steps" id="steps" aria-live="polite"></ol>
+
+      <div class="setup__actions">
+        <button class="btn btn--primary" id="btn-done">✓ I already did this</button>
+        <p class="setup__hint">You can reopen these instructions later from the menu.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ MAIN APP ============================ -->
+  <div id="app" hidden>
+    <header class="appbar">
+      <div class="appbar__row">
+        <img class="appbar__logo" src="icons/icon-192.png" alt="" width="34" height="34" />
+        <div class="appbar__titles">
+          <h1 class="appbar__title">SoFlo Vegan Eateries</h1>
+          <p class="appbar__sub" id="updated-note">Loading…</p>
+        </div>
+        <button class="appbar__help" id="btn-help" title="How to install" aria-label="How to install this app">＋</button>
+      </div>
+
+      <div class="search">
+        <input type="search" id="search" placeholder="Search name, cuisine, or city…" autocomplete="off" enterkeyhint="search" />
+      </div>
+
+      <div class="filters">
+        <select id="filter-county" class="filter" aria-label="Filter by county"></select>
+        <select id="filter-type" class="filter" aria-label="Filter by vegan type"></select>
+        <select id="filter-cuisine" class="filter" aria-label="Filter by cuisine"></select>
+        <label class="toggle">
+          <input type="checkbox" id="filter-outdoor" />
+          <span>Outdoor seating</span>
+        </label>
+      </div>
+
+      <div class="meta-row">
+        <span id="result-count" class="result-count"></span>
+        <button class="legend-toggle" id="legend-toggle" aria-expanded="false">What do V / VF / VO mean?</button>
+      </div>
+
+      <div class="legend" id="legend" hidden></div>
+    </header>
+
+    <main class="results" id="results" aria-live="polite"></main>
+
+    <!-- Feedback / contact -->
+    <section class="feedback">
+      <h2>Feedback &amp; corrections</h2>
+      <p>
+        Data is prepared and managed by
+        <a href="https://www.facebook.com/dschwartzberg" target="_blank" rel="noopener">David Schwartzberg</a>.
+      </p>
+      <p>
+        If you see an error or any issues, please reach out to David or send an email to
+        <a href="mailto:miamivegan2026@outlook.com">miamivegan2026@outlook.com</a>.
+      </p>
+    </section>
+
+    <footer class="colophon">
+      <p>Built by <a href="https://www.linkedin.com/in/abdunal" target="_blank" rel="noopener">Abdullah Unal</a> using Claude AI</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

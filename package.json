@@ -1,0 +1,16 @@
+{
+  "name": "soflo-vegan-eateries",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mobile-first PWA listing vegan and vegan-friendly restaurants in South Florida.",
+  "type": "module",
+  "scripts": {
+    "build:data": "node scripts/build-data.mjs",
+    "build:icons": "node scripts/build-icons.mjs",
+    "serve": "npx --yes serve public"
+  },
+  "devDependencies": {
+    "playwright": "^1.60.0",
+    "sharp": "^0.33.5"
+  }
+}

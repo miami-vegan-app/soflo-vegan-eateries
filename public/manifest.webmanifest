@@ -1,0 +1,17 @@
+{
+  "name": "SoFlo Vegan Eateries",
+  "short_name": "SoFlo Vegan",
+  "description": "Find vegan and vegan-friendly restaurants across South Florida — Palm Beach, Broward, and Miami-Dade.",
+  "start_url": "./index.html?src=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0fb8a8",
+  "theme_color": "#0fb8a8",
+  "categories": ["food", "lifestyle", "travel"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

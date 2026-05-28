@@ -1,0 +1,42 @@
+name: Update restaurant data
+
+# Pulls the latest data from the Google Sheet, rebuilds restaurants.json, and
+# commits it if anything changed. The commit triggers a Cloudflare Pages deploy.
+
+on:
+  schedule:
+    - cron: "0 8 * * *" # daily at 08:00 UTC (~3-4am Eastern)
+  workflow_dispatch: {} # allow manual runs from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Build data from the Google Sheet
+        run: node scripts/build-data.mjs
+
+      - name: Commit changes if any
+        run: |
+          if [[ -n "$(git status --porcelain public/data/restaurants.json)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add public/data/restaurants.json
+            git commit -m "data: daily refresh from Google Sheet"
+            git push
+            echo "Data updated and pushed."
+          else
+            echo "No changes — nothing to commit."
+          fi

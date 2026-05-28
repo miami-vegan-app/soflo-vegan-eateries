@@ -1,0 +1,3096 @@
+{
+  "updatedAt": "2026-05-28T23:06:48.119Z",
+  "sourceUpdated": "May 9, 2026",
+  "source": "https://docs.google.com/spreadsheets/d/1DQ5ys0MHw22qWXmwC_rAbLs7gQfDjFpASDii9beP9zE/edit",
+  "count": 306,
+  "legend": [
+    {
+      "code": "V",
+      "label": "Vegan",
+      "description": "Fully vegan establishment."
+    },
+    {
+      "code": "VF",
+      "label": "Vegan Friendly",
+      "description": "Has items marked vegan on the menu."
+    },
+    {
+      "code": "V1",
+      "label": "Mostly Vegan",
+      "description": "Mostly vegan — has honey on the menu."
+    },
+    {
+      "code": "VO",
+      "label": "Vegan Options",
+      "description": "Ask for vegan options."
+    }
+  ],
+  "counties": [
+    "Palm Beach County",
+    "Broward County",
+    "Miami / Dade County",
+    "Tri-County Area"
+  ],
+  "restaurants": [
+    {
+      "name": "Blaze Pizza",
+      "city": "Boca Raton",
+      "county": "Palm Beach County",
+      "cuisine": "Pizza",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://blazepizza.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Aruns",
+      "city": "Boca Raton",
+      "county": "Palm Beach County",
+      "cuisine": "Indian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://arunsboca.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Basilic Vietnamese Grill",
+      "city": "Boca Raton",
+      "county": "Palm Beach County",
+      "cuisine": "Vietnamese",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://basilic-vietnamese-cuisine-boca-raton.business.site/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Bento Asian Kitchen",
+      "city": "Boca Raton",
+      "county": "Palm Beach County",
+      "cuisine": "Asian/Bowls/Sushi",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://eatatbento.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Bolay",
+      "city": "Boca Raton",
+      "county": "Palm Beach County",
+      "cuisine": "Salads/Bowls",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.tajexpresskitchen.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Bombay Cafe",
+      "city": "Boca Raton",
+      "county": "Palm Beach County",
+      "cuisine": "Indian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://bombaycafeboca.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Bubbakoos",
+      "city": "Boca Raton",
+      "county": "Palm Beach County",
+      "cuisine": "Mexican",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.bubbakoos.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Cafe La Vie",
+      "city": "Boca Raton",
+      "county": "Palm Beach County",
+      "cuisine": "Vietnamese",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.menupix.com/menudirectory/menu.php?id=32009146",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Cinnaholic",
+      "city": "Boca Raton",
+      "county": "Palm Beach County",
+      "cuisine": "Cinnamon Buns/Kosher",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://cinnaholicboca.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Chow Thai",
+      "city": "Boca Raton",
+      "county": "Palm Beach County",
+      "cuisine": "Thai",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "http://www.chowthai.info/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Cookie Head",
+      "city": "Boca Raton",
+      "county": "Palm Beach County",
+      "cuisine": "Bakery",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://cookiehead.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Dvash",
+      "city": "Boca Raton",
+      "county": "Palm Beach County",
+      "cuisine": "Mediterranean",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://dvashboca.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Farmer’s Table",
+      "city": "Boca Raton",
+      "county": "Palm Beach County",
+      "cuisine": "Restaurant",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://dinefarmerstable.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Greens and Grains",
+      "city": "Boca Raton",
+      "county": "Palm Beach County",
+      "cuisine": "Healthy Fare",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://greensandgrains.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Garden Butcher",
+      "city": "Boca Raton",
+      "county": "Palm Beach County",
+      "cuisine": "Healthy Fare",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://gardenbutcher.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "La Condesa",
+      "city": "Boca Raton",
+      "county": "Palm Beach County",
+      "cuisine": "Mexican",
+      "type": "VO",
+      "typeLabel": "Ask for Vegan Options",
+      "website": "https://lacondesamexican.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Lynora's",
+      "city": "Boca Raton",
+      "county": "Palm Beach County",
+      "cuisine": "Italian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.lynoras.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Maggie McFlys",
+      "city": "Boca Raton",
+      "county": "Palm Beach County",
+      "cuisine": "Restaurant",
+      "type": "VO",
+      "typeLabel": "Ask for Vegan Options",
+      "website": "https://www.maggiemcflys.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Motek",
+      "city": "Boca Raton",
+      "county": "Palm Beach County",
+      "cuisine": "Mediterranean",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://motek.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Olive U Grill",
+      "city": "Boca Raton",
+      "county": "Palm Beach County",
+      "cuisine": "Mediterranean",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://oliveugrill.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Orion Fresh Mediterranean",
+      "city": "Boca Raton",
+      "county": "Palm Beach County",
+      "cuisine": "Mediterranean",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://eatorion.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Pho Boca",
+      "city": "Boca Raton",
+      "county": "Palm Beach County",
+      "cuisine": "Vietnamese",
+      "type": "VO",
+      "typeLabel": "Ask for Vegan Options",
+      "website": "https://phoboca.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Pizza District",
+      "city": "Boca Raton",
+      "county": "Palm Beach County",
+      "cuisine": "Pizza",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://pizzadistrict.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Pura Vida",
+      "city": "Boca Raton",
+      "county": "Palm Beach County",
+      "cuisine": "Healthy Fare",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.puravidamiami.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Renzo’s Cafe and Pizzeria",
+      "city": "Boca Raton",
+      "county": "Palm Beach County",
+      "cuisine": "Pizza",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://renzoscafepizzeria.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Sovereign",
+      "city": "Boca Raton",
+      "county": "Palm Beach County",
+      "cuisine": "Asian",
+      "type": "VO",
+      "typeLabel": "Ask for Vegan Options",
+      "website": "https://sovereignboca.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Taco Labs",
+      "city": "Boca Raton",
+      "county": "Palm Beach County",
+      "cuisine": "Tacos",
+      "type": "VO",
+      "typeLabel": "Ask for Vegan Options",
+      "website": "https://tacolabsboca.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Taj Express",
+      "city": "Boca Raton",
+      "county": "Palm Beach County",
+      "cuisine": "Indian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.tajexpresskitchen.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "True Food Kitchen",
+      "city": "Boca Raton",
+      "county": "Palm Beach County",
+      "cuisine": "Restaurant",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://truefoodkitchen.com/locations/bocaraton/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "VC Kitchen",
+      "city": "Boca Raton",
+      "county": "Palm Beach County",
+      "cuisine": "Healthy Fare",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.vcskitchen.com/menu",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Anzo",
+      "city": "Boynton Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Mediterranean",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://anzo.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Guaco Go",
+      "city": "Boynton Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Bowls/Wraps",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://guacago.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Joey's Home Bakery",
+      "city": "Boynton Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Bakery / Kosher",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://joeyshomebakeryglutenfree.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Natuurlik",
+      "city": "Boynton Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Restaurant",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://natuurlik.net/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Souvlaki GR",
+      "city": "Boynton Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Greek",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.souvlakigr.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Turning Point",
+      "city": "Boynton Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Breakfast/Lunch",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://turningpointrestaurants.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Amar",
+      "city": "Delray Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Meditteranean",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.amardelray.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Gourmet Killer Dogs",
+      "city": "Delray Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Hot Dogs/Wings",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://facebook.com/killerhotdogs",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Dada",
+      "city": "Delray Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Restaurant",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://sub-culture.org/dada/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Killer Hot Dogs",
+      "city": "Delray Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Hot Dogs",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://facebook.com/killerhotdogs",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Lily's Handmade Ice Cream",
+      "city": "Delray Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Ice Cream Shop",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.lilyshandmadeicecream.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Purlife Cafe",
+      "city": "Delray Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Healthy Fare",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://purlife.cafe/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Olive U Grill",
+      "city": "Delray Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Mediterranean",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://oliveugrill.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Whole Green Cafe",
+      "city": "Delray Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Market/Cafe",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.wholegreencafe.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Wild Celery",
+      "city": "Delray Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Juice/Bowls",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.wild-celery.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Ziree Thai Sushi",
+      "city": "Delray Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Thai/Sushi",
+      "type": "VO",
+      "typeLabel": "Ask for Vegan Options",
+      "website": "https://zireethaisushi.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Bunkhouse Coffee",
+      "city": "Jensen Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Coffee/Snack/Bowls",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "http://bunkhousecoffeebar.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Guanabanas",
+      "city": "Jupiter",
+      "county": "Palm Beach County",
+      "cuisine": "Restaurant-Waterfront",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.guanabanas.com/",
+      "outdoorSeating": true
+    },
+    {
+      "name": "Lynora's",
+      "city": "Jupiter",
+      "county": "Palm Beach County",
+      "cuisine": "Italian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.lynoras.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Meraki Juice Kitchen",
+      "city": "Jupiter",
+      "county": "Palm Beach County",
+      "cuisine": "Restaurant",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://merakijuicekitchen.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Haus Lounge",
+      "city": "Lake Worth",
+      "county": "Palm Beach County",
+      "cuisine": "Juice/Bowls",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://javajuicebar.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "La Chia Vegana",
+      "city": "Lake Worth",
+      "county": "Palm Beach County",
+      "cuisine": "Cafe",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://www.facebook.com/LaChiaVegana/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Lupita's Tex Mex",
+      "city": "Lake Worth",
+      "county": "Palm Beach County",
+      "cuisine": "Mexican",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://lupitastexmex.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Yen's Kitchen",
+      "city": "Lake Worth",
+      "county": "Palm Beach County",
+      "cuisine": "Vietnamese",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://ykstreetfood.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Fired Up PIzza",
+      "city": "Loxahatchee",
+      "county": "Palm Beach County",
+      "cuisine": "Pizza/Subs",
+      "type": "VO",
+      "typeLabel": "Ask for Vegan Options",
+      "website": "https://www.fireduppizzawest.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Malakor Thai Express",
+      "city": "Loxahatchee",
+      "county": "Palm Beach County",
+      "cuisine": "Thai",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://malakorexpress.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Island Produce Cafe",
+      "city": "North Palm Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Take Out/Catering",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://ipctogo.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Swifty's",
+      "city": "Palm Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Upscale",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://thecolonypalmbeach.com/dining-entertainment/",
+      "outdoorSeating": true
+    },
+    {
+      "name": "Bolay",
+      "city": "Palm Beach Gardens",
+      "county": "Palm Beach County",
+      "cuisine": "Restaurant",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://bolay.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Christopher’s Kitchen",
+      "city": "Palm Beach Gardens",
+      "county": "Palm Beach County",
+      "cuisine": "Upscale",
+      "type": "V1",
+      "typeLabel": "Mostly Vegan (has honey)",
+      "website": "https://christopherskitchenfl.com/",
+      "outdoorSeating": true
+    },
+    {
+      "name": "Lynora's",
+      "city": "Palm Beach Gardens",
+      "county": "Palm Beach County",
+      "cuisine": "Italian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.lynoras.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Meraki Juice Kitchen",
+      "city": "Palm Beach Gardens",
+      "county": "Palm Beach County",
+      "cuisine": "Restaurant",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://merakijuicekitchen.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Plant Based Mafia",
+      "city": "Palm Beach Gardens",
+      "county": "Palm Beach County",
+      "cuisine": "Italian",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://plantbasedmafia.com/",
+      "outdoorSeating": true
+    },
+    {
+      "name": "Yard House",
+      "city": "Palm Beach Gardens",
+      "county": "Palm Beach County",
+      "cuisine": "Restaurant",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.yardhouse.com/home",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Dina’s Vegan Deli and Desserts",
+      "city": "Riviera Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Sandwiches/Desserts",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://dinasvegandeli.com/",
+      "outdoorSeating": true
+    },
+    {
+      "name": "Tiki Market - Sundays Only",
+      "city": "Riviera Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Farmer's Market",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://tikimarketrb.com/",
+      "outdoorSeating": true
+    },
+    {
+      "name": "Bolay",
+      "city": "Royal Palm Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Restaurant",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://bolay.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Hot Pie Pizza",
+      "city": "Royal Palm Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Pizza",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "http://hotpiepizza.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Peppermint",
+      "city": "Royal Palm Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Thai/Japanese",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "http://www.peppermintroyalpalm.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Bagel Bistro",
+      "city": "Tequesta",
+      "county": "Palm Beach County",
+      "cuisine": "Restaurant",
+      "type": "VO",
+      "typeLabel": "Ask for Vegan Options",
+      "website": "https://bagelbistrotequesta.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Bunkhouse Coffee",
+      "city": "Tequesta",
+      "county": "Palm Beach County",
+      "cuisine": "Coffee/Snack/Bowls",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "http://bunkhousecoffeebar.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Perk Coffee",
+      "city": "Tequesta",
+      "county": "Palm Beach County",
+      "cuisine": "Cafe",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.perkcoffeetequesta.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "MOOD",
+      "city": "Tequesta",
+      "county": "Palm Beach County",
+      "cuisine": "Upscale",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://moodvegan.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "AGLIOLIO",
+      "city": "Wellington",
+      "county": "Palm Beach County",
+      "cuisine": "Italian Restaurant",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "http://www.agliolio.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Olive U Grill",
+      "city": "Wellington",
+      "county": "Palm Beach County",
+      "cuisine": "Italian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://oliveugrill.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Turning Point",
+      "city": "Wellington",
+      "county": "Palm Beach County",
+      "cuisine": "Breakfast/Lunch",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://turningpointrestaurants.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Bolay",
+      "city": "West Palm Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Restaurant",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://bolay.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Chunkay",
+      "city": "West Palm Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Trinidadian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://chunkay.app/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Cafe Sapori",
+      "city": "West Palm Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Italian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.cafesaporicorp.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Dope Vegan",
+      "city": "West Palm Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Burgers",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://www.eatdopevegan.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Darbster",
+      "city": "West Palm Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Upsclale",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://darbster.com/",
+      "outdoorSeating": true
+    },
+    {
+      "name": "Guaco Go",
+      "city": "West Palm Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Bowls/Wraps",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://guacago.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Hippocrates Institute",
+      "city": "West Palm Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Resort/Classes",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://hippocratesinst.org/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Joy Noodles",
+      "city": "West Palm Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Asian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://joynoodles.net/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Kindness Batters Vegan Bakery",
+      "city": "West Palm Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Bakery",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://kindnessbatters.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Leila Middle Eastern",
+      "city": "West Palm Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Middle Eastern",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://leilawpb.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Lynora's",
+      "city": "West Palm Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Italian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.lynoras.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Meraki Juice Kitchen",
+      "city": "West Palm Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Restaurant",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://merakijuicekitchen.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Mestizo",
+      "city": "West Palm Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Peruvian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.themodernrose.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Nombucket",
+      "city": "West Palm Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Restaurant",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://facebook.com/nombucket",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Queen of Sheba",
+      "city": "West Palm Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Ethiopian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.queenofsheebawpb.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "True Food Kitchen",
+      "city": "West Palm Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Healthy Fare",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.truefoodkitchen.com/locations/westpalmbeach/",
+      "outdoorSeating": true
+    },
+    {
+      "name": "True Vegan",
+      "city": "West Palm Beach",
+      "county": "Palm Beach County",
+      "cuisine": "Restaurant",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://true-vegan.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "BRGR Stop",
+      "city": "Coconut Creek",
+      "county": "Broward County",
+      "cuisine": "Burgers",
+      "type": "VO",
+      "typeLabel": "Ask for Vegan Options",
+      "website": "https://brgrstop.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Gogi Juicery",
+      "city": "Cooper City",
+      "county": "Broward County",
+      "cuisine": "Salads/Bowls",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://gojifresh.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Vegan Tierra",
+      "city": "Cooper City",
+      "county": "Broward County",
+      "cuisine": "Organic",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://vegantierra.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Aruns Indian Kicken",
+      "city": "Coral Springs",
+      "county": "Broward County",
+      "cuisine": "Indian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://indiankichen.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Bubbakoos",
+      "city": "Coral Springs",
+      "county": "Broward County",
+      "cuisine": "Mexican",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.bubbakoos.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Cherry Smash",
+      "city": "Coral Springs",
+      "county": "Broward County",
+      "cuisine": "Ice Cream",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.facebook.com/cherrysmash/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Cookie Head",
+      "city": "Coral Springs",
+      "county": "Broward County",
+      "cuisine": "Bakery",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://cookiehead.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Bolay",
+      "city": "Coral Springs",
+      "county": "Broward County",
+      "cuisine": "Bowls",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://bolay.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "4 Rivers Smokehouse",
+      "city": "Coral Springs",
+      "county": "Broward County",
+      "cuisine": "BBQ",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.4rsmokehouse.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Honest indian",
+      "city": "Coral Springs",
+      "county": "Broward County",
+      "cuisine": "Indian",
+      "type": "VO",
+      "typeLabel": "Ask for Vegan Options",
+      "website": "https://honestindianrestaurantfl.business.site/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Juice Kitchen",
+      "city": "Coral Springs",
+      "county": "Broward County",
+      "cuisine": "Juice/Bowls",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.juicekitchencompany.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Raw Addiction",
+      "city": "Coral Springs",
+      "county": "Broward County",
+      "cuisine": "Bowls/Juices",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://gorawaddiction.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Shibuya Sushi",
+      "city": "Coral Springs",
+      "county": "Broward County",
+      "cuisine": "Sushi",
+      "type": "VO",
+      "typeLabel": "Ask for Vegan Options",
+      "website": "https://shibuya.us/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Goji Juicery",
+      "city": "Dania Beach",
+      "county": "Broward County",
+      "cuisine": "Salads/Bowls",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://gojifresh.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Vegan Junkie",
+      "city": "Dania Beach",
+      "county": "Broward County",
+      "cuisine": "Burgers",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://www.veganjunkieburgers.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Zen Mystery",
+      "city": "Dania Beach",
+      "county": "Broward County",
+      "cuisine": "Restaurant/Tea Room",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://zenmystery.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Bento Asian Kitchen",
+      "city": "Davie",
+      "county": "Broward County",
+      "cuisine": "Asian/Bowls/Sushi",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://eatatbento.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Blaze Pizza",
+      "city": "Davie",
+      "county": "Broward County",
+      "cuisine": "Pizza",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://blazepizza.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Delicious Raw Kitchen and Juice Bar",
+      "city": "Davie",
+      "county": "Broward County",
+      "cuisine": "Juice/Bowls",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://delraw.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Fresh Fusion",
+      "city": "Davie",
+      "county": "Broward County",
+      "cuisine": "Breakfast+Lunch",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://thefreshfusion.com/vegan-menu/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Go Pho",
+      "city": "Davie",
+      "county": "Broward County",
+      "cuisine": "Vietnamese",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.eatgoeats.com/gopho-menus/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Hanj Snow Boba",
+      "city": "Davie",
+      "county": "Broward County",
+      "cuisine": "Boba",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://hanjiofficial.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Juice Therapy",
+      "city": "Davie",
+      "county": "Broward County",
+      "cuisine": "Juices",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://juicetherapycafe.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Lemongrass Hot Pot",
+      "city": "Davie",
+      "county": "Broward County",
+      "cuisine": "Asian/Hot pot",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.facebook.com/profile.php?id=100065613124483",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Mama Chea",
+      "city": "Davie",
+      "county": "Broward County",
+      "cuisine": "Restaurant",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://www.mamacheacafe.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Mama Tofu",
+      "city": "Davie",
+      "county": "Broward County",
+      "cuisine": "Vietnamese",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://facebook/mamatofu",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Pho Bar",
+      "city": "Davie",
+      "county": "Broward County",
+      "cuisine": "Vietnamese",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://phobar.co/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Poke Ramen",
+      "city": "Davie",
+      "county": "Broward County",
+      "cuisine": "Ramen",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://pokeramensoul.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Sweet Aloha Ice Cream",
+      "city": "Davie",
+      "county": "Broward County",
+      "cuisine": "Ice Cream",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.sweetalohaicecream.com/menu",
+      "outdoorSeating": false
+    },
+    {
+      "name": "El Jefe Luchador",
+      "city": "Deerfield Beach",
+      "county": "Broward County",
+      "cuisine": "Mexican",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://jefetaco.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "The Modern Rose",
+      "city": "Deerfield Beach",
+      "county": "Broward County",
+      "cuisine": "Coffee/Tea",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://facebook.com/Themodernrose/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Tucker Dukes",
+      "city": "Deerfield Beach",
+      "county": "Broward County",
+      "cuisine": "Burgers",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.tuckerdukesburgers.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "WonToms",
+      "city": "Deerfield Beach",
+      "county": "Broward County",
+      "cuisine": "Asian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://won-toms.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Anthony’s Runway 84",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Italian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://runway-84.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Batch",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Restaurant/Grill",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://batchsouthernkitchen.com/ftl/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Beehive Kitchen",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Salads/Bowls",
+      "type": "VO",
+      "typeLabel": "Ask for Vegan Options",
+      "website": "https://beehive-kitchen.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Big Mike's Gluten Free Bakery",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Bakery",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://www.bigmikesglutenfree.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Big Louies",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Pizza/Italian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://biglouies.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Blaze Pizza",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Pizza",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://blazepizza.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Blueprint Cookies",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Cookies",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.blueprintcookie.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Blue Tree Cafe",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Soul Food",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://www.bluetreecafe.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Boatyard",
+      "city": "Fort`Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Seafood",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://boatyard.restaurant/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Bohemian Latin Grill",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Latin",
+      "type": "VO",
+      "typeLabel": "Ask for Vegan Options",
+      "website": "https://www.bohemianlatingrill.net/",
+      "outdoorSeating": true
+    },
+    {
+      "name": "Bombay Cafe",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Indian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://bombay-cafe.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "BRGR Stop",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Burgers",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://brgrstop.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Carrot Express",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Cafe",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://carrotexpress.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Chill'n",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Ice Cream",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.chillnicecream.com/locations/ft-lauderdale-fl",
+      "outdoorSeating": true
+    },
+    {
+      "name": "Colombians Mountains Cafe",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Colombian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://colombianmountainscafe.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Cookie Head",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Bakery",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://cookiehead.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "DNY Pizza",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Pizza",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://dnypizzeria.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Fresh First",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Gluten Free/Healthy",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://freshfirst.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Evelyn's",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Upscale $$$$",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.fourseasons.com/fortlauderdale/dining/restaurants/evelyns/",
+      "outdoorSeating": true
+    },
+    {
+      "name": "Ferdos",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Middle Eastern",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.ferdosgrill.us/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Gulfstream Brewery",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Pizza/Brewery",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://gulfstreambeer.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Il mulino",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Italian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://ilmulinofl.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Indian Harbor",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Indian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://theindianharbor.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "JB&C Juice",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Juice/Bowls",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://jbcflorida.com/location/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Kan thai",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Thai",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://kansthaikitchen.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Localicious",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Ice Cream",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://localiciouscaribbeanicecream.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Living Green Fresh Market",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Market/Prepared Food",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://livinggreenfreshmarket.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Lokos Takos",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Mexican",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://lokostakostaqueria.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Ma-Prao Thai Cuisine",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Thai",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.ma-praothaicuisine.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Master Ba's Hot Pot",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Asian/Hot pot",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "http://www.masterbahotpot.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Moksha Indian Brasserie",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Indian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://mokshaftl.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Mini Pita Cafe",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Middle Eastern",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://minipitacafe.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Moxies",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Restaurant",
+      "type": "VO",
+      "typeLabel": "Ask for Vegan Options",
+      "website": "https://moxies.com/",
+      "outdoorSeating": true
+    },
+    {
+      "name": "Myapapaya",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Restaurant",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://myapapaya.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Ocean View Delight",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Restaurant",
+      "type": "VO",
+      "typeLabel": "Ask for Vegan Options",
+      "website": "https://facebook.com/oceanviewdelight",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Hummus House",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Middle Eastern",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://thehummushouseftl.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Phat Boy Sushi",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Japanese",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://phatboysushi.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Pizzeria Maggadino",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Pizza",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://pizzeriamagaddino.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "PS Green",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Restaurant",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://psgreenvegan.com/",
+      "outdoorSeating": true
+    },
+    {
+      "name": "Sarpino's",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Italian Restaurant",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.gosarpinos.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Seasons 52",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Restaurant",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://seasons52.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "SoBe Vegan",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Restaurant",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://sobev.com/",
+      "outdoorSeating": true
+    },
+    {
+      "name": "Stephanies Bakery",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Bakery",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://veganbakeryfortlauderdale.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Takato",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Japanese/Koran",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://takatorestaurant.com/",
+      "outdoorSeating": true
+    },
+    {
+      "name": "Tee Jay Thai Sushi",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Thai/Japanese",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://teejaythaisushi.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Tequila Sunrise",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Mexican",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://tequilasunrise.us/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Trulucks",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Seafood",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://trulucks.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Vegan Delights",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "To-go restaurant",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://www.vegandelights.org/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Wine Garden",
+      "city": "Fort Lauderdale",
+      "county": "Broward County",
+      "cuisine": "Italian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://wineandgarden.com/",
+      "outdoorSeating": true
+    },
+    {
+      "name": "The Juice Mafia",
+      "city": "Hallandale Beach",
+      "county": "Broward County",
+      "cuisine": "Juice/Cafe",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://thejuicemafia.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "The Krazy Vegan",
+      "city": "Hallandale Beach",
+      "county": "Broward County",
+      "cuisine": "Burger",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://thekrazyvegan.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Bol",
+      "city": "Hollywood",
+      "county": "Broward County",
+      "cuisine": "Asian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://bolrestaurants.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "C4Eats",
+      "city": "Hollywood",
+      "county": "Broward County",
+      "cuisine": "Vegan",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://www.c4eats.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Eattitude",
+      "city": "Hollywood",
+      "county": "Broward County",
+      "cuisine": "Health/Juices",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://facebook.com/EattitudeHollywood",
+      "outdoorSeating": false
+    },
+    {
+      "name": "El Bayu de Wela Sara",
+      "city": "Hollywood",
+      "county": "Broward County",
+      "cuisine": "Puerto Rican",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://elbayudewelasara.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "El Nopalito Vegan Taqueria",
+      "city": "Hollywood",
+      "county": "Broward County",
+      "cuisine": "Tacos",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://elnopalitovegantaqueria.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Gaia Therapeat",
+      "city": "Hollywood",
+      "county": "Broward County",
+      "cuisine": "Healthy",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://gaiatherapeat.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Helen Huang's Mandarin",
+      "city": "Hollywood",
+      "county": "Broward County",
+      "cuisine": "Chinese",
+      "type": "VO",
+      "typeLabel": "Ask for Vegan Options",
+      "website": "https://www.helenhuangsmandarin.getsauce.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Happeas",
+      "city": "Hollywood",
+      "county": "Broward County",
+      "cuisine": "Bowls",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://happens.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Fancy Plants Salad Company",
+      "city": "Hollywood",
+      "county": "Broward County",
+      "cuisine": "Salads",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://instagram.com/p/BeynOr-j0kk/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Krakatoa",
+      "city": "Hollywood",
+      "county": "Broward County",
+      "cuisine": "Indonesian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.krakatoacuisine.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Vannucchi Brothers",
+      "city": "Hollywood",
+      "county": "Broward County",
+      "cuisine": "Pizza/Italian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://vannucchibrotherspizza.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Vish",
+      "city": "Hollywood",
+      "county": "Broward County",
+      "cuisine": "Middle Eastern",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "http://vish.rest/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Yellow Green Farmers Market",
+      "city": "Hollywood",
+      "county": "Broward County",
+      "cuisine": "Farmers Market",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://ygfarmersmearket.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Zalie Cakes",
+      "city": "Hollywood",
+      "county": "Broward County",
+      "cuisine": "Bakery",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://zaliecakes.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Burger Vibez",
+      "city": "Lauderdale By The Sea",
+      "county": "Broward County",
+      "cuisine": "Burgers",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://burgervibezfl.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Taco Craft",
+      "city": "Lauderdale By The Sea",
+      "county": "Broward County",
+      "cuisine": "Mexican",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://tacocraft.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Arun’s Indian Kitchen - Sunrise & Taco Masala",
+      "city": "Lauderhill",
+      "county": "Broward County",
+      "cuisine": "Indian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://lauderhill.arunsindiankitchen.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Woodlands Indian Cuisine",
+      "city": "Lauderhill",
+      "county": "Broward County",
+      "cuisine": "Indian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://woodlandsus.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Bubbakoos",
+      "city": "Miramar",
+      "county": "Broward County",
+      "cuisine": "Mexican",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.bubbakoos.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Cleveland's Old Fashioned Ice cream",
+      "city": "Miramar",
+      "county": "Broward County",
+      "cuisine": "Ice Cream",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.facebook.com/people/Clevelands-Old-Fashioned-Ice-Cream/100063697253929",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Sarpino’s",
+      "city": "Miramar",
+      "county": "Broward County",
+      "cuisine": "Pizza/Italian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://gosarpinos.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Vegan Delights",
+      "city": "Miramar",
+      "county": "Broward County",
+      "cuisine": "To-go restaurant",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://www.vegandelights.org/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Vegetarian Delight",
+      "city": "Miramar",
+      "county": "Broward County",
+      "cuisine": "Restaurant/Juices",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://facebook.com/delightjuicebar",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Nour Thai",
+      "city": "Oakland Park",
+      "county": "Broward County",
+      "cuisine": "Thai",
+      "type": "VO",
+      "typeLabel": "Ask for Vegan Options",
+      "website": "https://nourthai.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Red Sea Eritrean & Ethiopian",
+      "city": "Oakland Park",
+      "county": "Broward County",
+      "cuisine": "Eritrean/Ethiopian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.redsearestaurantfl.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "MOD Pizza",
+      "city": "Parkland",
+      "county": "Broward County",
+      "cuisine": "Pizza/Salad",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://modpizza.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Bento Asian Kitchen",
+      "city": "Pembroke Pines",
+      "county": "Broward County",
+      "cuisine": "Asian/Bowls/Sushi",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://eatatbento.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Diced",
+      "city": "Pembroke Pines",
+      "county": "Broward County",
+      "cuisine": "Bowls",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://dicedfood.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Nine Five Pho",
+      "city": "Pembroke Pines",
+      "county": "Broward County",
+      "cuisine": "Vietnamese",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.facebook.com/NineFivePho/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Raw Addiction",
+      "city": "Pembroke Pines",
+      "county": "Broward County",
+      "cuisine": "Bowls/Juices",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://gorawaddiction.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Goji Juicery",
+      "city": "Pembroke Pines",
+      "county": "Broward County",
+      "cuisine": "Salads/Bowls",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://gojifresh.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "MOD Pizza",
+      "city": "Pembroke Pines",
+      "county": "Broward County",
+      "cuisine": "Pizza/Salad",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://modpizza.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Blueprint Cookies",
+      "city": "Plantation",
+      "county": "Broward County",
+      "cuisine": "Cookies",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.blueprintcookie.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Cucina Al Fresco",
+      "city": "Plantation",
+      "county": "Broward County",
+      "cuisine": "Italian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://cucinaalfresco.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Thai Meal",
+      "city": "Plantation",
+      "county": "Broward County",
+      "cuisine": "Thai",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://goodthaimeal.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "10xVegan",
+      "city": "Pompano Beach",
+      "county": "Broward County",
+      "cuisine": "Burgers/Salads/Smoothies",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://10xvegan.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Chill'n",
+      "city": "Pompano Beach",
+      "county": "Broward County",
+      "cuisine": "Ice Cream",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.chillnicecream.com/locations/pompano-beach",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Dangerous Minds Brewing Company",
+      "city": "Pompano Beach",
+      "county": "Broward County",
+      "cuisine": "Beer/Bar Food",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://dangerousmindsbrewing.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Fancy I Naturals",
+      "city": "Pompano Beach",
+      "county": "Broward County",
+      "cuisine": "Juice/Raw",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://fancyinaturals-109546.square.site/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Juice 2 U",
+      "city": "Pompano Beach",
+      "county": "Broward County",
+      "cuisine": "Juice/Cafe",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://juice-2-u.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "La Vie",
+      "city": "Pompano Beach",
+      "county": "Broward County",
+      "cuisine": "Mediterranean",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.lavieflorida.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Mini Pita Cafe",
+      "city": "Pompano Beach",
+      "county": "Broward County",
+      "cuisine": "Middle Eastern",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://minipitacafe.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "The Rabbit Hole",
+      "city": "Pompano Beach",
+      "county": "Broward County",
+      "cuisine": "Restaurant",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://www.therabbithole.life/",
+      "outdoorSeating": true
+    },
+    {
+      "name": "Shishka Lebanese Grill",
+      "city": "Pompano Beach",
+      "county": "Broward County",
+      "cuisine": "Middle Eastern",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://shishkagrill.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Utopia Juice Bar",
+      "city": "Pompano Beach",
+      "county": "Broward County",
+      "cuisine": "Juices/Bowls",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://utopiajuicebar.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Whole Green Cafe",
+      "city": "Pompano Beach",
+      "county": "Broward County",
+      "cuisine": "Market/Cafe",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.wholegreencafe.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Chef Rose Jamaican Cuisine",
+      "city": "Sunrise",
+      "county": "Broward County",
+      "cuisine": "Jamaican",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://instagram.com/chefrose.jamaicancuisine",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Madras Cafe",
+      "city": "Sunrise",
+      "county": "Broward County",
+      "cuisine": "Indian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.facebook.com/profile.php?id=100083225904319&sk=menu",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Origamy Gelato",
+      "city": "Sunrise",
+      "county": "Broward County",
+      "cuisine": "Ice Cream",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "http://origamygelato.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Pita Pita",
+      "city": "Sunrise",
+      "county": "Broward County",
+      "cuisine": "Greek, Middle Eastern",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "http://ww12.pitapitafalafelbar.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Simply Natural Cafe",
+      "city": "Sunrise",
+      "county": "Broward County",
+      "cuisine": "Cafe",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://simplynaturalcafe.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Sunrise Pita",
+      "city": "Sunrise",
+      "county": "Broward County",
+      "cuisine": "Middle Eastern",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://sunrisepita.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Rootz Soul Cafe",
+      "city": "Tamarac",
+      "county": "Broward County",
+      "cuisine": "Caribbean",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.facebook.com/rootzBar/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "My Organic Corner",
+      "city": "Weston",
+      "county": "Broward County",
+      "cuisine": "Restaurant",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://myorganiccorner.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Roll to GO",
+      "city": "Weston",
+      "county": "Broward County",
+      "cuisine": "Sushi",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://www.facebook.com/rolltogoweston/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Shibuya Sushi",
+      "city": "Weston",
+      "county": "Broward County",
+      "cuisine": "Sushi",
+      "type": "VO",
+      "typeLabel": "Ask for Vegan Options",
+      "website": "https://shibuya.us/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Zaika",
+      "city": "Weston",
+      "county": "Broward County",
+      "cuisine": "South Indian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://zaikaweston.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Treelion",
+      "city": "West Park",
+      "county": "Broward County",
+      "cuisine": "Restaurant/Juice Bar",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://3treelion.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "La Mexicana Taco Bar",
+      "city": "Wilton Manors",
+      "county": "Broward County",
+      "cuisine": "Mexican",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://lamexicana.online/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Jazzberry Creamery",
+      "city": "Wilton Manors",
+      "county": "Broward County",
+      "cuisine": "Ice Cream",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://jazzberrycreamery.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Sardi Cafe",
+      "city": "Wilton Manors",
+      "county": "Broward County",
+      "cuisine": "Peruvian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://sardicafelounge.com/",
+      "outdoorSeating": true
+    },
+    {
+      "name": "Dr Smood",
+      "city": "Aventura",
+      "county": "Miami / Dade County",
+      "cuisine": "Organic",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://drsmood.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Burgermeister",
+      "city": "Brickell",
+      "county": "Miami / Dade County",
+      "cuisine": "Burgers",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://burgermeistermia.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Happeas",
+      "city": "Brickell",
+      "county": "Miami / Dade County",
+      "cuisine": "Mediterranean",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.happeas.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Dr Smood",
+      "city": "Brickell",
+      "county": "Miami / Dade County",
+      "cuisine": "Organic",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://drsmood.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Glasers Organic Farms",
+      "city": "Coconut Grove",
+      "county": "Miami / Dade County",
+      "cuisine": "Farmers Market",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://glaserorganicfarms.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Dr Smood",
+      "city": "Coconut Grove",
+      "county": "Miami / Dade County",
+      "cuisine": "Organic",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://drsmood.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "L'Artisane Bakery",
+      "city": "Coral Gables",
+      "county": "Miami / Dade County",
+      "cuisine": "Bakery",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://lartisanebakery.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Vegan Litaly",
+      "city": "Coral Gables",
+      "county": "Miami / Dade County",
+      "cuisine": "Italian",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://veganlitaly.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Mama's up all Nite",
+      "city": "Delray Beach",
+      "county": "Miami / Dade County",
+      "cuisine": "Pizza",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://mamasupallnite.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Bunnie Cakes",
+      "city": "Doral",
+      "county": "Miami / Dade County",
+      "cuisine": "Bakery",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://bunniecakes.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Diced",
+      "city": "Doral",
+      "county": "Miami / Dade County",
+      "cuisine": "Bowls",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://dicedfoods.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "My Roots Juice Bar",
+      "city": "Doral",
+      "county": "Miami / Dade County",
+      "cuisine": "Juice/Cafe",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://myrootsjuicebar.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "NatuRxHeal",
+      "city": "Doral",
+      "county": "Miami / Dade County",
+      "cuisine": "Health Store",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://naturxheal.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Yardie Spice",
+      "city": "Homestead",
+      "county": "Miami / Dade County",
+      "cuisine": "Jamaican/Haitian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://facebook.com/Yardie-Spice-1750418601870226/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Diced",
+      "city": "Kendall",
+      "county": "Miami / Dade County",
+      "cuisine": "Healthy Fare",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://dicedfoods.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Ghee Indian Kitchen",
+      "city": "Kendall",
+      "county": "Miami / Dade County",
+      "cuisine": "Indian",
+      "type": "VO",
+      "typeLabel": "Ask for Vegan Options",
+      "website": "https://www.gheemiami.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Milly's Empanadas",
+      "city": "Kendall",
+      "county": "Miami / Dade County",
+      "cuisine": "Empanadas/Pastelitos",
+      "type": "VO",
+      "typeLabel": "Ask for Vegan Options",
+      "website": "https://www.millysfactory.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "My Roots Juice Bar",
+      "city": "Kendall",
+      "county": "Miami / Dade County",
+      "cuisine": "Juice/Cafe",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://myrootsjuicebar.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Aguacate",
+      "city": "Miami",
+      "county": "Miami / Dade County",
+      "cuisine": "Restaurant/Sanctuary",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://aguacatewellness.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Amor di Pasta",
+      "city": "Miami",
+      "county": "Miami / Dade County",
+      "cuisine": "Italian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "http://amordipasta.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Angie’s Epicurian",
+      "city": "Miami",
+      "county": "Miami / Dade County",
+      "cuisine": "Ice Cream",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://angiesepicurian.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Bunnie Cakes",
+      "city": "Miami",
+      "county": "Miami / Dade County",
+      "cuisine": "Bakery",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://bunniecakes.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Burgermeister",
+      "city": "Miami",
+      "county": "Miami / Dade County",
+      "cuisine": "Burgers",
+      "type": "",
+      "typeLabel": "",
+      "website": "https://burgermeistermia.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Chocolate Chip Bakery",
+      "city": "Miami",
+      "county": "Miami / Dade County",
+      "cuisine": "Bakery",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://chocolatechipbakery.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Dons Diner",
+      "city": "Miami",
+      "county": "Miami / Dade County",
+      "cuisine": "Diner",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://restaurantguru.com/Cafe-Kush-Miami/menu",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Isabel's",
+      "city": "Miami",
+      "county": "Miami / Dade County",
+      "cuisine": "Popup",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://www.isabelsmiami.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Jajaja Mexicana",
+      "city": "Miami",
+      "county": "Miami / Dade County",
+      "cuisine": "Mexican",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://jajajamexicana.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "JDs Vegmex",
+      "city": "Miami",
+      "county": "Miami / Dade County",
+      "cuisine": "Mexican",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://www.instagram.com/jdsvegmex",
+      "outdoorSeating": false
+    },
+    {
+      "name": "KC Healthy Kitchen",
+      "city": "Miami",
+      "county": "Miami / Dade County",
+      "cuisine": "Healthy",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://kocoyehcuisine.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Kush",
+      "city": "Miami",
+      "county": "Miami / Dade County",
+      "cuisine": "Burgers/Sandwich/Salad",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://kushwynwood.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Lemoni Cafe",
+      "city": "Miami",
+      "county": "Miami / Dade County",
+      "cuisine": "Restaurant",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://lemonicafe.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Love Life Cafe",
+      "city": "Miami",
+      "county": "Miami / Dade County",
+      "cuisine": "Restaurant",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://lovelifecafe.com/",
+      "outdoorSeating": true
+    },
+    {
+      "name": "Nabati Ice Cream",
+      "city": "Miami",
+      "county": "Miami / Dade County",
+      "cuisine": "Ice Cream",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://nabatiicecream.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Naomi's Garden",
+      "city": "Miami",
+      "county": "Miami / Dade County",
+      "cuisine": "Caribbean",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://naomismiami.com/menu/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Manna Life",
+      "city": "Miami",
+      "county": "Miami / Dade County",
+      "cuisine": "Restaurant",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://mannalifefood.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Old Days Coffee",
+      "city": "Miami",
+      "county": "Miami / Dade County",
+      "cuisine": "Breakast/Restaurant",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.oldayscoffee.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "On the Run",
+      "city": "Miami",
+      "county": "Miami / Dade County",
+      "cuisine": "Restaurant",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://www.clover.com/online-ordering/on-the-run-vegan-miami",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Plant Miami",
+      "city": "Miami",
+      "county": "Miami / Dade County",
+      "cuisine": "Gourmet Raw",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://sacredspacemiami.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Plantisserie",
+      "city": "Miami",
+      "county": "Miami / Dade County",
+      "cuisine": "Cafe/Deli",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://theplantisserie.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Roots Miami Kava & Eatery",
+      "city": "Miami",
+      "county": "Miami / Dade County",
+      "cuisine": "Kava Bar/Snacks",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://miamikava.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "PS Green",
+      "city": "Miami",
+      "county": "Miami / Dade County",
+      "cuisine": "Restaurant",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://psgreenrestaurant.menufy.com/#/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Shido",
+      "city": "Miami",
+      "county": "Miami / Dade County",
+      "cuisine": "Japanese/Sushi",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://shidomiami.com/our-menu",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Specialteas",
+      "city": "Miami",
+      "county": "Miami / Dade County",
+      "cuisine": "Teas/Food",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.specialtealounge.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Thatch Miami",
+      "city": "Miami",
+      "county": "Miami / Dade County",
+      "cuisine": "Organic",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://thatchmiami.com/",
+      "outdoorSeating": true
+    },
+    {
+      "name": "The Vegan Choice",
+      "city": "Miami",
+      "county": "Miami / Dade County",
+      "cuisine": "Restaurant",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://tvcorg.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Plant Theory Botanical Burger",
+      "city": "Miami",
+      "county": "Miami / Dade County",
+      "cuisine": "Burgers",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://places.singleplatform.com/plant-theory-0/menu",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Vegan Cuban Cuisine",
+      "city": "Miami",
+      "county": "Miami / Dade County",
+      "cuisine": "Cuban",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://vegancubancuisine.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Vegan Planet",
+      "city": "Miami",
+      "county": "Miami / Dade County",
+      "cuisine": "Italian",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://veganplanetmiami.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Vgan.Corner",
+      "city": "Miami",
+      "county": "Miami / Dade County",
+      "cuisine": "Market",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://www.bennyscorner.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "V Gelato",
+      "city": "Miami",
+      "county": "Miami / Dade County",
+      "cuisine": "Ice Cream",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://www.vgelatomiami.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Chotto Matte",
+      "city": "Miami Beach",
+      "county": "Miami / Dade County",
+      "cuisine": "Japanese",
+      "type": "VO",
+      "typeLabel": "Ask for Vegan Options",
+      "website": "https://chotto-matte.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Huahuas Taqueria",
+      "city": "Miami Beach",
+      "county": "Miami / Dade County",
+      "cuisine": "Tacos",
+      "type": "VO",
+      "typeLabel": "Ask for Vegan Options",
+      "website": "https://huahuastaco.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Nick's Pizza",
+      "city": "Miami Beach",
+      "county": "Miami / Dade County",
+      "cuisine": "Pizza",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.nickspizzamiami.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Nirvana Plant Based Bistro",
+      "city": "Miami Beach",
+      "county": "Miami / Dade County",
+      "cuisine": "Restaurant",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://www.nirvanaplantbasedbistro.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Awash Ethiopian",
+      "city": "Miami Gardens",
+      "county": "Miami / Dade County",
+      "cuisine": "Ethiopian",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.awashmiami.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Basilic Vietnamese Grill",
+      "city": "Miami Gardens",
+      "county": "Miami / Dade County",
+      "cuisine": "Vietnamese",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.basilicvietnamesegrill.getsauce.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Vegetarian by Hakin",
+      "city": "North Miami Beach",
+      "county": "Miami / Dade County",
+      "cuisine": "Restaurant",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://vegbyhakin.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Dr Smood",
+      "city": "South Miami",
+      "county": "Miami / Dade County",
+      "cuisine": "Organic",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://drsmood.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Raw Addiction",
+      "city": "South Miami",
+      "county": "Miami / Dade County",
+      "cuisine": "Bowls/Juices",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://gorawaddiction.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Reggae Beets",
+      "city": "",
+      "county": "Tri-County Area",
+      "cuisine": "Food Truck",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://reggaebeets.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Seaside Eatery Key Largo",
+      "city": "",
+      "county": "Tri-County Area",
+      "cuisine": "Food Truck",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://seasideeateryflkeys.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Vegan Cuban Cuisine",
+      "city": "",
+      "county": "Tri-County Area",
+      "cuisine": "Cuban/Delivery",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://vegancubancuisine.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Pamela Wasabi",
+      "city": "",
+      "county": "Tri-County Area",
+      "cuisine": "Bakery - Delivery",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://pamelawasabi.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Caribe Vegan",
+      "city": "",
+      "county": "Tri-County Area",
+      "cuisine": "Caribbean / Catering",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://thecaribevegan.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Krave Kitchen",
+      "city": "",
+      "county": "Tri-County Area",
+      "cuisine": "Delivery-Tri County",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://thekravekitchen.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Dub and Grub",
+      "city": "",
+      "county": "Tri-County Area",
+      "cuisine": "Food Truck",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://dubandgrub.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Garden Diva Hummus",
+      "city": "",
+      "county": "Tri-County Area",
+      "cuisine": "Food Truck",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://www.gardendivahummus.com/food-truck-menu",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Menchies",
+      "city": "Multiple Locations",
+      "county": "Tri-County Area",
+      "cuisine": "Ice Cream",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://menchies.com/",
+      "outdoorSeating": false
+    }
+  ]
+}
