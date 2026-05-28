@@ -6,3 +6,4 @@ sheet.csv
 *.local
 .env
 vegan app.txt
+.wrangler/

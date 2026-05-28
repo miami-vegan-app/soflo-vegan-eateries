@@ -1,0 +1,10 @@
+{
+  // Deploys the static PWA as a Cloudflare Worker that serves static assets.
+  // Cloudflare Workers Builds runs `npx wrangler deploy`; auth is handled by the
+  // connected Cloudflare account, so no token is needed in the build.
+  "name": "soflo-vegan-eateries",
+  "compatibility_date": "2026-05-28",
+  "assets": {
+    "directory": "./public"
+  }
+}

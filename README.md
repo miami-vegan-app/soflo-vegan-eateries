@@ -56,6 +56,13 @@ Then open the local URL in your browser (or your phone on the same network) to t
 > Netlify works identically: set **Publish directory** to `public` and leave the build
 > command empty.
 
+### Alternative: Cloudflare Workers (Static Assets)
+
+This repo also includes `wrangler.jsonc`, so it can be deployed as a Worker that serves the
+`public/` directory as static assets. In Cloudflare's **Workers** build flow, leave the
+**build command empty** and keep the default **deploy command `npx wrangler deploy`**.
+Auth is handled by the connected Cloudflare account.
+
 ## Updating the icon
 
 Edit `assets/icon.svg`, run `npm run build:icons`, and commit the regenerated PNGs in
