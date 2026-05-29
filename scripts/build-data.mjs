@@ -15,8 +15,13 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT_PATH = resolve(__dirname, "../public/data/restaurants.json");
 
 const SHEET_ID = "1DQ5ys0MHw22qWXmwC_rAbLs7gQfDjFpASDii9beP9zE";
-const GID = "0";
-const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=${GID}`;
+// The master list, grouped "By County".
+const MAIN_GID = "0";
+// A separate "100% Vegan" tab. It's mostly a curated subset of the main list, but a few
+// fully-vegan spots are entered ONLY here, so we merge in anything not already present.
+const VEGAN_GID = "119809278";
+const csvUrl = (gid) =>
+  `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=${gid}`;
 
 // Minimum number of parsed restaurants we expect — guards against a partial/empty fetch.
 const MIN_RESTAURANTS = 150;
@@ -114,56 +119,89 @@ function isEmptyRow(row) {
   return row.every((c) => cleanCell(c) === "");
 }
 
+// Name+city identity for de-duping a restaurant across the two tabs.
+function restaurantKey(r) {
+  const norm = (s) => cleanCell(s).toLowerCase().replace(/[^a-z0-9]/g, "");
+  return `${norm(r.name)}|${norm(r.city)}`;
+}
+
+// Website identity (host + path, ignoring scheme/www/query) — catches the same place
+// listed under slightly different names on the two tabs (e.g. "Konata's Vegan" vs
+// "Konata's Vegan Restaurant", same URL). Returns "" when there's no usable website.
+function websiteKey(r) {
+  if (!r.website) return "";
+  try {
+    const u = new URL(r.website);
+    const host = u.hostname.replace(/^www\./, "").toLowerCase();
+    const path = u.pathname.replace(/\/+$/, "").toLowerCase();
+    return host + path;
+  } catch {
+    return "";
+  }
+}
+
+// Parses one tab's CSV (CITY, NAME, WEBSITE, CUISINE, TYPE, OUTDOOR SEATING) into
+// restaurant objects. Rows are grouped under "<COUNTY> COUNTY" section headers; pass
+// `defaultCounty` for tabs whose first section has no header (the 100% Vegan tab starts
+// straight into Palm Beach rows).
+function parseRestaurants(csv, { defaultCounty = "" } = {}) {
+  const rows = parseCsv(csv);
+  const restaurants = [];
+  let currentCounty = defaultCounty;
+
+  for (const row of rows) {
+    if (isEmptyRow(row)) continue;
+    const first = cleanCell(row[0]).toUpperCase();
+
+    // County section header?
+    if (COUNTY_MAP.has(first) && isEmptyRow(row.slice(1))) {
+      currentCounty = COUNTY_MAP.get(first);
+      continue;
+    }
+    // Repeated column header row?
+    if (first === "CITY" && cleanCell(row[1]).toUpperCase() === "NAME") continue;
+    // Skip everything before the first county section (title/legend/disclaimers).
+    if (!currentCounty) continue;
+
+    const name = cleanCell(row[1]);
+    if (!name) continue;
+
+    const type = normalizeType(row[4]);
+    restaurants.push({
+      name,
+      city: titleCaseCity(row[0]),
+      county: currentCounty,
+      cuisine: cleanCell(row[3]),
+      type,
+      typeLabel: TYPE_LABELS[type] || "",
+      website: normalizeWebsite(row[2]),
+      outdoorSeating: parseOutdoor(row[5]),
+    });
+  }
+
+  return restaurants;
+}
+
+function fetchCsv(gid) {
+  return fetch(csvUrl(gid), { redirect: "follow" }).then((res) => {
+    if (!res.ok) throw new Error(`Sheet fetch failed: HTTP ${res.status}`);
+    return res.text();
+  });
+}
+
 function main() {
-  return fetch(CSV_URL, { redirect: "follow" })
-    .then((res) => {
-      if (!res.ok) throw new Error(`Sheet fetch failed: HTTP ${res.status}`);
-      return res.text();
-    })
+  return fetchCsv(MAIN_GID)
     .then((csv) => {
       if (!/SOUTH FLORIDA VEGANS/i.test(csv)) {
         throw new Error("Fetched content does not look like the expected sheet.");
       }
-
-      const rows = parseCsv(csv);
 
       // Capture the "updated <date>" note from the header rows, if present.
       let sourceUpdated = "";
       const updatedMatch = csv.match(/updated\s+([A-Za-z]+\.?\s+\d{1,2},?\s+\d{4})/i);
       if (updatedMatch) sourceUpdated = updatedMatch[1].replace(/\s+/g, " ").trim();
 
-      const restaurants = [];
-      let currentCounty = "";
-
-      for (const row of rows) {
-        if (isEmptyRow(row)) continue;
-        const first = cleanCell(row[0]).toUpperCase();
-
-        // County section header?
-        if (COUNTY_MAP.has(first) && isEmptyRow(row.slice(1))) {
-          currentCounty = COUNTY_MAP.get(first);
-          continue;
-        }
-        // Repeated column header row?
-        if (first === "CITY" && cleanCell(row[1]).toUpperCase() === "NAME") continue;
-        // Skip everything before the first county section (title/legend/disclaimers).
-        if (!currentCounty) continue;
-
-        const name = cleanCell(row[1]);
-        if (!name) continue;
-
-        const type = normalizeType(row[4]);
-        restaurants.push({
-          name,
-          city: titleCaseCity(row[0]),
-          county: currentCounty,
-          cuisine: cleanCell(row[3]),
-          type,
-          typeLabel: TYPE_LABELS[type] || "",
-          website: normalizeWebsite(row[2]),
-          outdoorSeating: parseOutdoor(row[5]),
-        });
-      }
+      const restaurants = parseRestaurants(csv);
 
       if (restaurants.length < MIN_RESTAURANTS) {
         throw new Error(
@@ -171,41 +209,73 @@ function main() {
         );
       }
 
-      const counties = [...new Set(restaurants.map((r) => r.county))];
-
-      const out = {
-        updatedAt: new Date().toISOString(),
-        sourceUpdated,
-        source: `https://docs.google.com/spreadsheets/d/${SHEET_ID}/edit`,
-        count: restaurants.length,
-        legend: LEGEND,
-        counties,
-        restaurants,
-      };
-
-      mkdirSync(dirname(OUT_PATH), { recursive: true });
-
-      // Only write if content (ignoring the timestamp) actually changed, so the daily
-      // Action produces a clean no-op commit when the sheet is unchanged.
-      const nextSansTime = JSON.stringify({ ...out, updatedAt: "" });
-      if (existsSync(OUT_PATH)) {
-        try {
-          const prev = JSON.parse(readFileSync(OUT_PATH, "utf8"));
-          const prevSansTime = JSON.stringify({ ...prev, updatedAt: "" });
-          if (prevSansTime === nextSansTime) {
-            console.log(`No data changes (${restaurants.length} restaurants). Skipping write.`);
-            return;
+      // Merge in fully-vegan spots that live only on the "100% Vegan" tab. This is
+      // supplementary — if it fails, keep the good main-list data rather than aborting.
+      return fetchCsv(VEGAN_GID)
+        .then((veganCsv) => {
+          const veganOnly = parseRestaurants(veganCsv, { defaultCounty: "Palm Beach County" });
+          const haveNames = new Set(restaurants.map(restaurantKey));
+          const haveSites = new Set(restaurants.map(websiteKey).filter(Boolean));
+          let added = 0;
+          for (const r of veganOnly) {
+            const site = websiteKey(r);
+            if (haveNames.has(restaurantKey(r)) || (site && haveSites.has(site))) continue;
+            haveNames.add(restaurantKey(r));
+            if (site) haveSites.add(site);
+            restaurants.push(r);
+            added++;
           }
-        } catch {
-          /* fall through and overwrite a corrupt file */
-        }
-      }
-
-      writeFileSync(OUT_PATH, JSON.stringify(out, null, 2) + "\n");
-      console.log(
-        `Wrote ${restaurants.length} restaurants across ${counties.length} counties -> ${OUT_PATH}`
-      );
+          console.log(
+            `100% Vegan tab: ${veganOnly.length} entries, merged ${added} not already on the main list.`
+          );
+        })
+        .catch((err) => {
+          console.warn(
+            `Warning: could not merge the 100% Vegan tab (${err.message}). Continuing with the main list only.`
+          );
+        })
+        .then(() => finalize(restaurants, sourceUpdated));
     });
+}
+
+function finalize(restaurants, sourceUpdated) {
+  const counties = [...new Set(restaurants.map((r) => r.county))];
+  const now = new Date().toISOString();
+
+  // Everything except the timestamps — used to detect whether the list actually changed.
+  const data = {
+    sourceUpdated,
+    source: `https://docs.google.com/spreadsheets/d/${SHEET_ID}/edit`,
+    count: restaurants.length,
+    legend: LEGEND,
+    counties,
+    restaurants,
+  };
+
+  // `checkedAt` always advances — we fetch daily and want to show users the last fetch.
+  // `updatedAt` only advances when the underlying list actually changed, so it reflects
+  // when the data last differed (carried forward from the previous file when unchanged).
+  let updatedAt = now;
+  if (existsSync(OUT_PATH)) {
+    try {
+      const prev = JSON.parse(readFileSync(OUT_PATH, "utf8"));
+      const { updatedAt: _u, checkedAt: _c, ...prevData } = prev;
+      if (JSON.stringify(prevData) === JSON.stringify(data)) {
+        updatedAt = prev.updatedAt || now;
+      }
+    } catch {
+      /* fall through and overwrite a corrupt file */
+    }
+  }
+
+  const out = { updatedAt, checkedAt: now, ...data };
+
+  mkdirSync(dirname(OUT_PATH), { recursive: true });
+  writeFileSync(OUT_PATH, JSON.stringify(out, null, 2) + "\n");
+  console.log(
+    `Wrote ${restaurants.length} restaurants across ${counties.length} counties ` +
+      `(updatedAt ${updatedAt}, checkedAt ${now}) -> ${OUT_PATH}`
+  );
 }
 
 main().catch((err) => {

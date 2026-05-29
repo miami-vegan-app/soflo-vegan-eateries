@@ -153,6 +153,14 @@
     try { return new URL(url).hostname.replace(/^www\./, ""); } catch (_) { return url; }
   }
 
+  // ISO timestamp -> "May 29, 2026". Returns "" if missing/invalid.
+  function formatCheckedDate(iso) {
+    if (!iso) return "";
+    const d = new Date(iso);
+    if (isNaN(d.getTime())) return "";
+    return d.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
+  }
+
   function cardHtml(r) {
     const badgeClass = r.type ? `badge--${r.type}` : "badge--none";
     const badgeText = r.type || "?";
@@ -248,9 +256,11 @@
       })
       .then((data) => {
         RESTAURANTS = data.restaurants || [];
-        $("#updated-note").textContent = data.sourceUpdated
-          ? `${RESTAURANTS.length} places · list updated ${data.sourceUpdated}`
-          : `${RESTAURANTS.length} places`;
+        const bits = [`${RESTAURANTS.length} places`];
+        if (data.sourceUpdated) bits.push(`list updated ${data.sourceUpdated}`);
+        const checked = formatCheckedDate(data.checkedAt);
+        if (checked) bits.push(`data checked ${checked}`);
+        $("#updated-note").textContent = bits.join(" · ");
         renderLegend(data.legend || []);
         initFilters(data);
         applyFilters();

@@ -1,8 +1,9 @@
 {
-  "updatedAt": "2026-05-28T23:06:48.119Z",
+  "updatedAt": "2026-05-29T16:11:15.776Z",
+  "checkedAt": "2026-05-29T16:11:24.598Z",
   "sourceUpdated": "May 9, 2026",
   "source": "https://docs.google.com/spreadsheets/d/1DQ5ys0MHw22qWXmwC_rAbLs7gQfDjFpASDii9beP9zE/edit",
-  "count": 306,
+  "count": 310,
   "legend": [
     {
       "code": "V",
@@ -2593,6 +2594,16 @@
       "outdoorSeating": false
     },
     {
+      "name": "Raw South Kendall",
+      "city": "Kendall",
+      "county": "Miami / Dade County",
+      "cuisine": "Juice/Healthy Fare",
+      "type": "VF",
+      "typeLabel": "Vegan Friendly",
+      "website": "https://www.facebook.com/RawSouthJuice",
+      "outdoorSeating": false
+    },
+    {
       "name": "Aguacate",
       "city": "Miami",
       "county": "Miami / Dade County",
@@ -2973,6 +2984,16 @@
       "outdoorSeating": false
     },
     {
+      "name": "Konata's Vegan Restaurant",
+      "city": "Miami Gardens",
+      "county": "Miami / Dade County",
+      "cuisine": "Jamaican",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://www.yelp.com/biz/konatas-vegan-restaurant-miami-gardens",
+      "outdoorSeating": false
+    },
+    {
       "name": "Vegetarian by Hakin",
       "city": "North Miami Beach",
       "county": "Miami / Dade County",
@@ -3090,6 +3111,26 @@
       "type": "VF",
       "typeLabel": "Vegan Friendly",
       "website": "https://menchies.com/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Ittle Litaly",
+      "city": "Coral Gables",
+      "county": "Miami / Dade County",
+      "cuisine": "Italian",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://ittlelitaly.square.site/",
+      "outdoorSeating": false
+    },
+    {
+      "name": "Happy Vegan Bakers",
+      "city": "Hialeah",
+      "county": "Miami / Dade County",
+      "cuisine": "Spanish Bakery",
+      "type": "V",
+      "typeLabel": "Vegan",
+      "website": "https://happyveganbakers.com/",
       "outdoorSeating": false
     }
   ]
