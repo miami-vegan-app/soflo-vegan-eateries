@@ -1,6 +1,6 @@
 {
   "updatedAt": "2026-05-29T16:11:15.776Z",
-  "checkedAt": "2026-06-02T20:57:20.929Z",
+  "checkedAt": "2026-06-02T21:08:33.838Z",
   "sourceUpdated": "May 9, 2026",
   "source": "https://docs.google.com/spreadsheets/d/1DQ5ys0MHw22qWXmwC_rAbLs7gQfDjFpASDii9beP9zE/edit",
   "count": 310,
@@ -79,7 +79,9 @@
       "lng": -80.1578847,
       "businessStatus": "OPERATIONAL",
       "placeId": "ChIJOU78O5Gt2YgRIv80IyHED_g",
-      "matchConfidence": "approximate"
+      "matchConfidence": "approximate",
+      "websiteStatus": "down",
+      "websiteCheckedAt": "2026-06-02"
     },
     {
       "name": "Bento Asian Kitchen",
@@ -1135,7 +1137,9 @@
       "lng": -80.22025719999999,
       "businessStatus": "OPERATIONAL",
       "placeId": "ChIJidMe-e8u2YgR7CA71qyymp0",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "websiteStatus": "down",
+      "websiteCheckedAt": "2026-06-02"
     },
     {
       "name": "Bagel Bistro",
@@ -1673,7 +1677,9 @@
       "lng": -80.25136309999999,
       "businessStatus": "CLOSED_PERMANENTLY",
       "placeId": "ChIJqSmFqUQF2YgREkqyNRA-mNQ",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "websiteStatus": "down",
+      "websiteCheckedAt": "2026-06-02"
     },
     {
       "name": "Juice Kitchen",
@@ -2265,7 +2271,9 @@
       "lng": -80.1172634,
       "businessStatus": "OPERATIONAL",
       "placeId": "ChIJqadZh-wB2YgR9fFPLMtBcDw",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "websiteStatus": "down",
+      "websiteCheckedAt": "2026-06-02"
     },
     {
       "name": "Colombians Mountains Cafe",
@@ -2921,7 +2929,9 @@
       "lng": -80.1456935,
       "businessStatus": "OPERATIONAL",
       "placeId": "ChIJs-NhX3ur2YgRm5UMXCieYGg",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "websiteStatus": "down",
+      "websiteCheckedAt": "2026-06-02"
     },
     {
       "name": "El Nopalito Vegan Taqueria",
@@ -3449,7 +3459,9 @@
       "lng": -80.1013303,
       "businessStatus": "OPERATIONAL",
       "placeId": "ChIJ42k1qQID2YgRf-ffqN9osVc",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "websiteStatus": "down",
+      "websiteCheckedAt": "2026-06-02"
     },
     {
       "name": "Dangerous Minds Brewing Company",
@@ -4147,7 +4159,9 @@
       "lng": -80.390912,
       "businessStatus": "OPERATIONAL",
       "placeId": "ChIJ0UMNAh6_2YgRu4HylSv34_s",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "websiteStatus": "down",
+      "websiteCheckedAt": "2026-06-02"
     },
     {
       "name": "Amor di Pasta",
@@ -4221,7 +4235,9 @@
       "lng": -80.191951,
       "businessStatus": "CLOSED_PERMANENTLY",
       "placeId": "ChIJy2V-k0mx2YgRWZ-ylaGyLzg",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "websiteStatus": "down",
+      "websiteCheckedAt": "2026-06-02"
     },
     {
       "name": "Dons Diner",
@@ -4253,7 +4269,9 @@
       "lng": -80.2380712,
       "businessStatus": "OPERATIONAL",
       "placeId": "ChIJgW_5qc632YgRJp09efZfDEg",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "websiteStatus": "down",
+      "websiteCheckedAt": "2026-06-02"
     },
     {
       "name": "Jajaja Mexicana",
@@ -4871,7 +4889,9 @@
       "type": "V",
       "typeLabel": "Vegan",
       "website": "https://thecaribevegan.com/",
-      "outdoorSeating": false
+      "outdoorSeating": false,
+      "websiteStatus": "down",
+      "websiteCheckedAt": "2026-06-02"
     },
     {
       "name": "Krave Kitchen",
@@ -4887,7 +4907,9 @@
       "lng": -80.214676,
       "businessStatus": "OPERATIONAL",
       "placeId": "ChIJo0bG1UGp2YgRwEreIaAxxQM",
-      "matchConfidence": "approximate"
+      "matchConfidence": "approximate",
+      "websiteStatus": "down",
+      "websiteCheckedAt": "2026-06-02"
     },
     {
       "name": "Dub and Grub",
@@ -4919,7 +4941,9 @@
       "lng": -80.168801,
       "businessStatus": "OPERATIONAL",
       "placeId": "ChIJ_09gD8mr2YgRwayHwxny40c",
-      "matchConfidence": "approximate"
+      "matchConfidence": "approximate",
+      "websiteStatus": "down",
+      "websiteCheckedAt": "2026-06-02"
     },
     {
       "name": "Menchies",
@@ -4951,7 +4975,9 @@
       "lng": -80.2575567,
       "businessStatus": "OPERATIONAL",
       "placeId": "ChIJO5IyrXW32YgRnyXQP2MkKnE",
-      "matchConfidence": "approximate"
+      "matchConfidence": "approximate",
+      "websiteStatus": "down",
+      "websiteCheckedAt": "2026-06-02"
     },
     {
       "name": "Happy Vegan Bakers",

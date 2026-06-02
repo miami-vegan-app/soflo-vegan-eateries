@@ -168,7 +168,9 @@
     if (r.city) cityBits.push(escapeHtml(r.city));
     if (r.cuisine) cityBits.push(escapeHtml(r.cuisine));
     const outdoor = r.outdoorSeating ? `<span class="dot">·</span><span class="chip-outdoor">🌿 Outdoor seating</span>` : "";
-    const link = r.website
+    // A website confirmed down (404) is hidden so we never link users to a dead page.
+    // The restaurant still shows — the place may well be open; only the link is gone.
+    const link = r.website && r.websiteStatus !== "down"
       ? `<a class="card__link" href="${escapeHtml(r.website)}" target="_blank" rel="noopener">${escapeHtml(hostname(r.website))}</a>`
       : "";
     return (

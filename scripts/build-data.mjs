@@ -271,6 +271,13 @@ function finalize(restaurants, sourceUpdated) {
         for (const f of ENRICHED_FIELDS) {
           if (old[f] !== undefined) r[f] = old[f];
         }
+        // Carry forward the website down-flag (set by scripts/check-websites.mjs --write),
+        // but ONLY while the URL is unchanged. If the sheet now has a different website,
+        // the old verdict no longer applies — drop it so the new URL gets re-checked fresh.
+        if (old.websiteStatus === "down" && old.website === r.website) {
+          r.websiteStatus = old.websiteStatus;
+          if (old.websiteCheckedAt !== undefined) r.websiteCheckedAt = old.websiteCheckedAt;
+        }
       }
     } catch {
       /* no usable previous file — nothing to carry forward */

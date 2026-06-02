@@ -4,6 +4,7 @@ npm-debug.log*
 Thumbs.db
 sheet.csv
 scripts/.places-cache.json
+website-report.html
 *.local
 .env
 vegan app.txt
