@@ -48,6 +48,11 @@ const LEGEND = [
   { code: "VO", label: "Vegan Options", description: "Ask for vegan options." },
 ];
 
+// Fields owned by scripts/enrich-places.mjs (Google Places API), not the sheet. The
+// daily rebuild must carry these forward from the previous restaurants.json or it would
+// wipe them. Keep this list in sync with ENRICHED_FIELDS in enrich-places.mjs.
+const ENRICHED_FIELDS = ["address", "lat", "lng", "businessStatus", "placeId", "matchConfidence"];
+
 // --- Minimal but correct CSV parser (handles quoted fields, escaped quotes, CRLF) ---
 function parseCsv(text) {
   const rows = [];
@@ -89,13 +94,24 @@ function titleCaseCity(s) {
     .replace(/\bFt\b/g, "Ft.");
 }
 
+// Known-bad website hostnames in the sheet -> the correct hostname. The sheet owners
+// sometimes leave a typo'd URL up; we serve the working one regardless. Keyed by lowercase
+// hostname (without scheme), so it applies no matter how the cell is otherwise formatted.
+const WEBSITE_HOST_FIXES = new Map([
+  // "mearket" typo — the typo'd domain doesn't resolve; the corrected one returns 200.
+  ["ygfarmersmearket.com", "ygfarmersmarket.com"],
+]);
+
 function normalizeWebsite(raw) {
   let w = cleanCell(raw);
   if (!w) return "";
   if (!/^https?:\/\//i.test(w)) w = "https://" + w.replace(/^\/+/, "");
   try {
     // Validate; return normalized form.
-    return new URL(w).href;
+    const url = new URL(w);
+    const fixed = WEBSITE_HOST_FIXES.get(url.hostname.toLowerCase());
+    if (fixed) url.hostname = fixed;
+    return url.href;
   } catch {
     return "";
   }
@@ -241,6 +257,25 @@ function main() {
 function finalize(restaurants, sourceUpdated) {
   const counties = [...new Set(restaurants.map((r) => r.county))];
   const now = new Date().toISOString();
+
+  // Carry forward Places-API enrichment (address/lat/lng/status) from the previous
+  // build — those fields come from enrich-places.mjs, not the sheet, so a fresh sheet
+  // parse must not erase them. Matched by name+city via restaurantKey().
+  if (existsSync(OUT_PATH)) {
+    try {
+      const prev = JSON.parse(readFileSync(OUT_PATH, "utf8"));
+      const byKey = new Map((prev.restaurants || []).map((r) => [restaurantKey(r), r]));
+      for (const r of restaurants) {
+        const old = byKey.get(restaurantKey(r));
+        if (!old) continue;
+        for (const f of ENRICHED_FIELDS) {
+          if (old[f] !== undefined) r[f] = old[f];
+        }
+      }
+    } catch {
+      /* no usable previous file — nothing to carry forward */
+    }
+  }
 
   // Everything except the timestamps — used to detect whether the list actually changed.
   const data = {

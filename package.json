@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "build:data": "node scripts/build-data.mjs",
+    "enrich:places": "node scripts/enrich-places.mjs",
     "build:icons": "node scripts/build-icons.mjs",
     "serve": "npx --yes serve public"
   },

@@ -3,6 +3,7 @@ npm-debug.log*
 .DS_Store
 Thumbs.db
 sheet.csv
+scripts/.places-cache.json
 *.local
 .env
 vegan app.txt
