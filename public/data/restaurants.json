@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-03T13:56:11.107Z",
-  "checkedAt": "2026-06-03T13:56:11.107Z",
+  "updatedAt": "2026-06-03T20:29:11.541Z",
+  "checkedAt": "2026-06-03T20:29:11.541Z",
   "sourceUpdated": "May 9, 2026",
   "source": "https://docs.google.com/spreadsheets/d/1DQ5ys0MHw22qWXmwC_rAbLs7gQfDjFpASDii9beP9zE/edit",
   "count": 310,
@@ -1051,13 +1051,13 @@
       "typeLabel": "Mostly Vegan (has honey)",
       "website": "https://christopherskitchenfl.com/",
       "outdoorSeating": true,
-      "address": "4783 PGA Blvd, Palm Beach Gardens, FL 33418",
-      "lat": 26.839166700000003,
-      "lng": -80.1097222,
+      "address": "328 Fern St, West Palm Beach, FL 33401",
+      "lat": 26.7102325,
+      "lng": -80.0532061,
       "businessStatus": "OPERATIONAL",
-      "businessStatusAt": "2026-06-02T20:47:59.429Z",
-      "placeId": "ChIJtZQCfk_V3ogRxdV-rP77Zsk",
-      "matchConfidence": "high"
+      "businessStatusAt": "2026-06-02T20:48:00.133Z",
+      "placeId": "ChIJYx65DIrW2IgRpT-agsInzRs",
+      "matchConfidence": "verified"
     },
     {
       "name": "Lynora's",
@@ -1088,9 +1088,6 @@
       "address": "328 Fern St, West Palm Beach, FL 33401",
       "lat": 26.7102325,
       "lng": -80.0532061,
-      "businessStatus": "OPERATIONAL",
-      "businessStatusAt": "2026-06-02T20:48:00.133Z",
-      "placeId": "ChIJYx65DIrW2IgRpT-agsInzRs",
       "matchConfidence": "verified",
       "formerName": "Meraki Juice Kitchen"
     },
@@ -1871,9 +1868,6 @@
       "address": "386 E Dania Beach Blvd, Dania Beach, FL 33004",
       "lat": 26.0513564,
       "lng": -80.1370152,
-      "businessStatus": "OPERATIONAL",
-      "businessStatusAt": "2026-06-02T20:48:19.061Z",
-      "placeId": "ChIJQ49ZJPSq2YgR35flKn3sOio",
       "matchConfidence": "verified",
       "formerName": "Goji Juicery"
     },
@@ -1959,9 +1953,6 @@
       "address": "3732 Davie Rd, Davie, FL 33314",
       "lat": 26.0756812,
       "lng": -80.23156999999999,
-      "businessStatus": "OPERATIONAL",
-      "businessStatusAt": "2026-06-02T20:48:22.094Z",
-      "placeId": "ChIJL9b-jiip2YgRY9oNazPw9gY",
       "matchConfidence": "verified",
       "formerName": "Delicious Raw Kitchen and Juice Bar"
     },
@@ -2011,9 +2002,6 @@
       "address": "2215 S University Dr, Davie, FL 33324",
       "lat": 26.093872599999997,
       "lng": -80.25206109999999,
-      "businessStatus": "OPERATIONAL",
-      "businessStatusAt": "2026-06-02T20:48:23.225Z",
-      "placeId": "ChIJcfFXVvsH2YgRER_27RkbNI8",
       "matchConfidence": "verified",
       "formerName": "Hanj Snow Boba"
     },
@@ -2442,8 +2430,7 @@
       "businessStatus": "OPERATIONAL",
       "businessStatusAt": "2026-06-02T20:48:34.352Z",
       "placeId": "ChIJqadZh-wB2YgR9fFPLMtBcDw",
-      "matchConfidence": "high",
-      "websiteCheckedAt": "2026-06-02"
+      "matchConfidence": "high"
     },
     {
       "name": "Colombians Mountains Cafe",
@@ -3154,8 +3141,7 @@
       "businessStatus": "OPERATIONAL",
       "businessStatusAt": "2026-06-02T20:48:52.024Z",
       "placeId": "ChIJs-NhX3ur2YgRm5UMXCieYGg",
-      "matchConfidence": "high",
-      "websiteCheckedAt": "2026-06-02"
+      "matchConfidence": "high"
     },
     {
       "name": "El Nopalito Vegan Taqueria",
@@ -3728,8 +3714,7 @@
       "businessStatus": "OPERATIONAL",
       "businessStatusAt": "2026-06-02T20:49:05.416Z",
       "placeId": "ChIJ42k1qQID2YgRf-ffqN9osVc",
-      "matchConfidence": "high",
-      "websiteCheckedAt": "2026-06-02"
+      "matchConfidence": "high"
     },
     {
       "name": "Dangerous Minds Brewing Company",
@@ -4496,8 +4481,7 @@
       "businessStatus": "OPERATIONAL",
       "businessStatusAt": "2026-06-02T20:49:23.828Z",
       "placeId": "ChIJ0UMNAh6_2YgRu4HylSv34_s",
-      "matchConfidence": "high",
-      "websiteCheckedAt": "2026-06-02"
+      "matchConfidence": "high"
     },
     {
       "name": "Amor di Pasta",
@@ -4741,9 +4725,6 @@
       "address": "3415 NE 1st Ave, Miami, FL 33137",
       "lat": 25.808820299999997,
       "lng": -80.19251919999999,
-      "businessStatus": "OPERATIONAL",
-      "businessStatusAt": "2026-06-02T20:49:30.177Z",
-      "placeId": "ChIJzVEOGWSx2YgRjwz7BGjVRYk",
       "matchConfidence": "verified",
       "formerName": "Nabati Ice Cream"
     },
@@ -5073,9 +5054,6 @@
       "address": "820 Collins Ave, Miami Beach, FL 33139",
       "lat": 25.778544,
       "lng": -80.1322776,
-      "businessStatus": "OPERATIONAL",
-      "businessStatusAt": "2026-06-02T20:49:37.400Z",
-      "placeId": "ChIJIX9RqHW12YgRha535Rv515w",
       "matchConfidence": "verified",
       "formerName": "Huahuas Taqueria"
     },
@@ -5108,9 +5086,6 @@
       "address": "2320 NE 2nd Ave, Miami, FL 33137",
       "lat": 25.7993632,
       "lng": -80.1910573,
-      "businessStatus": "OPERATIONAL",
-      "businessStatusAt": "2026-06-02T20:49:38.389Z",
-      "placeId": "ChIJ9ZgmSxG32YgRMvEumwPcEDc",
       "matchConfidence": "verified",
       "formerName": "Nirvana Plant Based Bistro"
     },
@@ -5295,9 +5270,9 @@
       "typeLabel": "Vegan",
       "website": "https://thecaribevegan.com/",
       "outdoorSeating": false,
+      "matchConfidence": "verified",
       "websiteStatus": "down",
       "websiteCheckedAt": "2026-06-02",
-      "matchConfidence": "verified",
       "hidden": true,
       "hiddenReason": "closed_permanently"
     },
@@ -5352,8 +5327,7 @@
       "businessStatus": "OPERATIONAL",
       "businessStatusAt": "2026-06-02T20:49:44.786Z",
       "placeId": "ChIJ_09gD8mr2YgRwayHwxny40c",
-      "matchConfidence": "verified",
-      "websiteCheckedAt": "2026-06-02"
+      "matchConfidence": "verified"
     },
     {
       "name": "Menchies",
@@ -5387,8 +5361,7 @@
       "businessStatus": "OPERATIONAL",
       "businessStatusAt": "2026-06-02T20:49:45.546Z",
       "placeId": "ChIJO5IyrXW32YgRnyXQP2MkKnE",
-      "matchConfidence": "verified",
-      "websiteCheckedAt": "2026-06-02"
+      "matchConfidence": "verified"
     },
     {
       "name": "Happy Vegan Bakers",
