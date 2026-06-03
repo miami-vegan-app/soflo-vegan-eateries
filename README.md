@@ -11,8 +11,21 @@ Google Sheet and refreshes automatically every day.
 - **Daily data refresh:** a GitHub Action (`.github/workflows/update-data.yml`) fetches the
   Google Sheet as CSV, converts it to `public/data/restaurants.json`, and commits the result.
   That commit triggers an automatic Cloudflare Pages deploy.
+- **Google Places enrichment:** each restaurant is enriched with a street address, lat/lng
+  coordinates, and live business status via the Google Places API. Run locally on demand
+  (`npm run enrich:places`); results are cached so re-runs only call the API for new entries.
+  Matches are confidence-gated — anything below "high" confidence goes into a manual review
+  queue rather than being written to the data file directly.
+- **Website health checks:** `npm run check:websites` probes every restaurant URL, flags
+  confirmed-404 sites (`websiteStatus: "down"`) in `restaurants.json`, and generates an HTML
+  report. The app hides dead links from users.
+- **Manual review UI:** `npm run review` starts a local server at `http://localhost:5174`
+  for approving/correcting low-confidence Places matches and dead websites. Decisions are
+  saved to `scripts/places-overrides.json` (committed) and re-applied on every build.
 - **Health checks:** a second Action (`.github/workflows/health-check.yml`) verifies the
   sheet is reachable and well-formed each day, and opens a GitHub Issue if something breaks.
+- **"Near me" sorting:** the app can sort restaurants by distance from the user's current
+  location, using the lat/lng coordinates added by the Places enrichment step.
 - **Offline support:** a service worker caches the app shell and the latest data.
 
 ## Project layout
@@ -21,10 +34,14 @@ Google Sheet and refreshes automatically every day.
 public/                  # what Cloudflare Pages serves
   index.html  styles.css  app.js
   manifest.webmanifest  sw.js
-  data/restaurants.json  # generated daily
+  data/restaurants.json  # generated daily (includes Places enrichment)
   icons/                 # generated PNG icons
 scripts/
-  build-data.mjs         # Google Sheet CSV -> restaurants.json
+  build-data.mjs         # Google Sheet CSV -> restaurants.json (applies overrides)
+  enrich-places.mjs      # Google Places API -> address, lat/lng, business status
+  check-websites.mjs     # probes restaurant URLs, flags dead links
+  review-server.mjs      # local UI for reviewing low-confidence matches
+  places-overrides.json  # committed human-verified corrections
   build-icons.mjs        # assets/icon.svg -> PNG icons
 assets/icon.svg          # source artwork for the icon
 .github/workflows/       # daily data refresh + health check
@@ -33,10 +50,18 @@ assets/icon.svg          # source artwork for the icon
 ## Local development
 
 ```bash
-npm install            # installs sharp (only needed to regenerate icons)
-npm run build:data     # refresh public/data/restaurants.json from the live sheet
-npm run build:icons    # regenerate icons from assets/icon.svg
-npm run serve          # serve public/ locally (http://localhost:3000)
+npm install              # installs sharp (only needed to regenerate icons)
+npm run build:data       # refresh public/data/restaurants.json from the live sheet
+npm run build:icons      # regenerate icons from assets/icon.svg
+npm run serve            # serve public/ locally (http://localhost:3000)
+
+# Places enrichment (run on demand, not in the daily sync)
+GOOGLE_PLACES_API_KEY=<key> npm run enrich:places
+npm run review           # open http://localhost:5174 to review low-confidence matches
+
+# Website health check
+npm run check:websites             # report problems to console
+npm run check:websites -- --write  # also flag dead links in restaurants.json
 ```
 
 Then open the local URL in your browser (or your phone on the same network) to test.
