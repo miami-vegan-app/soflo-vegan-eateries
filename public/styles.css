@@ -256,6 +256,17 @@ select, .browser-pick select {
 .card__cuisine { font-size: 0.86rem; color: var(--ink-soft); }
 .card__row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 0.82rem; color: var(--ink-soft); }
 .card__row .dot { opacity: 0.4; }
+.card__former { font-size: 0.78rem; color: var(--ink-soft); font-style: italic; margin: 1px 0 2px; }
+.card__closed {
+  display: inline-block;
+  margin: 4px 0 2px;
+  padding: 2px 8px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #8a5a00;
+  background: #fdf0d5;
+  border-radius: 999px;
+}
 
 .badge {
   flex: 0 0 auto;

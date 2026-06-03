@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-29T16:11:15.776Z",
-  "checkedAt": "2026-06-02T21:08:33.838Z",
+  "updatedAt": "2026-06-03T13:56:11.107Z",
+  "checkedAt": "2026-06-03T13:56:11.107Z",
   "sourceUpdated": "May 9, 2026",
   "source": "https://docs.google.com/spreadsheets/d/1DQ5ys0MHw22qWXmwC_rAbLs7gQfDjFpASDii9beP9zE/edit",
   "count": 310,
@@ -46,6 +46,7 @@
       "lat": 26.369399599999998,
       "lng": -80.0769404,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:44:37.532Z",
       "placeId": "ChIJRdsJXu3h2IgRPD1X4mdmjHw",
       "matchConfidence": "high"
     },
@@ -62,6 +63,7 @@
       "lat": 26.3672722,
       "lng": -80.07709740000001,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:44:37.961Z",
       "placeId": "ChIJhb6NHM_h2IgRgOuH-R3sgmo",
       "matchConfidence": "high"
     },
@@ -78,8 +80,9 @@
       "lat": 25.911711699999998,
       "lng": -80.1578847,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:44:38.377Z",
       "placeId": "ChIJOU78O5Gt2YgRIv80IyHED_g",
-      "matchConfidence": "approximate",
+      "matchConfidence": "verified",
       "websiteStatus": "down",
       "websiteCheckedAt": "2026-06-02"
     },
@@ -96,6 +99,7 @@
       "lat": 26.401337299999998,
       "lng": -80.1205221,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:44:38.776Z",
       "placeId": "ChIJq7lDavIf2YgRdQCFNGwifBw",
       "matchConfidence": "high"
     },
@@ -112,6 +116,7 @@
       "lat": 26.4099661,
       "lng": -80.1221085,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:44:39.160Z",
       "placeId": "ChIJbXocobUf2YgR0SU9jrSbzPg",
       "matchConfidence": "high"
     },
@@ -128,6 +133,7 @@
       "lat": 26.3933684,
       "lng": -80.11294730000002,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:46:53.598Z",
       "placeId": "ChIJcdhwhAEe2YgRr54sLaq3Ef4",
       "matchConfidence": "high"
     },
@@ -144,6 +150,7 @@
       "lat": 26.3508401,
       "lng": -80.08866499999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:46:53.954Z",
       "placeId": "ChIJZQJSXOHj2IgRaQlKj8IwYpY",
       "matchConfidence": "high"
     },
@@ -160,8 +167,11 @@
       "lat": 26.4107542,
       "lng": -80.123924,
       "businessStatus": "CLOSED_TEMPORARILY",
+      "businessStatusAt": "2026-06-02T20:46:54.381Z",
       "placeId": "ChIJzTp_fpwf2YgRLPqiTwUaxdw",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified",
+      "closedTemporarily": true,
+      "closedSince": "2026-06-02T20:46:54.381Z"
     },
     {
       "name": "Cinnaholic",
@@ -176,6 +186,7 @@
       "lat": 26.368791899999998,
       "lng": -80.08634459999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:46:54.747Z",
       "placeId": "ChIJYZakqvrh2IgR-uq5YWfz5Cw",
       "matchConfidence": "high"
     },
@@ -192,6 +203,7 @@
       "lat": 26.334394699999997,
       "lng": -80.2007503,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:46:55.151Z",
       "placeId": "ChIJe0WDAZEb2YgRO5llAG8calM",
       "matchConfidence": "high"
     },
@@ -208,6 +220,7 @@
       "lat": 26.3630294,
       "lng": -80.1232776,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:38.112Z",
       "placeId": "ChIJtx_rJHcf2YgRNKTSI1xJ5g4",
       "matchConfidence": "high"
     },
@@ -224,6 +237,7 @@
       "lat": 26.3665618,
       "lng": -80.17456349999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:38.470Z",
       "placeId": "ChIJhw7RYwYQ2YgRw4WJxG6ojCI",
       "matchConfidence": "high"
     },
@@ -240,6 +254,7 @@
       "lat": 26.3667335,
       "lng": -80.1221264,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:38.875Z",
       "placeId": "ChIJB01OlnQe2YgRlX6U_Kj-ToI",
       "matchConfidence": "high"
     },
@@ -256,6 +271,7 @@
       "lat": 26.3478003,
       "lng": -80.08435329999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:39.255Z",
       "placeId": "ChIJ88aiGwDj2IgRJOsa4Dawn6U",
       "matchConfidence": "high"
     },
@@ -272,6 +288,7 @@
       "lat": 26.392716,
       "lng": -80.1010914,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:39.695Z",
       "placeId": "ChIJIS-UDPIf2YgRVbjb-1NmSYg",
       "matchConfidence": "high"
     },
@@ -288,6 +305,7 @@
       "lat": 26.378627899999998,
       "lng": -80.1117203,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:40.308Z",
       "placeId": "ChIJhQdce3Uf2YgRqva3rVhT6G8",
       "matchConfidence": "high"
     },
@@ -304,6 +322,7 @@
       "lat": 26.366399599999998,
       "lng": -80.1972224,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:40.655Z",
       "placeId": "ChIJrWDNI_oZ2YgRSdaiaUDaVrc",
       "matchConfidence": "high"
     },
@@ -320,6 +339,7 @@
       "lat": 26.363695099999997,
       "lng": -80.1313076,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:41.040Z",
       "placeId": "ChIJQ6TvaYEf2YgRN7gYmGo9xtk",
       "matchConfidence": "high"
     },
@@ -336,6 +356,7 @@
       "lat": 26.3643361,
       "lng": -80.12797049999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:41.399Z",
       "placeId": "ChIJg-qbknYe2YgRS0bIcr0vtOo",
       "matchConfidence": "high"
     },
@@ -352,6 +373,7 @@
       "lat": 26.366436,
       "lng": -80.1966289,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:41.765Z",
       "placeId": "ChIJlxBXDm8Z2YgRWwE1z-dpaj0",
       "matchConfidence": "high"
     },
@@ -368,6 +390,7 @@
       "lat": 26.365327399999998,
       "lng": -80.0790165,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:42.102Z",
       "placeId": "ChIJBVMNdXjh2IgRN3eF5iy34u4",
       "matchConfidence": "high"
     },
@@ -384,6 +407,7 @@
       "lat": 26.368651999999997,
       "lng": -80.18910919999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:42.504Z",
       "placeId": "ChIJ5y_n5lQZ2YgRFRP_MRZHcfQ",
       "matchConfidence": "high"
     },
@@ -400,6 +424,7 @@
       "lat": 26.3324043,
       "lng": -80.152279,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:43.012Z",
       "placeId": "ChIJK8qJ0o8d2YgRgC0fSnmuXI8",
       "matchConfidence": "high"
     },
@@ -416,6 +441,7 @@
       "lat": 26.4014253,
       "lng": -80.1205118,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:43.576Z",
       "placeId": "ChIJLWryOv0f2YgRLkLT1jSSMXU",
       "matchConfidence": "high"
     },
@@ -432,6 +458,7 @@
       "lat": 26.410939,
       "lng": -80.07589899999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:43.956Z",
       "placeId": "ChIJ5_bTHTbg2IgRzUpoh5Jr5ws",
       "matchConfidence": "high"
     },
@@ -448,6 +475,7 @@
       "lat": 26.353329400000003,
       "lng": -80.1123892,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:44.497Z",
       "placeId": "ChIJsWcvWsMd2YgRcXklIJ8REsY",
       "matchConfidence": "high"
     },
@@ -464,6 +492,7 @@
       "lat": 26.367483099999998,
       "lng": -80.076292,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:44.835Z",
       "placeId": "ChIJxwlbw33h2IgRNcBiOWonYzc",
       "matchConfidence": "high"
     },
@@ -480,6 +509,7 @@
       "lat": 26.362372099999998,
       "lng": -80.08957629999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:45.191Z",
       "placeId": "ChIJ92Dlzfnh2IgRab7osZxvVds",
       "matchConfidence": "high"
     },
@@ -496,6 +526,7 @@
       "lat": 26.366391399999998,
       "lng": -80.13392069999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:45.532Z",
       "placeId": "ChIJsb6tn3ke2YgRMRBNrsRLvIA",
       "matchConfidence": "high"
     },
@@ -512,6 +543,7 @@
       "lat": 26.3930482,
       "lng": -80.1125981,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:47.078Z",
       "placeId": "ChIJZdSfw-4f2YgRc9Ft5vfo5ec",
       "matchConfidence": "high"
     },
@@ -528,6 +560,7 @@
       "lat": 26.536299,
       "lng": -80.09008229999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:47.426Z",
       "placeId": "ChIJGwMV_lDf2IgRrJmbKeXCIVA",
       "matchConfidence": "high"
     },
@@ -544,8 +577,9 @@
       "lat": 26.456766000000002,
       "lng": -80.1243056,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:47.808Z",
       "placeId": "ChIJa06jOAQh2YgRU3udOwUO_Ug",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified"
     },
     {
       "name": "Joey's Home Bakery",
@@ -560,6 +594,7 @@
       "lat": 26.516815,
       "lng": -80.076875,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:48.160Z",
       "placeId": "ChIJT51HXWvf2IgRxAFO2zlTRj0",
       "matchConfidence": "high"
     },
@@ -576,6 +611,7 @@
       "lat": 26.5536423,
       "lng": -80.1211799,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:48.560Z",
       "placeId": "ChIJQ-0uYoAn2YgRvx0BcWeoQcs",
       "matchConfidence": "high"
     },
@@ -592,6 +628,7 @@
       "lat": 26.5266699,
       "lng": -80.1866958,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:48.932Z",
       "placeId": "ChIJi7azU6Eh2YgRaxk5ogYBEKs",
       "matchConfidence": "high"
     },
@@ -608,6 +645,7 @@
       "lat": 26.528498499999998,
       "lng": -80.162312,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:49.343Z",
       "placeId": "ChIJ72dWHu8h2YgRQh7H5rePfks",
       "matchConfidence": "high"
     },
@@ -624,6 +662,7 @@
       "lat": 26.4611157,
       "lng": -80.06674160000001,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:49.672Z",
       "placeId": "ChIJL7A8G4Hf2IgR0DVCL2YvhaA",
       "matchConfidence": "high"
     },
@@ -640,6 +679,7 @@
       "lat": 26.4582545,
       "lng": -80.1069567,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:50.161Z",
       "placeId": "ChIJc_bFewMg2YgRISxcgwme0hk",
       "matchConfidence": "high"
     },
@@ -656,6 +696,7 @@
       "lat": 26.463289,
       "lng": -80.073443,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:50.487Z",
       "placeId": "ChIJk_Tv28Lf2IgRgVL--gUmzzs",
       "matchConfidence": "high"
     },
@@ -672,6 +713,7 @@
       "lat": 26.4582545,
       "lng": -80.1069567,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:50.827Z",
       "placeId": "ChIJc_bFewMg2YgRISxcgwme0hk",
       "matchConfidence": "high"
     },
@@ -688,6 +730,7 @@
       "lat": 26.437657599999998,
       "lng": -80.1212955,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:51.189Z",
       "placeId": "ChIJuYq5E_cf2YgR-t7za9OsEAM",
       "matchConfidence": "high"
     },
@@ -704,6 +747,7 @@
       "lat": 26.4627038,
       "lng": -80.0708666,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:51.767Z",
       "placeId": "ChIJOQkNRcPf2IgR_IuHXvQmpFg",
       "matchConfidence": "high"
     },
@@ -720,6 +764,7 @@
       "lat": 26.4528482,
       "lng": -80.1853105,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:52.129Z",
       "placeId": "ChIJrXsmalYf2YgRNLLCz25ooRU",
       "matchConfidence": "high"
     },
@@ -736,6 +781,7 @@
       "lat": 26.4590557,
       "lng": -80.0672835,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:52.516Z",
       "placeId": "ChIJa9Kz_9rf2IgRHlo4cR3hPP8",
       "matchConfidence": "high"
     },
@@ -752,6 +798,7 @@
       "lat": 26.450477,
       "lng": -80.068198,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:52.905Z",
       "placeId": "ChIJyfNi_NMZ2YgRpiItbIJOHhU",
       "matchConfidence": "high"
     },
@@ -768,6 +815,7 @@
       "lat": 26.461819199999997,
       "lng": -80.07731199999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:53.274Z",
       "placeId": "ChIJveNJ2-ff2IgRHcR25LCMPRM",
       "matchConfidence": "high"
     },
@@ -784,6 +832,7 @@
       "lat": 27.2435594,
       "lng": -80.2270197,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:53.619Z",
       "placeId": "ChIJCaCCDgbn3ogRbDncY07jPRQ",
       "matchConfidence": "high"
     },
@@ -800,6 +849,7 @@
       "lat": 26.942697,
       "lng": -80.0812253,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:53.969Z",
       "placeId": "ChIJ1T2OiMEp34gRcRQOutyc6j8",
       "matchConfidence": "high"
     },
@@ -816,6 +866,7 @@
       "lat": 26.953721599999998,
       "lng": -80.0857498,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:54.270Z",
       "placeId": "ChIJZ-krjzIo34gRg3fJKEOD5t0",
       "matchConfidence": "high"
     },
@@ -832,8 +883,11 @@
       "lat": 26.8815019,
       "lng": -80.1054995,
       "businessStatus": "CLOSED_PERMANENTLY",
+      "businessStatusAt": "2026-06-02T20:47:54.620Z",
       "placeId": "ChIJDxpeS4TV3ogRo4XIQc5Vk_A",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
       "name": "Haus Lounge",
@@ -848,6 +902,7 @@
       "lat": 26.6326879,
       "lng": -80.11184380000002,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:55.010Z",
       "placeId": "ChIJ2807O5gn2YgRGiaeS1QKE4A",
       "matchConfidence": "high"
     },
@@ -864,6 +919,7 @@
       "lat": 26.613907899999997,
       "lng": -80.0577036,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:55.355Z",
       "placeId": "ChIJUxYOamzX2IgR8WsmNsg2LKU",
       "matchConfidence": "high"
     },
@@ -880,6 +936,7 @@
       "lat": 26.6192294,
       "lng": -80.057541,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:55.710Z",
       "placeId": "ChIJ25aVvjPY2IgR7aHIibR9Hyg",
       "matchConfidence": "high"
     },
@@ -896,8 +953,9 @@
       "lat": 26.616169499999998,
       "lng": -80.1625494,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:56.088Z",
       "placeId": "ChIJnQzyNgcn2YgRaIKzacNy6Vo",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified"
     },
     {
       "name": "Fired Up PIzza",
@@ -912,6 +970,7 @@
       "lat": 26.684563999999998,
       "lng": -80.29326490000001,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:56.577Z",
       "placeId": "ChIJAQDA1Dsw2YgReADUqLIx1vw",
       "matchConfidence": "high"
     },
@@ -928,6 +987,7 @@
       "lat": 26.684455000000003,
       "lng": -80.2928737,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:56.911Z",
       "placeId": "ChIJn8PTBxAx2YgReiYdvamJM5U",
       "matchConfidence": "high"
     },
@@ -944,6 +1004,7 @@
       "lat": 26.808445799999998,
       "lng": -80.0727217,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:58.358Z",
       "placeId": "ChIJ2ftSzILV2IgRySO7HM3eI-I",
       "matchConfidence": "high"
     },
@@ -960,6 +1021,7 @@
       "lat": 26.700119100000002,
       "lng": -80.0354809,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:58.710Z",
       "placeId": "ChIJA1zE2q7X2IgRVk0hFhYiENw",
       "matchConfidence": "high"
     },
@@ -976,6 +1038,7 @@
       "lat": 26.8089002,
       "lng": -80.0889717,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:59.068Z",
       "placeId": "ChIJwZiRdlvV2IgRHEOQTMXAJ2g",
       "matchConfidence": "high"
     },
@@ -992,6 +1055,7 @@
       "lat": 26.839166700000003,
       "lng": -80.1097222,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:59.429Z",
       "placeId": "ChIJtZQCfk_V3ogRxdV-rP77Zsk",
       "matchConfidence": "high"
     },
@@ -1008,11 +1072,12 @@
       "lat": 26.8810036,
       "lng": -80.11622369999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:59.803Z",
       "placeId": "ChIJH7e59EbV3ogRxMpU9x64Qjw",
       "matchConfidence": "high"
     },
     {
-      "name": "Meraki Juice Kitchen",
+      "name": "Christopher’s Kitchen",
       "city": "Palm Beach Gardens",
       "county": "Palm Beach County",
       "cuisine": "Restaurant",
@@ -1024,8 +1089,10 @@
       "lat": 26.7102325,
       "lng": -80.0532061,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:00.133Z",
       "placeId": "ChIJYx65DIrW2IgRpT-agsInzRs",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified",
+      "formerName": "Meraki Juice Kitchen"
     },
     {
       "name": "Plant Based Mafia",
@@ -1040,6 +1107,7 @@
       "lat": 26.835748499999998,
       "lng": -80.13236359999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:00.497Z",
       "placeId": "ChIJ0Q_kCpXV2IgRf7N3Ogz4rTk",
       "matchConfidence": "high"
     },
@@ -1056,6 +1124,7 @@
       "lat": 26.847388,
       "lng": -80.093429,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:00.879Z",
       "placeId": "ChIJK_uZnKEq34gR7LNTAX47uSc",
       "matchConfidence": "high"
     },
@@ -1072,6 +1141,7 @@
       "lat": 26.773221099999997,
       "lng": -80.087423,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:01.226Z",
       "placeId": "ChIJFVuR-3vV2IgRHWEVSV_Omkc",
       "matchConfidence": "high"
     },
@@ -1088,8 +1158,11 @@
       "lat": 26.7741363,
       "lng": -80.0528806,
       "businessStatus": "CLOSED_TEMPORARILY",
+      "businessStatusAt": "2026-06-02T20:48:01.620Z",
       "placeId": "ChIJwxBI-8zV2IgR_of06dAmbWs",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified",
+      "closedTemporarily": true,
+      "closedSince": "2026-06-02T20:48:01.620Z"
     },
     {
       "name": "Bolay",
@@ -1104,6 +1177,7 @@
       "lat": 26.6708371,
       "lng": -80.2018551,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:01.944Z",
       "placeId": "ChIJ3yImYjgv2YgRNFtTKytKfnE",
       "matchConfidence": "high"
     },
@@ -1120,8 +1194,11 @@
       "lat": 26.705492,
       "lng": -80.22412,
       "businessStatus": "CLOSED_PERMANENTLY",
+      "businessStatusAt": "2026-06-02T20:48:02.338Z",
       "placeId": "ChIJS-ZrY_ou2YgRW5WiMCGv7cI",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
       "name": "Peppermint",
@@ -1136,6 +1213,7 @@
       "lat": 26.7063278,
       "lng": -80.22025719999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:03.147Z",
       "placeId": "ChIJidMe-e8u2YgR7CA71qyymp0",
       "matchConfidence": "high",
       "websiteStatus": "down",
@@ -1154,6 +1232,7 @@
       "lat": 26.961785,
       "lng": -80.0840252,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:03.494Z",
       "placeId": "ChIJNwbvA80p34gRW2fj1DOvVr8",
       "matchConfidence": "high"
     },
@@ -1170,8 +1249,11 @@
       "lat": 26.9571562,
       "lng": -80.0854007,
       "businessStatus": "CLOSED_PERMANENTLY",
+      "businessStatusAt": "2026-06-02T20:48:03.828Z",
       "placeId": "ChIJa09Cgwcp34gRJTHEqLFtHwI",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
       "name": "Perk Coffee",
@@ -1186,6 +1268,7 @@
       "lat": 26.9583667,
       "lng": -80.0950333,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:04.167Z",
       "placeId": "ChIJbad3j9Yp34gRIhOSUhPuxAM",
       "matchConfidence": "high"
     },
@@ -1202,6 +1285,7 @@
       "lat": 26.957310999999997,
       "lng": -80.08426229999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:04.494Z",
       "placeId": "ChIJWw21e84p34gReYPQf9wXi9k",
       "matchConfidence": "high"
     },
@@ -1218,6 +1302,7 @@
       "lat": 26.6723355,
       "lng": -80.24829330000001,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:04.823Z",
       "placeId": "ChIJQc6mOZYv2YgRTLHSUOpBSMo",
       "matchConfidence": "high"
     },
@@ -1234,6 +1319,7 @@
       "lat": 26.642219899999997,
       "lng": -80.2046431,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:05.167Z",
       "placeId": "ChIJhbw0V1Ml2YgR6m6DSok7zmM",
       "matchConfidence": "high"
     },
@@ -1250,8 +1336,9 @@
       "lat": 26.528498499999998,
       "lng": -80.162312,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:05.548Z",
       "placeId": "ChIJ72dWHu8h2YgRQh7H5rePfks",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified"
     },
     {
       "name": "Bolay",
@@ -1266,6 +1353,7 @@
       "lat": 26.70592,
       "lng": -80.08021,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:05.920Z",
       "placeId": "ChIJdZiBaD7W2IgRr8MZjCID4JI",
       "matchConfidence": "high"
     },
@@ -1277,7 +1365,13 @@
       "type": "VF",
       "typeLabel": "Vegan Friendly",
       "website": "https://chunkay.app/",
-      "outdoorSeating": false
+      "outdoorSeating": false,
+      "address": "",
+      "lat": null,
+      "lng": null,
+      "matchConfidence": "rejected",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
       "name": "Cafe Sapori",
@@ -1292,6 +1386,7 @@
       "lat": 26.6758192,
       "lng": -80.050389,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:06.613Z",
       "placeId": "ChIJ-9p21wbX2IgR7rDiSCfXa08",
       "matchConfidence": "high"
     },
@@ -1308,6 +1403,7 @@
       "lat": 26.680142999999997,
       "lng": -80.1126776,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:06.972Z",
       "placeId": "ChIJh9OXn1wp2YgRge4UqHu5_uY",
       "matchConfidence": "high"
     },
@@ -1324,6 +1420,7 @@
       "lat": 26.645187,
       "lng": -80.0560404,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:07.366Z",
       "placeId": "ChIJkwDJ_oLX2IgRCTrMr11c0ts",
       "matchConfidence": "high"
     },
@@ -1340,6 +1437,7 @@
       "lat": 26.6853239,
       "lng": -80.0547078,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:07.997Z",
       "placeId": "ChIJEdj9pabX2IgRF085NkgexKw",
       "matchConfidence": "high"
     },
@@ -1356,6 +1454,7 @@
       "lat": 26.6986599,
       "lng": -80.1586829,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:08.357Z",
       "placeId": "ChIJyVJ12hsp2YgRwpSR1if7hJE",
       "matchConfidence": "high"
     },
@@ -1372,6 +1471,7 @@
       "lat": 26.694278699999998,
       "lng": -80.05404899999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:09.801Z",
       "placeId": "ChIJO7v2-FfW2IgRmzb6v6rwu2s",
       "matchConfidence": "high"
     },
@@ -1388,6 +1488,7 @@
       "lat": 26.704830599999998,
       "lng": -80.0789037,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:10.221Z",
       "placeId": "ChIJ7x7xZXcv2YgR0NZmeIFtwVo",
       "matchConfidence": "high"
     },
@@ -1404,8 +1505,9 @@
       "lat": 26.7124493,
       "lng": -80.0534784,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:10.596Z",
       "placeId": "ChIJw4aS4onW2IgRwR7l1GXaOKQ",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified"
     },
     {
       "name": "Lynora's",
@@ -1420,6 +1522,7 @@
       "lat": 26.7134036,
       "lng": -80.0510137,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:10.926Z",
       "placeId": "ChIJBb1TwJ0B2YgRxV8HUR7lg9k",
       "matchConfidence": "high"
     },
@@ -1436,6 +1539,7 @@
       "lat": 26.7102325,
       "lng": -80.0532061,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:11.232Z",
       "placeId": "ChIJYx65DIrW2IgRpT-agsInzRs",
       "matchConfidence": "high"
     },
@@ -1452,6 +1556,7 @@
       "lat": 26.7351116,
       "lng": -80.055422,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:11.595Z",
       "placeId": "ChIJE29Fv1_V2IgRvFpRFz9LMk0",
       "matchConfidence": "high"
     },
@@ -1468,8 +1573,11 @@
       "lat": 26.805351800000004,
       "lng": -80.0814913,
       "businessStatus": "CLOSED_TEMPORARILY",
+      "businessStatusAt": "2026-06-02T20:48:12.374Z",
       "placeId": "ChIJT-PfN3zV2IgRcbbvFow55AI",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "closedTemporarily": true,
+      "closedSince": "2026-06-02T20:48:12.374Z"
     },
     {
       "name": "Queen of Sheba",
@@ -1484,6 +1592,7 @@
       "lat": 26.7197708,
       "lng": -80.05836049999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:12.802Z",
       "placeId": "ChIJaZutmXzW2IgR2iU8bNTUzCc",
       "matchConfidence": "high"
     },
@@ -1500,6 +1609,7 @@
       "lat": 26.7075151,
       "lng": -80.05709879999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:13.213Z",
       "placeId": "ChIJuekBksXX2IgRHn39W_Pxpqs",
       "matchConfidence": "high"
     },
@@ -1516,6 +1626,7 @@
       "lat": 26.7075151,
       "lng": -80.05709879999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:13.622Z",
       "placeId": "ChIJuekBksXX2IgRHn39W_Pxpqs",
       "matchConfidence": "high"
     },
@@ -1532,6 +1643,7 @@
       "lat": 26.245180599999998,
       "lng": -80.1822213,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:13.991Z",
       "placeId": "ChIJgbjykmQD2YgRtBrgwHTllec",
       "matchConfidence": "high"
     },
@@ -1548,8 +1660,9 @@
       "lat": 26.957158999999997,
       "lng": -80.0853762,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:14.720Z",
       "placeId": "ChIJEbeDf7Mp34gRxOfKbmzD6Fw",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified"
     },
     {
       "name": "Vegan Tierra",
@@ -1564,6 +1677,7 @@
       "lat": 26.04569,
       "lng": -80.26247,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:15.049Z",
       "placeId": "ChIJrTirPJmp2YgRBFAW_N1OrWY",
       "matchConfidence": "high"
     },
@@ -1580,6 +1694,7 @@
       "lat": 26.2721318,
       "lng": -80.2634257,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:15.419Z",
       "placeId": "ChIJcwaqtU0F2YgR1v5Et_rvjqE",
       "matchConfidence": "high"
     },
@@ -1596,6 +1711,7 @@
       "lat": 26.285510499999997,
       "lng": -80.2495063,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:15.763Z",
       "placeId": "ChIJC1s5wEwb2YgRPjTwoO0YbKc",
       "matchConfidence": "high"
     },
@@ -1612,6 +1728,7 @@
       "lat": 26.286350400000003,
       "lng": -80.2326106,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:16.118Z",
       "placeId": "ChIJXWVI-Nca2YgRJxmxjtOPI3U",
       "matchConfidence": "high"
     },
@@ -1628,6 +1745,7 @@
       "lat": 26.285503,
       "lng": -80.24794,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:16.513Z",
       "placeId": "ChIJRWhzZ_Mb2YgRxcCV5N2-d6s",
       "matchConfidence": "high"
     },
@@ -1644,6 +1762,7 @@
       "lat": 26.285700000000002,
       "lng": -80.2493671,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:16.842Z",
       "placeId": "ChIJnUae8isb2YgRSiIYk_hm2hE",
       "matchConfidence": "high"
     },
@@ -1660,6 +1779,7 @@
       "lat": 26.262931800000004,
       "lng": -80.2508376,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:17.236Z",
       "placeId": "ChIJPUCS6TkF2YgRF3JIPwOjCM0",
       "matchConfidence": "high"
     },
@@ -1676,10 +1796,13 @@
       "lat": 26.2587157,
       "lng": -80.25136309999999,
       "businessStatus": "CLOSED_PERMANENTLY",
+      "businessStatusAt": "2026-06-02T20:48:17.592Z",
       "placeId": "ChIJqSmFqUQF2YgREkqyNRA-mNQ",
       "matchConfidence": "high",
       "websiteStatus": "down",
-      "websiteCheckedAt": "2026-06-02"
+      "websiteCheckedAt": "2026-06-02",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
       "name": "Juice Kitchen",
@@ -1694,6 +1817,7 @@
       "lat": 26.2831156,
       "lng": -80.2036653,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:17.977Z",
       "placeId": "ChIJP1SqSU8b2YgRfFa6FSNZiIo",
       "matchConfidence": "high"
     },
@@ -1710,8 +1834,11 @@
       "lat": 26.2855447,
       "lng": -80.2363087,
       "businessStatus": "CLOSED_PERMANENTLY",
+      "businessStatusAt": "2026-06-02T20:48:18.360Z",
       "placeId": "ChIJY_R1RNca2YgR-pgoN6s1_tA",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
       "name": "Shibuya Sushi",
@@ -1726,11 +1853,14 @@
       "lat": 26.2868998,
       "lng": -80.2779601,
       "businessStatus": "CLOSED_PERMANENTLY",
+      "businessStatusAt": "2026-06-02T20:48:18.695Z",
       "placeId": "ChIJEbZnxagR2YgRoR6I6VH0KYM",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
-      "name": "Goji Juicery",
+      "name": "The Fresh Squeeze",
       "city": "Dania Beach",
       "county": "Broward County",
       "cuisine": "Salads/Bowls",
@@ -1742,8 +1872,10 @@
       "lat": 26.0513564,
       "lng": -80.1370152,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:19.061Z",
       "placeId": "ChIJQ49ZJPSq2YgR35flKn3sOio",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified",
+      "formerName": "Goji Juicery"
     },
     {
       "name": "Vegan Junkie",
@@ -1758,8 +1890,11 @@
       "lat": 26.0897567,
       "lng": -80.1621986,
       "businessStatus": "CLOSED_PERMANENTLY",
+      "businessStatusAt": "2026-06-02T20:48:19.392Z",
       "placeId": "ChIJoQ26b7ir2YgRPrHcmPIIB_s",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
       "name": "Zen Mystery",
@@ -1774,6 +1909,7 @@
       "lat": 26.0535972,
       "lng": -80.1435779,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:19.738Z",
       "placeId": "ChIJiU2uQl-q2YgR6O8PT-Dmtrg",
       "matchConfidence": "high"
     },
@@ -1790,6 +1926,7 @@
       "lat": 26.0942704,
       "lng": -80.2496542,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:21.180Z",
       "placeId": "ChIJeeyAo4sH2YgR9VJSYu9rQpw",
       "matchConfidence": "high"
     },
@@ -1806,11 +1943,12 @@
       "lat": 26.0955655,
       "lng": -80.2521015,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:21.522Z",
       "placeId": "ChIJkSj0fIwH2YgRtyJVry3cGzY",
       "matchConfidence": "high"
     },
     {
-      "name": "Delicious Raw Kitchen and Juice Bar",
+      "name": "Swami Juice",
       "city": "Davie",
       "county": "Broward County",
       "cuisine": "Juice/Bowls",
@@ -1822,8 +1960,10 @@
       "lat": 26.0756812,
       "lng": -80.23156999999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:22.094Z",
       "placeId": "ChIJL9b-jiip2YgRY9oNazPw9gY",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified",
+      "formerName": "Delicious Raw Kitchen and Juice Bar"
     },
     {
       "name": "Fresh Fusion",
@@ -1838,6 +1978,7 @@
       "lat": 26.0851483,
       "lng": -80.2517357,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:22.485Z",
       "placeId": "ChIJ0TXqcdmp2YgRJWwkK_REqJY",
       "matchConfidence": "high"
     },
@@ -1854,11 +1995,12 @@
       "lat": 26.0942144,
       "lng": -80.24944909999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:22.854Z",
       "placeId": "ChIJJZOb7r8H2YgRptVJhRhbRqs",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified"
     },
     {
-      "name": "Hanj Snow Boba",
+      "name": "Jade Tea House",
       "city": "Davie",
       "county": "Broward County",
       "cuisine": "Boba",
@@ -1870,8 +2012,10 @@
       "lat": 26.093872599999997,
       "lng": -80.25206109999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:23.225Z",
       "placeId": "ChIJcfFXVvsH2YgRER_27RkbNI8",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified",
+      "formerName": "Hanj Snow Boba"
     },
     {
       "name": "Juice Therapy",
@@ -1886,8 +2030,9 @@
       "lat": 26.1002945,
       "lng": -80.2679145,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:23.655Z",
       "placeId": "ChIJn2-vrp4H2YgRSFU-Ioba8Zw",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified"
     },
     {
       "name": "Lemongrass Hot Pot",
@@ -1902,8 +2047,9 @@
       "lat": 26.053211899999997,
       "lng": -80.20678869999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:24.007Z",
       "placeId": "ChIJIfnEz-qp2YgRy7v677wyHwU",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified"
     },
     {
       "name": "Mama Chea",
@@ -1918,6 +2064,7 @@
       "lat": 26.063942599999997,
       "lng": -80.25685229999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:24.337Z",
       "placeId": "ChIJwbc3LlOp2YgRJy2Ph5Zzt2E",
       "matchConfidence": "high"
     },
@@ -1934,6 +2081,7 @@
       "lat": 26.0465378,
       "lng": -80.2329419,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:24.740Z",
       "placeId": "ChIJaZVbc7yp2YgR2q433LSqP2w",
       "matchConfidence": "high"
     },
@@ -1950,8 +2098,9 @@
       "lat": 26.0646515,
       "lng": -80.2308219,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:25.112Z",
       "placeId": "ChIJ6S_Josqp2YgREUxSZkLHs4E",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified"
     },
     {
       "name": "Poke Ramen",
@@ -1966,6 +2115,7 @@
       "lat": 26.095828599999997,
       "lng": -80.249391,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:25.499Z",
       "placeId": "ChIJce3J5CIH2YgRVuObDtrOUoY",
       "matchConfidence": "high"
     },
@@ -1982,6 +2132,7 @@
       "lat": 26.101593200000003,
       "lng": -80.26368959999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:25.964Z",
       "placeId": "ChIJNaZ-gxIH2YgRVD6POD-eHj4",
       "matchConfidence": "high"
     },
@@ -1998,6 +2149,7 @@
       "lat": 26.317152999999998,
       "lng": -80.09137,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:26.299Z",
       "placeId": "ChIJHelZC3zi2IgRJI_tjtkfclI",
       "matchConfidence": "high"
     },
@@ -2010,12 +2162,15 @@
       "typeLabel": "Vegan",
       "website": "https://facebook.com/Themodernrose/",
       "outdoorSeating": false,
-      "address": "331 SE 15th Terrace, Deerfield Beach, FL 33441",
-      "lat": 26.3137647,
-      "lng": -80.08505129999999,
+      "address": "",
+      "lat": null,
+      "lng": null,
       "businessStatus": "CLOSED_PERMANENTLY",
+      "businessStatusAt": "2026-06-02T20:48:26.742Z",
       "placeId": "ChIJ8YKC5GLi2IgRFc-AG8x8Ba0",
-      "matchConfidence": "approximate"
+      "matchConfidence": "rejected",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
       "name": "Tucker Dukes",
@@ -2030,6 +2185,7 @@
       "lat": 26.3022735,
       "lng": -80.1530709,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:27.257Z",
       "placeId": "ChIJLeA4aeUc2YgRjA1IrWJNjIg",
       "matchConfidence": "high"
     },
@@ -2046,8 +2202,9 @@
       "lat": 26.3133508,
       "lng": -80.08513889999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:27.610Z",
       "placeId": "ChIJnQjm4ZHj2IgReSwlOsTweGc",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified"
     },
     {
       "name": "Anthony’s Runway 84",
@@ -2062,6 +2219,7 @@
       "lat": 26.092366600000002,
       "lng": -80.14570599999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:27.952Z",
       "placeId": "ChIJjTbnMoYA2YgR5F-fXIrCCcA",
       "matchConfidence": "high"
     },
@@ -2078,6 +2236,7 @@
       "lat": 26.128822399999997,
       "lng": -80.13775059999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:28.302Z",
       "placeId": "ChIJC3G10NQB2YgR4SH3-4Kcgrw",
       "matchConfidence": "high"
     },
@@ -2094,6 +2253,7 @@
       "lat": 26.2047289,
       "lng": -80.14747799999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:28.784Z",
       "placeId": "ChIJGUeh9rMD2YgRnaVorA8IRkk",
       "matchConfidence": "high"
     },
@@ -2110,8 +2270,9 @@
       "lat": 26.101774,
       "lng": -80.12547599999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:29.224Z",
       "placeId": "ChIJ-yCh0msA2YgRJbVzPZTrlWA",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified"
     },
     {
       "name": "Big Louies",
@@ -2126,6 +2287,7 @@
       "lat": 26.1372175,
       "lng": -80.1197141,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:29.616Z",
       "placeId": "ChIJBU-FEMgB2YgR--6ABlhe-j0",
       "matchConfidence": "high"
     },
@@ -2142,6 +2304,7 @@
       "lat": 26.205004,
       "lng": -80.1471737,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:29.970Z",
       "placeId": "ChIJ7-M2ArQD2YgRiT7RVYQXzXo",
       "matchConfidence": "high"
     },
@@ -2158,6 +2321,7 @@
       "lat": 26.1357598,
       "lng": -80.1391683,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:30.339Z",
       "placeId": "ChIJT-wDY8EB2YgRGCLx4LyletA",
       "matchConfidence": "high"
     },
@@ -2174,6 +2338,7 @@
       "lat": 26.130096299999998,
       "lng": -80.1533267,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:30.776Z",
       "placeId": "ChIJb3dlM0AB2YgRXEEB1vszgww",
       "matchConfidence": "high"
     },
@@ -2190,6 +2355,7 @@
       "lat": 26.1022631,
       "lng": -80.1260956,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:31.125Z",
       "placeId": "ChIJ66FNeGkA2YgRoQiupP7lkiU",
       "matchConfidence": "high"
     },
@@ -2206,6 +2372,7 @@
       "lat": 26.1685752,
       "lng": -80.1010756,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:32.655Z",
       "placeId": "ChIJc0cD_5UB2YgRDQRNF998C8g",
       "matchConfidence": "high"
     },
@@ -2218,12 +2385,13 @@
       "typeLabel": "Vegan Friendly",
       "website": "https://bombay-cafe.com/",
       "outdoorSeating": false,
-      "address": "1672 E Oakland Park Blvd, Oakland Park, FL 33334",
-      "lat": 26.1666503,
-      "lng": -80.12454629999999,
+      "address": "",
+      "lat": null,
+      "lng": null,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:33.013Z",
       "placeId": "ChIJIdmZsXkB2YgRqBwJz0QchTI",
-      "matchConfidence": "approximate"
+      "matchConfidence": "rejected"
     },
     {
       "name": "BRGR Stop",
@@ -2238,6 +2406,7 @@
       "lat": 26.136662899999997,
       "lng": -80.1204271,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:33.520Z",
       "placeId": "ChIJu5RmLe8B2YgR3t2oYru3R_w",
       "matchConfidence": "high"
     },
@@ -2254,6 +2423,7 @@
       "lat": 26.120072200000003,
       "lng": -80.13812150000001,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:33.915Z",
       "placeId": "ChIJO9g1xRIB2YgRBXV5cajN2ww",
       "matchConfidence": "high"
     },
@@ -2264,15 +2434,15 @@
       "cuisine": "Ice Cream",
       "type": "VF",
       "typeLabel": "Vegan Friendly",
-      "website": "https://www.chillnicecream.com/locations/ft-lauderdale-fl",
+      "website": "https://order.toasttab.com/online/chill-n-nitrogen-ice-cream-fort-lauderdale-2422-n-federal-hwy",
       "outdoorSeating": true,
       "address": "2422 N Federal Hwy Space 50, Fort Lauderdale, FL 33305",
       "lat": 26.1565208,
       "lng": -80.1172634,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:34.352Z",
       "placeId": "ChIJqadZh-wB2YgR9fFPLMtBcDw",
       "matchConfidence": "high",
-      "websiteStatus": "down",
       "websiteCheckedAt": "2026-06-02"
     },
     {
@@ -2288,6 +2458,7 @@
       "lat": 26.168981799999997,
       "lng": -80.1011695,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:34.917Z",
       "placeId": "ChIJx-Y0oZAB2YgRCjB0K5pdPfI",
       "matchConfidence": "high"
     },
@@ -2304,6 +2475,7 @@
       "lat": 26.1357598,
       "lng": -80.1391683,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:35.299Z",
       "placeId": "ChIJT-wDY8EB2YgRGCLx4LyletA",
       "matchConfidence": "high"
     },
@@ -2320,6 +2492,7 @@
       "lat": 26.1678969,
       "lng": -80.1015858,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:35.671Z",
       "placeId": "ChIJ3b1XF0AB2YgRcZctCyItYKc",
       "matchConfidence": "high"
     },
@@ -2336,8 +2509,11 @@
       "lat": 26.101774,
       "lng": -80.12547599999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:36.084Z",
       "placeId": "ChIJ-yCh0msA2YgRJbVzPZTrlWA",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified",
+      "hidden": true,
+      "hiddenReason": "duplicate"
     },
     {
       "name": "Evelyn's",
@@ -2352,6 +2528,7 @@
       "lat": 26.130150099999998,
       "lng": -80.104101,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:36.419Z",
       "placeId": "ChIJkeDVKTgB2YgRyRUQfO4q_fU",
       "matchConfidence": "high"
     },
@@ -2368,6 +2545,7 @@
       "lat": 26.180840999999997,
       "lng": -80.119124,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:36.774Z",
       "placeId": "ChIJ76LGlBgC2YgRHjQtWIrxwNE",
       "matchConfidence": "high"
     },
@@ -2384,6 +2562,7 @@
       "lat": 26.1427595,
       "lng": -80.1322856,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:37.170Z",
       "placeId": "ChIJmfhZ0KQB2YgReqi5HpK-8Q4",
       "matchConfidence": "high"
     },
@@ -2400,6 +2579,7 @@
       "lat": 26.1371094,
       "lng": -80.1217952,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:37.552Z",
       "placeId": "ChIJsQw467cB2YgRxdueVJO8LMc",
       "matchConfidence": "high"
     },
@@ -2416,6 +2596,7 @@
       "lat": 26.1008471,
       "lng": -80.1268004,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:37.947Z",
       "placeId": "ChIJgaTc1WgA2YgRDoi--VItSWA",
       "matchConfidence": "high"
     },
@@ -2432,6 +2613,7 @@
       "lat": 26.1358601,
       "lng": -80.1391752,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:38.286Z",
       "placeId": "ChIJq6q6EakB2YgRp0I6bYbhTQU",
       "matchConfidence": "high"
     },
@@ -2448,6 +2630,7 @@
       "lat": 26.187352699999998,
       "lng": -80.1159401,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:38.644Z",
       "placeId": "ChIJW7EpNQAD2YgRAG6sdxCcHUE",
       "matchConfidence": "high"
     },
@@ -2464,6 +2647,7 @@
       "lat": 26.140551,
       "lng": -80.204955,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:39.000Z",
       "placeId": "ChIJVU00ZdwG2YgRvwKI3Xp8ZBc",
       "matchConfidence": "high"
     },
@@ -2480,8 +2664,9 @@
       "lat": 26.1893704,
       "lng": -80.1298716,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:39.597Z",
       "placeId": "ChIJeRodUDoC2YgReT7QuorblbI",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified"
     },
     {
       "name": "Lokos Takos",
@@ -2496,6 +2681,7 @@
       "lat": 26.189393799999998,
       "lng": -80.1082103,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:40.075Z",
       "placeId": "ChIJvStakloD2YgRJQghpwkw7wI",
       "matchConfidence": "high"
     },
@@ -2512,8 +2698,11 @@
       "lat": 26.1872951,
       "lng": -80.1158358,
       "businessStatus": "CLOSED_PERMANENTLY",
+      "businessStatusAt": "2026-06-02T20:48:40.424Z",
       "placeId": "ChIJV8mXjVYD2YgRKQeYCdcLnfg",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
       "name": "Master Ba's Hot Pot",
@@ -2528,8 +2717,11 @@
       "lat": 26.1902737,
       "lng": -80.1082273,
       "businessStatus": "CLOSED_PERMANENTLY",
+      "businessStatusAt": "2026-06-02T20:48:40.793Z",
       "placeId": "ChIJ8SfG4Q0C2YgREHVc-fZL5LU",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
       "name": "Moksha Indian Brasserie",
@@ -2544,6 +2736,7 @@
       "lat": 26.1677772,
       "lng": -80.1076133,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:41.153Z",
       "placeId": "ChIJAQCwlvkB2YgR75MaCksUmR4",
       "matchConfidence": "high"
     },
@@ -2560,6 +2753,7 @@
       "lat": 26.0925938,
       "lng": -80.1566678,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:41.538Z",
       "placeId": "ChIJbeflyZoA2YgR6Sq507lUP9o",
       "matchConfidence": "high"
     },
@@ -2576,6 +2770,7 @@
       "lat": 26.1193702,
       "lng": -80.141172,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:41.963Z",
       "placeId": "ChIJ4d19JoUB2YgRQ06gW0hA-Js",
       "matchConfidence": "high"
     },
@@ -2592,6 +2787,7 @@
       "lat": 26.175243800000004,
       "lng": -80.1187597,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:42.296Z",
       "placeId": "ChIJ16aG5sUB2YgRCZ7LQs0tGqw",
       "matchConfidence": "high"
     },
@@ -2608,8 +2804,11 @@
       "lat": 26.1366969,
       "lng": -80.1033861,
       "businessStatus": "CLOSED_PERMANENTLY",
+      "businessStatusAt": "2026-06-02T20:48:42.701Z",
       "placeId": "ChIJXZdT_dkB2YgRSDPIbWI98ws",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
       "name": "Hummus House",
@@ -2624,6 +2823,7 @@
       "lat": 26.1364587,
       "lng": -80.1194478,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:44.154Z",
       "placeId": "ChIJ94yvPsgB2YgRPYAaNRZaEBA",
       "matchConfidence": "high"
     },
@@ -2640,6 +2840,7 @@
       "lat": 26.1787119,
       "lng": -80.1192674,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:44.670Z",
       "placeId": "ChIJfaJNflkA2YgRSXkg42WVWks",
       "matchConfidence": "high"
     },
@@ -2656,6 +2857,7 @@
       "lat": 26.1427595,
       "lng": -80.1322856,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:45.063Z",
       "placeId": "ChIJKXSeRHMB2YgRmy82-WmkDEw",
       "matchConfidence": "high"
     },
@@ -2672,6 +2874,7 @@
       "lat": 26.1668284,
       "lng": -80.1160007,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:45.423Z",
       "placeId": "ChIJOzsd5IcB2YgRxWrKgO5_Avs",
       "matchConfidence": "high"
     },
@@ -2688,6 +2891,7 @@
       "lat": 26.1217421,
       "lng": -80.1422013,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:45.840Z",
       "placeId": "ChIJJc1RCVYA2YgRUP6MWFWo1wQ",
       "matchConfidence": "high"
     },
@@ -2704,6 +2908,7 @@
       "lat": 26.137376999999997,
       "lng": -80.113034,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:46.176Z",
       "placeId": "ChIJ6ZqIWM8B2YgRP0RaUaB-qUI",
       "matchConfidence": "high"
     },
@@ -2720,6 +2925,7 @@
       "lat": 26.128261600000002,
       "lng": -80.104558,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:46.522Z",
       "placeId": "ChIJWbG3sB0B2YgRLZ33YLFRLas",
       "matchConfidence": "high"
     },
@@ -2736,6 +2942,7 @@
       "lat": 26.1456731,
       "lng": -80.1198764,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:46.899Z",
       "placeId": "ChIJFV4KphIB2YgRi5ZIxOf3PtE",
       "matchConfidence": "high"
     },
@@ -2752,6 +2959,7 @@
       "lat": 26.130713,
       "lng": -80.1036647,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:47.670Z",
       "placeId": "ChIJ__8_-dMB2YgRXRYlZksvuEk",
       "matchConfidence": "high"
     },
@@ -2768,6 +2976,7 @@
       "lat": 26.201195400000003,
       "lng": -80.11026179999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:48.195Z",
       "placeId": "ChIJ64Cr5W0C2YgRfk2b19h52DU",
       "matchConfidence": "high"
     },
@@ -2784,6 +2993,7 @@
       "lat": 26.1851484,
       "lng": -80.1350718,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:48.769Z",
       "placeId": "ChIJ0-PYMy4C2YgRXpmrOtf4kHI",
       "matchConfidence": "high"
     },
@@ -2800,6 +3010,7 @@
       "lat": 26.132894600000004,
       "lng": -80.1042085,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:49.077Z",
       "placeId": "ChIJk2KzY8UB2YgRCIB9I5A9ZGI",
       "matchConfidence": "high"
     },
@@ -2816,6 +3027,7 @@
       "lat": 26.139436900000003,
       "lng": -80.134759,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:49.466Z",
       "placeId": "ChIJAebcdZMB2YgRTa3Gfmouofc",
       "matchConfidence": "high"
     },
@@ -2832,6 +3044,7 @@
       "lat": 26.1315861,
       "lng": -80.1046083,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:49.907Z",
       "placeId": "ChIJ11-XWdEB2YgRJb75IF5Bu-w",
       "matchConfidence": "high"
     },
@@ -2848,8 +3061,11 @@
       "lat": 25.994631,
       "lng": -80.1432914,
       "businessStatus": "CLOSED_PERMANENTLY",
+      "businessStatusAt": "2026-06-02T20:48:50.264Z",
       "placeId": "ChIJ1z_MJOMP2YgRhcpxm0mA2W8",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
       "name": "The Krazy Vegan",
@@ -2864,8 +3080,11 @@
       "lat": 25.984726700000003,
       "lng": -80.1559904,
       "businessStatus": "CLOSED_TEMPORARILY",
+      "businessStatusAt": "2026-06-02T20:48:50.610Z",
       "placeId": "ChIJFwvMt1St2YgRJ_1nUoRUGa8",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "closedTemporarily": true,
+      "closedSince": "2026-06-02T20:48:50.610Z"
     },
     {
       "name": "Bol",
@@ -2880,8 +3099,9 @@
       "lat": 26.0518091,
       "lng": -80.212048,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:50.968Z",
       "placeId": "ChIJNSNYKb2p2YgRXmOuZVtdnMM",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified"
     },
     {
       "name": "C4Eats",
@@ -2896,6 +3116,7 @@
       "lat": 26.0105743,
       "lng": -80.1472947,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:51.282Z",
       "placeId": "ChIJa15geWyr2YgR--9ZIbRSRCs",
       "matchConfidence": "high"
     },
@@ -2912,8 +3133,11 @@
       "lat": 26.0192421,
       "lng": -80.1693133,
       "businessStatus": "CLOSED_PERMANENTLY",
+      "businessStatusAt": "2026-06-02T20:48:51.653Z",
       "placeId": "ChIJ0RGMf82r2YgRxT0cUjIZblw",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
       "name": "El Bayu de Wela Sara",
@@ -2928,9 +3152,9 @@
       "lat": 26.0117864,
       "lng": -80.1456935,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:52.024Z",
       "placeId": "ChIJs-NhX3ur2YgRm5UMXCieYGg",
       "matchConfidence": "high",
-      "websiteStatus": "down",
       "websiteCheckedAt": "2026-06-02"
     },
     {
@@ -2946,6 +3170,7 @@
       "lat": 26.0293219,
       "lng": -80.16951949999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:52.403Z",
       "placeId": "ChIJTSIUBeir2YgRMYG3O5p1ubM",
       "matchConfidence": "high"
     },
@@ -2962,8 +3187,11 @@
       "lat": 26.0645921,
       "lng": -80.3642989,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:52.802Z",
       "placeId": "ChIJY1csXmqn2YgR4KR1S2wYoW4",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
       "name": "Helen Huang's Mandarin",
@@ -2978,6 +3206,7 @@
       "lat": 26.0116763,
       "lng": -80.1482061,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:53.139Z",
       "placeId": "ChIJ_UthPSer2YgRLBjN4xqdkhA",
       "matchConfidence": "high"
     },
@@ -2994,8 +3223,9 @@
       "lat": 25.762146599999998,
       "lng": -80.1933442,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:53.483Z",
       "placeId": "ChIJx22JFFqr2YgRYBR0NiL5ji4",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified"
     },
     {
       "name": "Fancy Plants Salad Company",
@@ -3010,8 +3240,11 @@
       "lat": 26.0276976,
       "lng": -80.1688853,
       "businessStatus": "CLOSED_TEMPORARILY",
+      "businessStatusAt": "2026-06-02T20:48:53.880Z",
       "placeId": "ChIJoReY36Qd2YgRYE-v3CgcgI4",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified",
+      "closedTemporarily": true,
+      "closedSince": "2026-06-02T20:48:53.880Z"
     },
     {
       "name": "Krakatoa",
@@ -3026,6 +3259,7 @@
       "lat": 26.011301099999997,
       "lng": -80.145483,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:54.198Z",
       "placeId": "ChIJgRoBgZ-r2YgRmKispNnVhOk",
       "matchConfidence": "high"
     },
@@ -3042,6 +3276,7 @@
       "lat": 26.01129,
       "lng": -80.162088,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:55.558Z",
       "placeId": "ChIJN87XnZWr2YgR919Gs5IBdi8",
       "matchConfidence": "high"
     },
@@ -3058,6 +3293,7 @@
       "lat": 26.0483188,
       "lng": -80.1806773,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:55.899Z",
       "placeId": "ChIJl0QFIEKr2YgRedu4eMUvcTQ",
       "matchConfidence": "high"
     },
@@ -3074,6 +3310,7 @@
       "lat": 26.0283935,
       "lng": -80.1689731,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:56.296Z",
       "placeId": "ChIJPRiqpDSr2YgRb4c3rhi4ny0",
       "matchConfidence": "high"
     },
@@ -3090,8 +3327,11 @@
       "lat": 25.9904269,
       "lng": -80.1645662,
       "businessStatus": "CLOSED_TEMPORARILY",
+      "businessStatusAt": "2026-06-02T20:48:56.633Z",
       "placeId": "ChIJUWM7ft6r2YgRb_5axxlkILA",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "closedTemporarily": true,
+      "closedSince": "2026-06-02T20:48:56.633Z"
     },
     {
       "name": "Burger Vibez",
@@ -3106,8 +3346,11 @@
       "lat": 26.1899014,
       "lng": -80.09618329999999,
       "businessStatus": "CLOSED_PERMANENTLY",
+      "businessStatusAt": "2026-06-02T20:48:56.972Z",
       "placeId": "ChIJqw-841D92IgRh1G7VIXcmms",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
       "name": "Taco Craft",
@@ -3122,6 +3365,7 @@
       "lat": 26.1899774,
       "lng": -80.09646099999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:57.373Z",
       "placeId": "ChIJc35jPDL92IgRsdrk52dpxqY",
       "matchConfidence": "high"
     },
@@ -3138,6 +3382,7 @@
       "lat": 26.191186,
       "lng": -80.2526864,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:57.744Z",
       "placeId": "ChIJs5-iaRgF2YgRhVcCbMRalzc",
       "matchConfidence": "high"
     },
@@ -3154,8 +3399,9 @@
       "lat": 26.1849764,
       "lng": -80.2512189,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:58.076Z",
       "placeId": "ChIJjwYMlZQF2YgRXGxsoEqcJoo",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified"
     },
     {
       "name": "Bubbakoos",
@@ -3170,6 +3416,7 @@
       "lat": 25.979476899999998,
       "lng": -80.29658500000001,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:58.407Z",
       "placeId": "ChIJ6-Q3xBel2YgRF41O30VtyBw",
       "matchConfidence": "high"
     },
@@ -3186,6 +3433,7 @@
       "lat": 25.9827397,
       "lng": -80.2264801,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:58.836Z",
       "placeId": "ChIJ8-NiyZmv2YgRGyJlLZ5WHT8",
       "matchConfidence": "high"
     },
@@ -3202,6 +3450,7 @@
       "lat": 25.9773,
       "lng": -80.3077,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:59.217Z",
       "placeId": "ChIJTS7ssPul2YgRq-hITptZvBk",
       "matchConfidence": "high"
     },
@@ -3218,6 +3467,7 @@
       "lat": 25.988816,
       "lng": -80.278518,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:59.602Z",
       "placeId": "ChIJnZ8OIuyl2YgRblWeo99ncHY",
       "matchConfidence": "high"
     },
@@ -3234,6 +3484,7 @@
       "lat": 25.988816,
       "lng": -80.278518,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:48:59.974Z",
       "placeId": "ChIJnZ8OIuyl2YgRblWeo99ncHY",
       "matchConfidence": "high"
     },
@@ -3250,6 +3501,7 @@
       "lat": 26.1718489,
       "lng": -80.1309735,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:00.314Z",
       "placeId": "ChIJpxXIQtUB2YgRKB90OgJAXDU",
       "matchConfidence": "high"
     },
@@ -3266,6 +3518,7 @@
       "lat": 26.171534899999997,
       "lng": -80.1310845,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:00.779Z",
       "placeId": "ChIJlbSZfIgB2YgRYisnI8kwZrg",
       "matchConfidence": "high"
     },
@@ -3282,6 +3535,7 @@
       "lat": 26.318942099999997,
       "lng": -80.20332549999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:01.130Z",
       "placeId": "ChIJ6cKPG3Yb2YgRhpZFwZOlBQw",
       "matchConfidence": "high"
     },
@@ -3298,6 +3552,7 @@
       "lat": 26.006670500000002,
       "lng": -80.2837327,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:01.517Z",
       "placeId": "ChIJK6Sfe2Gn2YgRmnxtxcYcN2c",
       "matchConfidence": "high"
     },
@@ -3314,6 +3569,7 @@
       "lat": 26.011209899999997,
       "lng": -80.3588516,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:01.944Z",
       "placeId": "ChIJy3F7YPin2YgR-WAoG--OMZc",
       "matchConfidence": "high"
     },
@@ -3330,6 +3586,7 @@
       "lat": 26.006297699999998,
       "lng": -80.348442,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:02.326Z",
       "placeId": "ChIJt6dERven2YgRLIzRZ54_lFY",
       "matchConfidence": "high"
     },
@@ -3346,6 +3603,7 @@
       "lat": 26.0062098,
       "lng": -80.2919902,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:02.678Z",
       "placeId": "ChIJHy1xRg6m2YgRCJifsDSvifs",
       "matchConfidence": "high"
     },
@@ -3362,8 +3620,11 @@
       "lat": 26.008199599999998,
       "lng": -80.3577869,
       "businessStatus": "CLOSED_PERMANENTLY",
+      "businessStatusAt": "2026-06-02T20:49:03.121Z",
       "placeId": "ChIJ2yiG1q6m2YgRmOq3-wzcDYg",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
       "name": "MOD Pizza",
@@ -3378,6 +3639,7 @@
       "lat": 26.008326,
       "lng": -80.29867689999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:03.524Z",
       "placeId": "ChIJxc1Q_Iyn2YgRDjdZzdW4O3A",
       "matchConfidence": "high"
     },
@@ -3394,6 +3656,7 @@
       "lat": 26.1111541,
       "lng": -80.2531175,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:03.858Z",
       "placeId": "ChIJD9-jLgEH2YgRFiqq0QEmhDA",
       "matchConfidence": "high"
     },
@@ -3410,8 +3673,9 @@
       "lat": 26.121547699999997,
       "lng": -80.24025,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:04.240Z",
       "placeId": "ChIJhwQXivUH2YgR2rERH2ZQjKA",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified"
     },
     {
       "name": "Thai Meal",
@@ -3426,6 +3690,7 @@
       "lat": 26.1495654,
       "lng": -80.2612405,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:04.610Z",
       "placeId": "ChIJS3neDzoG2YgRCJNJGeOfvlc",
       "matchConfidence": "high"
     },
@@ -3442,8 +3707,11 @@
       "lat": 26.210127999999997,
       "lng": -80.1227983,
       "businessStatus": "CLOSED_TEMPORARILY",
+      "businessStatusAt": "2026-06-02T20:49:05.094Z",
       "placeId": "ChIJibFIDu0D2YgRPM6LW7o_FYQ",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified",
+      "closedTemporarily": true,
+      "closedSince": "2026-06-02T20:49:05.094Z"
     },
     {
       "name": "Chill'n",
@@ -3452,15 +3720,15 @@
       "cuisine": "Ice Cream",
       "type": "VF",
       "typeLabel": "Vegan Friendly",
-      "website": "https://www.chillnicecream.com/locations/pompano-beach",
+      "website": "https://order.toasttab.com/online/chill-n-nitrogen-pompano",
       "outdoorSeating": false,
       "address": "1170 N Federal Hwy, Pompano Beach, FL 33062",
       "lat": 26.245962799999997,
       "lng": -80.1013303,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:05.416Z",
       "placeId": "ChIJ42k1qQID2YgRf-ffqN9osVc",
       "matchConfidence": "high",
-      "websiteStatus": "down",
       "websiteCheckedAt": "2026-06-02"
     },
     {
@@ -3476,6 +3744,7 @@
       "lat": 26.2564369,
       "lng": -80.1016382,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:06.948Z",
       "placeId": "ChIJ1cN1Z08D2YgRuykcWE19fJU",
       "matchConfidence": "high"
     },
@@ -3492,8 +3761,11 @@
       "lat": 26.0276976,
       "lng": -80.1688853,
       "businessStatus": "CLOSED_TEMPORARILY",
+      "businessStatusAt": "2026-06-02T20:49:07.310Z",
       "placeId": "ChIJoReY36Qd2YgRYE-v3CgcgI4",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified",
+      "closedTemporarily": true,
+      "closedSince": "2026-06-02T20:49:07.310Z"
     },
     {
       "name": "Juice 2 U",
@@ -3508,6 +3780,7 @@
       "lat": 26.271595299999998,
       "lng": -80.1526189,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:07.939Z",
       "placeId": "ChIJR-38iNIc2YgRB7gGu2MhLmw",
       "matchConfidence": "high"
     },
@@ -3524,6 +3797,7 @@
       "lat": 26.227662,
       "lng": -80.158372,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:08.287Z",
       "placeId": "ChIJH2Z-RwkD2YgRGD4AiHlnVSI",
       "matchConfidence": "high"
     },
@@ -3540,8 +3814,11 @@
       "lat": 26.232000300000003,
       "lng": -80.09806809999999,
       "businessStatus": "CLOSED_PERMANENTLY",
+      "businessStatusAt": "2026-06-02T20:49:08.688Z",
       "placeId": "ChIJLeAUZln92IgRxf2l3C_efTA",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
       "name": "The Rabbit Hole",
@@ -3556,6 +3833,7 @@
       "lat": 26.2322214,
       "lng": -80.0969083,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:09.025Z",
       "placeId": "ChIJR5WYD6z92IgRwgDlXyeW6GQ",
       "matchConfidence": "high"
     },
@@ -3572,6 +3850,7 @@
       "lat": 26.256500000000003,
       "lng": -80.10206199999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:09.353Z",
       "placeId": "ChIJWWZH4agC2YgRXAlfDsSo9sU",
       "matchConfidence": "high"
     },
@@ -3588,6 +3867,7 @@
       "lat": 26.2123368,
       "lng": -80.154654,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:09.699Z",
       "placeId": "ChIJ39LSXKUD2YgRnnphXN9wmlo",
       "matchConfidence": "high"
     },
@@ -3604,6 +3884,7 @@
       "lat": 26.2364255,
       "lng": -80.1026437,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:10.105Z",
       "placeId": "ChIJizL1WgID2YgR0XRzPF0WnV8",
       "matchConfidence": "high"
     },
@@ -3620,6 +3901,7 @@
       "lat": 26.166414399999997,
       "lng": -80.2599733,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:10.478Z",
       "placeId": "ChIJgalo-4MH2YgRDD_Y73ZqkhE",
       "matchConfidence": "high"
     },
@@ -3636,8 +3918,11 @@
       "lat": 26.159319399999998,
       "lng": -80.2567979,
       "businessStatus": "CLOSED_PERMANENTLY",
+      "businessStatusAt": "2026-06-02T20:49:10.839Z",
       "placeId": "ChIJra-DryQH2YgRCjvIfe6Swh4",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
       "name": "Origamy Gelato",
@@ -3652,6 +3937,7 @@
       "lat": 26.103338899999997,
       "lng": -80.36089439999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:11.178Z",
       "placeId": "ChIJa24Sf7oJ2YgRijB3yYmFgyI",
       "matchConfidence": "high"
     },
@@ -3668,8 +3954,9 @@
       "lat": 26.0928506,
       "lng": -80.2521584,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:11.572Z",
       "placeId": "ChIJuwTd-i4H2YgRZuezEQTp-5I",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified"
     },
     {
       "name": "Simply Natural Cafe",
@@ -3684,6 +3971,7 @@
       "lat": 26.154272499999998,
       "lng": -80.25673189999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:11.966Z",
       "placeId": "ChIJQehL1jgG2YgR9c2RBARyv1k",
       "matchConfidence": "high"
     },
@@ -3700,8 +3988,11 @@
       "lat": 26.1568015,
       "lng": -80.2567193,
       "businessStatus": "CLOSED_PERMANENTLY",
+      "businessStatusAt": "2026-06-02T20:49:12.320Z",
       "placeId": "ChIJBdPezD8G2YgRHswnpKDeXUs",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
       "name": "Rootz Soul Cafe",
@@ -3716,8 +4007,11 @@
       "lat": 26.206366799999998,
       "lng": -80.2045797,
       "businessStatus": "CLOSED_TEMPORARILY",
+      "businessStatusAt": "2026-06-02T20:49:12.645Z",
       "placeId": "ChIJT9eeXTsF2YgRYbI1PFVcjnM",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified",
+      "closedTemporarily": true,
+      "closedSince": "2026-06-02T20:49:12.645Z"
     },
     {
       "name": "My Organic Corner",
@@ -3732,6 +4026,7 @@
       "lat": 26.1213417,
       "lng": -80.36276099999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:13.001Z",
       "placeId": "ChIJ-xmpGIsJ2YgR_nksH21aAE4",
       "matchConfidence": "high"
     },
@@ -3748,8 +4043,9 @@
       "lat": 26.104921899999997,
       "lng": -80.36124,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:13.356Z",
       "placeId": "ChIJSRkpVwAJ2YgRWq-zC4rnFRk",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified"
     },
     {
       "name": "Shibuya Sushi",
@@ -3764,6 +4060,7 @@
       "lat": 26.138907699999997,
       "lng": -80.4224375,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:13.683Z",
       "placeId": "ChIJz058RDoL2YgRcvEk1F4e0-g",
       "matchConfidence": "high"
     },
@@ -3780,8 +4077,9 @@
       "lat": 26.1031308,
       "lng": -80.36103229999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:14.031Z",
       "placeId": "ChIJxQyinnUJ2YgREtGnm9Qo3Vs",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified"
     },
     {
       "name": "Treelion",
@@ -3796,8 +4094,9 @@
       "lat": 25.9443186,
       "lng": -80.2061301,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:14.370Z",
       "placeId": "ChIJZekXd12v2YgRwvU9UQMjspk",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified"
     },
     {
       "name": "La Mexicana Taco Bar",
@@ -3812,6 +4111,7 @@
       "lat": 26.1581154,
       "lng": -80.1300431,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:14.740Z",
       "placeId": "ChIJ8dPG6pAB2YgREAXTA1YOPO8",
       "matchConfidence": "high"
     },
@@ -3828,6 +4128,7 @@
       "lat": 26.157516599999997,
       "lng": -80.1368174,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:15.065Z",
       "placeId": "ChIJJYUeOQAB2YgR-D9BEb4eb-A",
       "matchConfidence": "high"
     },
@@ -3844,6 +4145,7 @@
       "lat": 26.153661999999997,
       "lng": -80.140577,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:15.395Z",
       "placeId": "ChIJ3SNNmGIB2YgRPFHzjSRCHYs",
       "matchConfidence": "high"
     },
@@ -3860,8 +4162,11 @@
       "lat": 25.955809300000002,
       "lng": -80.14108159999999,
       "businessStatus": "CLOSED_PERMANENTLY",
+      "businessStatusAt": "2026-06-02T20:49:15.753Z",
       "placeId": "ChIJzyX-olis2YgR0DrA2Wo5H8I",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
       "name": "Burgermeister",
@@ -3876,6 +4181,7 @@
       "lat": 25.7633695,
       "lng": -80.19468069999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:16.061Z",
       "placeId": "ChIJhQA_6R232YgR5eyL0E5zOJA",
       "matchConfidence": "high"
     },
@@ -3892,6 +4198,7 @@
       "lat": 25.762146599999998,
       "lng": -80.1933442,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:16.359Z",
       "placeId": "ChIJx22JFFqr2YgRYBR0NiL5ji4",
       "matchConfidence": "high"
     },
@@ -3908,8 +4215,11 @@
       "lat": 25.7672556,
       "lng": -80.19302669999999,
       "businessStatus": "CLOSED_PERMANENTLY",
+      "businessStatusAt": "2026-06-02T20:49:16.723Z",
       "placeId": "ChIJpd3Xn4S22YgRw4HzRIO2fIA",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
       "name": "Glasers Organic Farms",
@@ -3924,6 +4234,7 @@
       "lat": 25.5880298,
       "lng": -80.4144967,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:18.357Z",
       "placeId": "ChIJac_3YlTC2YgRCzjrphgH-60",
       "matchConfidence": "high"
     },
@@ -3935,7 +4246,13 @@
       "type": "VF",
       "typeLabel": "Vegan Friendly",
       "website": "https://drsmood.com/",
-      "outdoorSeating": false
+      "outdoorSeating": false,
+      "address": "",
+      "lat": null,
+      "lng": null,
+      "matchConfidence": "rejected",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
       "name": "L'Artisane Bakery",
@@ -3950,8 +4267,11 @@
       "lat": 25.7480972,
       "lng": -80.2588592,
       "businessStatus": "CLOSED_PERMANENTLY",
+      "businessStatusAt": "2026-06-02T20:49:19.083Z",
       "placeId": "ChIJ7Y9lKeiy2YgR6joDz0do6T0",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
       "name": "Vegan Litaly",
@@ -3966,6 +4286,7 @@
       "lat": 25.7645134,
       "lng": -80.2575567,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:19.458Z",
       "placeId": "ChIJO5IyrXW32YgRnyXQP2MkKnE",
       "matchConfidence": "high"
     },
@@ -3982,6 +4303,7 @@
       "lat": 26.462181800000003,
       "lng": -80.0709169,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:19.898Z",
       "placeId": "ChIJZRNFCPDf2IgRNOzJm80z6R0",
       "matchConfidence": "high"
     },
@@ -3998,8 +4320,11 @@
       "lat": 25.819640500000002,
       "lng": -80.3355182,
       "businessStatus": "CLOSED_PERMANENTLY",
+      "businessStatusAt": "2026-06-02T20:49:20.249Z",
       "placeId": "ChIJGdez3kW72YgRZ9UFsEw_pUU",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
       "name": "Diced",
@@ -4014,6 +4339,7 @@
       "lat": 25.7985653,
       "lng": -80.337656,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:20.609Z",
       "placeId": "ChIJHc4l1G652YgRAjvwKwnTHow",
       "matchConfidence": "high"
     },
@@ -4030,8 +4356,9 @@
       "lat": 25.6885138,
       "lng": -80.3941966,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:21.001Z",
       "placeId": "ChIJ838bWO_A2YgRe-zC17KWVB4",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified"
     },
     {
       "name": "NatuRxHeal",
@@ -4046,6 +4373,7 @@
       "lat": 25.802849,
       "lng": -80.3678408,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:21.348Z",
       "placeId": "ChIJuWCKkbK-2YgRXsd3udgWgRE",
       "matchConfidence": "high"
     },
@@ -4062,6 +4390,7 @@
       "lat": 25.4680699,
       "lng": -80.4772637,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:21.683Z",
       "placeId": "ChIJwbPYfD_n2YgRqtSexWFhWnw",
       "matchConfidence": "high"
     },
@@ -4078,6 +4407,7 @@
       "lat": 25.6718905,
       "lng": -80.37135660000001,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:22.045Z",
       "placeId": "ChIJa7to1ivB2YgRlXcFYXswsZg",
       "matchConfidence": "high"
     },
@@ -4094,6 +4424,7 @@
       "lat": 25.6871755,
       "lng": -80.3127732,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:22.405Z",
       "placeId": "ChIJ_Un49qTH2YgRe6GmHfMFfcg",
       "matchConfidence": "high"
     },
@@ -4110,6 +4441,7 @@
       "lat": 25.729824299999997,
       "lng": -80.4101501,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:22.779Z",
       "placeId": "ChIJIfFaPGbA2YgRrh6wNpnqqYA",
       "matchConfidence": "high"
     },
@@ -4126,8 +4458,11 @@
       "lat": 25.6885138,
       "lng": -80.3941966,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:23.092Z",
       "placeId": "ChIJ838bWO_A2YgRe-zC17KWVB4",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified",
+      "hidden": true,
+      "hiddenReason": "duplicate"
     },
     {
       "name": "Raw South Kendall",
@@ -4142,6 +4477,7 @@
       "lat": 25.6792972,
       "lng": -80.31866339999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:23.459Z",
       "placeId": "ChIJmaA-CqnH2YgRkNEv4nbNHsI",
       "matchConfidence": "high"
     },
@@ -4152,15 +4488,15 @@
       "cuisine": "Restaurant/Sanctuary",
       "type": "V",
       "typeLabel": "Vegan",
-      "website": "https://aguacatewellness.com/",
+      "website": "https://www.mindbodyonline.com/explore/locations/aguacate-garden-of-love",
       "outdoorSeating": false,
       "address": "12100 SW 43rd St, Miami, FL 33175",
       "lat": 25.727836000000003,
       "lng": -80.390912,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:23.828Z",
       "placeId": "ChIJ0UMNAh6_2YgRu4HylSv34_s",
       "matchConfidence": "high",
-      "websiteStatus": "down",
       "websiteCheckedAt": "2026-06-02"
     },
     {
@@ -4176,6 +4512,7 @@
       "lat": 25.7993129,
       "lng": -80.1910736,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:24.269Z",
       "placeId": "ChIJu54buKu22YgRv32kc-CUR64",
       "matchConfidence": "high"
     },
@@ -4187,7 +4524,13 @@
       "type": "V",
       "typeLabel": "Vegan",
       "website": "https://angiesepicurian.com/",
-      "outdoorSeating": false
+      "outdoorSeating": false,
+      "address": "",
+      "lat": null,
+      "lng": null,
+      "matchConfidence": "rejected",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
       "name": "Bunnie Cakes",
@@ -4202,8 +4545,11 @@
       "lat": 25.819640500000002,
       "lng": -80.3355182,
       "businessStatus": "CLOSED_PERMANENTLY",
+      "businessStatusAt": "2026-06-02T20:49:24.994Z",
       "placeId": "ChIJGdez3kW72YgRZ9UFsEw_pUU",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
       "name": "Burgermeister",
@@ -4218,6 +4564,7 @@
       "lat": 25.7633695,
       "lng": -80.19468069999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:25.297Z",
       "placeId": "ChIJhQA_6R232YgR5eyL0E5zOJA",
       "matchConfidence": "high"
     },
@@ -4234,10 +4581,13 @@
       "lat": 25.8039207,
       "lng": -80.191951,
       "businessStatus": "CLOSED_PERMANENTLY",
+      "businessStatusAt": "2026-06-02T20:49:25.703Z",
       "placeId": "ChIJy2V-k0mx2YgRWZ-ylaGyLzg",
       "matchConfidence": "high",
       "websiteStatus": "down",
-      "websiteCheckedAt": "2026-06-02"
+      "websiteCheckedAt": "2026-06-02",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
       "name": "Dons Diner",
@@ -4252,6 +4602,7 @@
       "lat": 25.9576863,
       "lng": -80.2059654,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:26.122Z",
       "placeId": "ChIJ8ZNATGOv2YgRpZutjyPUyRE",
       "matchConfidence": "high"
     },
@@ -4268,6 +4619,7 @@
       "lat": 25.7302422,
       "lng": -80.2380712,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:26.515Z",
       "placeId": "ChIJgW_5qc632YgRJp09efZfDEg",
       "matchConfidence": "high",
       "websiteStatus": "down",
@@ -4286,6 +4638,7 @@
       "lat": 25.802738899999998,
       "lng": -80.2010825,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:26.841Z",
       "placeId": "ChIJdz90kfS32YgRCCnNJT_Qq08",
       "matchConfidence": "high"
     },
@@ -4302,8 +4655,11 @@
       "lat": 25.743002399999998,
       "lng": -80.4171123,
       "businessStatus": "CLOSED_PERMANENTLY",
+      "businessStatusAt": "2026-06-02T20:49:27.204Z",
       "placeId": "ChIJhxgHGJG_2YgRbuqItQZjIik",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
       "name": "KC Healthy Kitchen",
@@ -4318,6 +4674,7 @@
       "lat": 25.6479221,
       "lng": -80.3356063,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:27.591Z",
       "placeId": "ChIJYwDJYI_H2YgRQ_-SheiXxrA",
       "matchConfidence": "high"
     },
@@ -4334,6 +4691,7 @@
       "lat": 25.767514799999997,
       "lng": -80.1934544,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:27.926Z",
       "placeId": "ChIJv_lvTYW32YgRCt1yz-SmPEE",
       "matchConfidence": "high"
     },
@@ -4350,6 +4708,7 @@
       "lat": 25.818042,
       "lng": -80.1917347,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:28.283Z",
       "placeId": "ChIJo4b7oVmx2YgRfOFJzetBz0E",
       "matchConfidence": "high"
     },
@@ -4366,11 +4725,12 @@
       "lat": 25.8014708,
       "lng": -80.20337310000001,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:29.802Z",
       "placeId": "ChIJAQC0fLS22YgR2GdZKk5kBLY",
       "matchConfidence": "high"
     },
     {
-      "name": "Nabati Ice Cream",
+      "name": "Banana Daddy",
       "city": "Miami",
       "county": "Miami / Dade County",
       "cuisine": "Ice Cream",
@@ -4382,8 +4742,10 @@
       "lat": 25.808820299999997,
       "lng": -80.19251919999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:30.177Z",
       "placeId": "ChIJzVEOGWSx2YgRjwz7BGjVRYk",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified",
+      "formerName": "Nabati Ice Cream"
     },
     {
       "name": "Naomi's Garden",
@@ -4398,6 +4760,7 @@
       "lat": 25.7931024,
       "lng": -80.1408241,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:30.549Z",
       "placeId": "ChIJt2JzXCG12YgR7en5BPCIZAg",
       "matchConfidence": "high"
     },
@@ -4410,12 +4773,13 @@
       "typeLabel": "Vegan",
       "website": "https://mannalifefood.com/",
       "outdoorSeating": false,
-      "address": "10 W Lee St, Bel Air, MD 21014",
-      "lat": 39.5374379,
-      "lng": -76.3512482,
+      "address": "",
+      "lat": null,
+      "lng": null,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:30.884Z",
       "placeId": "ChIJf84GTrLdx4kRd3_gp1XZGEc",
-      "matchConfidence": "approximate"
+      "matchConfidence": "rejected"
     },
     {
       "name": "Old Days Coffee",
@@ -4430,8 +4794,9 @@
       "lat": 25.807999,
       "lng": -80.1926969,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:31.261Z",
       "placeId": "ChIJodadmsSx2YgRT2AZcnRUxPo",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified"
     },
     {
       "name": "On the Run",
@@ -4446,6 +4811,7 @@
       "lat": 25.802760499999998,
       "lng": -80.2071248,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:31.717Z",
       "placeId": "ChIJoeYXHbW22YgRTwjuaSPJBxc",
       "matchConfidence": "high"
     },
@@ -4462,6 +4828,7 @@
       "lat": 25.853165999999998,
       "lng": -80.1933548,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:32.104Z",
       "placeId": "ChIJy25q4jWx2YgRzDdQA2wODMo",
       "matchConfidence": "high"
     },
@@ -4478,6 +4845,7 @@
       "lat": 25.842430699999998,
       "lng": -80.19291659999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:32.425Z",
       "placeId": "ChIJV5mthN-x2YgRIQ5zMw7nufo",
       "matchConfidence": "high"
     },
@@ -4494,6 +4862,7 @@
       "lat": 25.830048599999998,
       "lng": -80.1883118,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:32.819Z",
       "placeId": "ChIJA5RHusex2YgR1S8fexhmbhg",
       "matchConfidence": "high"
     },
@@ -4510,8 +4879,9 @@
       "lat": 26.1668284,
       "lng": -80.1160007,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:33.201Z",
       "placeId": "ChIJOzsd5IcB2YgRxWrKgO5_Avs",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified"
     },
     {
       "name": "Shido",
@@ -4526,8 +4896,9 @@
       "lat": 25.803108899999998,
       "lng": -80.1996448,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:33.538Z",
       "placeId": "ChIJPwl5Cfe32YgRJuIPAjAPtYc",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified"
     },
     {
       "name": "Specialteas",
@@ -4542,6 +4913,7 @@
       "lat": 25.7460934,
       "lng": -80.3690793,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:33.867Z",
       "placeId": "ChIJYVe9hDW_2YgRYqu1JMb1WBc",
       "matchConfidence": "high"
     },
@@ -4558,8 +4930,11 @@
       "lat": 25.8071128,
       "lng": -80.19245099999999,
       "businessStatus": "CLOSED_PERMANENTLY",
+      "businessStatusAt": "2026-06-02T20:49:34.211Z",
       "placeId": "ChIJrSHOJ_ix2YgRgKCrXqhBOyo",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
       "name": "The Vegan Choice",
@@ -4574,8 +4949,11 @@
       "lat": 25.8079592,
       "lng": -80.1925512,
       "businessStatus": "CLOSED_PERMANENTLY",
+      "businessStatusAt": "2026-06-02T20:49:34.653Z",
       "placeId": "ChIJM4f8Zb6x2YgRCQhlaBRJhJQ",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
       "name": "Plant Theory Botanical Burger",
@@ -4590,8 +4968,11 @@
       "lat": 25.791285900000002,
       "lng": -80.1362008,
       "businessStatus": "CLOSED_PERMANENTLY",
+      "businessStatusAt": "2026-06-02T20:49:35.161Z",
       "placeId": "ChIJpZEKR_O02YgRPmi2QJMU14g",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
       "name": "Vegan Cuban Cuisine",
@@ -4606,6 +4987,7 @@
       "lat": 25.7008355,
       "lng": -80.34914839999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:35.542Z",
       "placeId": "ChIJ7fSeJ76_2YgR6tX5SuQ78Xg",
       "matchConfidence": "high"
     },
@@ -4622,6 +5004,7 @@
       "lat": 25.7993632,
       "lng": -80.1910573,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:35.920Z",
       "placeId": "ChIJ9ZgmSxG32YgRMvEumwPcEDc",
       "matchConfidence": "high"
     },
@@ -4638,6 +5021,7 @@
       "lat": 25.8032588,
       "lng": -80.196,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:36.309Z",
       "placeId": "ChIJnx88KgC32YgRLiiIJh1LTbo",
       "matchConfidence": "high"
     },
@@ -4654,6 +5038,7 @@
       "lat": 25.8008669,
       "lng": -80.20157209999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:36.744Z",
       "placeId": "ChIJDYYlpNK32YgR7YCoIRUp1ps",
       "matchConfidence": "high"
     },
@@ -4670,11 +5055,14 @@
       "lat": 25.791492599999998,
       "lng": -80.1376712,
       "businessStatus": "CLOSED_TEMPORARILY",
+      "businessStatusAt": "2026-06-02T20:49:37.069Z",
       "placeId": "ChIJ33yarIe02YgREuodDObd5YI",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "closedTemporarily": true,
+      "closedSince": "2026-06-02T20:49:37.069Z"
     },
     {
-      "name": "Huahuas Taqueria",
+      "name": "Abuela’s Tacos",
       "city": "Miami Beach",
       "county": "Miami / Dade County",
       "cuisine": "Tacos",
@@ -4686,8 +5074,10 @@
       "lat": 25.778544,
       "lng": -80.1322776,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:37.400Z",
       "placeId": "ChIJIX9RqHW12YgRha535Rv515w",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified",
+      "formerName": "Huahuas Taqueria"
     },
     {
       "name": "Nick's Pizza",
@@ -4702,11 +5092,12 @@
       "lat": 25.769942,
       "lng": -80.13450560000001,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:37.865Z",
       "placeId": "ChIJP_10H9u12YgRSpbiuShx9jU",
       "matchConfidence": "high"
     },
     {
-      "name": "Nirvana Plant Based Bistro",
+      "name": "Vegan Planet",
       "city": "Miami Beach",
       "county": "Miami / Dade County",
       "cuisine": "Restaurant",
@@ -4718,8 +5109,10 @@
       "lat": 25.7993632,
       "lng": -80.1910573,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:38.389Z",
       "placeId": "ChIJ9ZgmSxG32YgRMvEumwPcEDc",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified",
+      "formerName": "Nirvana Plant Based Bistro"
     },
     {
       "name": "Awash Ethiopian",
@@ -4734,6 +5127,7 @@
       "lat": 25.9586524,
       "lng": -80.20629260000001,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:38.723Z",
       "placeId": "ChIJpa7-XZKu2YgRh1LP12RQOP0",
       "matchConfidence": "high"
     },
@@ -4750,8 +5144,9 @@
       "lat": 25.911711699999998,
       "lng": -80.1578847,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:39.083Z",
       "placeId": "ChIJOU78O5Gt2YgRIv80IyHED_g",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified"
     },
     {
       "name": "Konata's Vegan Restaurant",
@@ -4766,6 +5161,7 @@
       "lat": 25.9657798,
       "lng": -80.2053549,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:39.457Z",
       "placeId": "ChIJk_JLg1-v2YgR3QnQH14qLGs",
       "matchConfidence": "high"
     },
@@ -4782,8 +5178,11 @@
       "lat": 25.928500399999997,
       "lng": -80.19906879999999,
       "businessStatus": "CLOSED_PERMANENTLY",
+      "businessStatusAt": "2026-06-02T20:49:39.816Z",
       "placeId": "ChIJWxg4HG6u2YgRxZeTPvOSV4I",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
       "name": "Dr Smood",
@@ -4798,8 +5197,9 @@
       "lat": 25.8014708,
       "lng": -80.20337310000001,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:41.323Z",
       "placeId": "ChIJAQC0fLS22YgR2GdZKk5kBLY",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified"
     },
     {
       "name": "Raw Addiction",
@@ -4814,8 +5214,9 @@
       "lat": 26.0062098,
       "lng": -80.2919902,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:41.697Z",
       "placeId": "ChIJHy1xRg6m2YgRCJifsDSvifs",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified"
     },
     {
       "name": "Reggae Beets",
@@ -4830,8 +5231,9 @@
       "lat": 26.0897567,
       "lng": -80.1621986,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:42.059Z",
       "placeId": "ChIJ79sszEAF2YgRL1WghKg97Ig",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified"
     },
     {
       "name": "Seaside Eatery Key Largo",
@@ -4846,8 +5248,9 @@
       "lat": 25.0981788,
       "lng": -80.4373143,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:42.471Z",
       "placeId": "ChIJq89aUjRp14gROXBdSaTJfmU",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified"
     },
     {
       "name": "Vegan Cuban Cuisine",
@@ -4862,8 +5265,9 @@
       "lat": 25.7008355,
       "lng": -80.34914839999999,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:42.861Z",
       "placeId": "ChIJ7fSeJ76_2YgR6tX5SuQ78Xg",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified"
     },
     {
       "name": "Pamela Wasabi",
@@ -4878,8 +5282,9 @@
       "lat": 25.7945089,
       "lng": -80.221897,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:43.191Z",
       "placeId": "ChIJzd_jz_6x2YgRuGpKiq16KyA",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified"
     },
     {
       "name": "Caribe Vegan",
@@ -4891,7 +5296,10 @@
       "website": "https://thecaribevegan.com/",
       "outdoorSeating": false,
       "websiteStatus": "down",
-      "websiteCheckedAt": "2026-06-02"
+      "websiteCheckedAt": "2026-06-02",
+      "matchConfidence": "verified",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
       "name": "Krave Kitchen",
@@ -4906,8 +5314,9 @@
       "lat": 25.9951303,
       "lng": -80.214676,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:44.066Z",
       "placeId": "ChIJo0bG1UGp2YgRwEreIaAxxQM",
-      "matchConfidence": "approximate",
+      "matchConfidence": "verified",
       "websiteStatus": "down",
       "websiteCheckedAt": "2026-06-02"
     },
@@ -4924,8 +5333,9 @@
       "lat": 25.9443208,
       "lng": -80.20611780000002,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:44.422Z",
       "placeId": "ChIJNdlxPISv2YgREGmmR775H18",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified"
     },
     {
       "name": "Garden Diva Hummus",
@@ -4934,15 +5344,15 @@
       "cuisine": "Food Truck",
       "type": "V",
       "typeLabel": "Vegan",
-      "website": "https://www.gardendivahummus.com/food-truck-menu",
+      "website": "https://gardendivahummus.com/store-locator/",
       "outdoorSeating": false,
       "address": "1940 N 30th Rd #303, Hollywood, FL 33021",
       "lat": 26.028698,
       "lng": -80.168801,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:44.786Z",
       "placeId": "ChIJ_09gD8mr2YgRwayHwxny40c",
-      "matchConfidence": "approximate",
-      "websiteStatus": "down",
+      "matchConfidence": "verified",
       "websiteCheckedAt": "2026-06-02"
     },
     {
@@ -4958,8 +5368,9 @@
       "lat": 25.9501785,
       "lng": -80.1442153,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:45.190Z",
       "placeId": "ChIJ4_CqFPCt2YgR8NZbghl9ZYY",
-      "matchConfidence": "approximate"
+      "matchConfidence": "verified"
     },
     {
       "name": "Ittle Litaly",
@@ -4968,15 +5379,15 @@
       "cuisine": "Italian",
       "type": "V",
       "typeLabel": "Vegan",
-      "website": "https://ittlelitaly.square.site/",
+      "website": "https://www.veganlitaly.com/",
       "outdoorSeating": false,
       "address": "3808 SW 8th St, Coral Gables, FL 33134",
       "lat": 25.7645134,
       "lng": -80.2575567,
       "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:49:45.546Z",
       "placeId": "ChIJO5IyrXW32YgRnyXQP2MkKnE",
-      "matchConfidence": "approximate",
-      "websiteStatus": "down",
+      "matchConfidence": "verified",
       "websiteCheckedAt": "2026-06-02"
     },
     {
@@ -4992,8 +5403,11 @@
       "lat": 25.897176599999998,
       "lng": -80.3418514,
       "businessStatus": "CLOSED_PERMANENTLY",
+      "businessStatusAt": "2026-06-02T20:49:46.032Z",
       "placeId": "ChIJp7TKjhy72YgRNzhWYfhcPSE",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     }
   ]
 }

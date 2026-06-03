@@ -45,6 +45,10 @@ export const ENRICHED_FIELDS = [
   "lat",
   "lng",
   "businessStatus",
+  // When Google last reported businessStatus for this place (= the cache record's
+  // queriedAt). Carried forward so the daily CI build — which has no Places cache —
+  // can still show "temporarily closed as of <date>" without re-querying the API.
+  "businessStatusAt",
   "placeId",
   "matchConfidence",
 ];
@@ -217,6 +221,7 @@ function applyRecord(r, rec) {
   r.lat = rec.lat;
   r.lng = rec.lng;
   r.businessStatus = rec.businessStatus;
+  r.businessStatusAt = rec.queriedAt || "";
   r.placeId = rec.placeId;
   r.matchConfidence = confidence;
   return confidence;

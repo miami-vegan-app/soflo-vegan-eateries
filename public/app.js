@@ -168,6 +168,18 @@
     if (r.city) cityBits.push(escapeHtml(r.city));
     if (r.cuisine) cityBits.push(escapeHtml(r.cuisine));
     const outdoor = r.outdoorSeating ? `<span class="dot">·</span><span class="chip-outdoor">🌿 Outdoor seating</span>` : "";
+    // A rename (e.g. the place rebranded) keeps a subtle pointer to the old name so
+    // long-time regulars searching the former name still recognise it.
+    const former = r.formerName
+      ? `<div class="card__former">formerly ${escapeHtml(r.formerName)}</div>`
+      : "";
+    // Temporarily-closed (per Google Places). Permanently-closed places are dropped
+    // upstream in build-data; these we keep but flag, with the date we last checked.
+    let closed = "";
+    if (r.closedTemporarily) {
+      const since = formatCheckedDate(r.closedSince);
+      closed = `<div class="card__closed">⏸️ Temporarily closed${since ? ` · as of ${since}` : ""}</div>`;
+    }
     // A website confirmed down (404) is hidden so we never link users to a dead page.
     // The restaurant still shows — the place may well be open; only the link is gone.
     const link = r.website && r.websiteStatus !== "down"
@@ -179,7 +191,9 @@
           `<h3 class="card__name">${escapeHtml(r.name)}</h3>` +
           `<span class="badge ${badgeClass}" title="${escapeHtml(r.typeLabel || "Unknown")}">${badgeText}</span>` +
         `</div>` +
+        former +
         `<div class="card__row">${cityBits.join('<span class="dot">·</span>')}${outdoor}</div>` +
+        closed +
         link +
       `</article>`
     );
@@ -198,7 +212,7 @@
       if (cuisine && r.cuisine !== cuisine) return false;
       if (outdoorOnly && !r.outdoorSeating) return false;
       if (q) {
-        const hay = `${r.name} ${r.cuisine} ${r.city}`.toLowerCase();
+        const hay = `${r.name} ${r.formerName || ""} ${r.cuisine} ${r.city}`.toLowerCase();
         if (!hay.includes(q)) return false;
       }
       return true;
@@ -257,7 +271,9 @@
         return r.json();
       })
       .then((data) => {
-        RESTAURANTS = data.restaurants || [];
+        // Hidden rows (permanently closed or de-duplicated) stay in the JSON for the
+        // record but never surface in the app.
+        RESTAURANTS = (data.restaurants || []).filter((r) => !r.hidden);
         const bits = [`${RESTAURANTS.length} places`];
         if (data.sourceUpdated) bits.push(`list updated ${data.sourceUpdated}`);
         const checked = formatCheckedDate(data.checkedAt);
