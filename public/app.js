@@ -124,6 +124,11 @@
   const countEl = $("#result-count");
   let RESTAURANTS = [];
 
+  // "Near me" state: the user's location (once granted) and whether we're currently
+  // sorting by distance. userLoc is cached so toggling off/on doesn't re-prompt.
+  let userLoc = null;
+  let nearActive = false;
+
   const escapeHtml = (s) =>
     String(s).replace(/[&<>"']/g, (c) =>
       ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])
@@ -149,8 +154,35 @@
       "</dl>";
   }
 
-  function hostname(url) {
-    try { return new URL(url).hostname.replace(/^www\./, ""); } catch (_) { return url; }
+  // Great-circle distance in miles between two {lat,lng} points (haversine).
+  function distanceMiles(a, b) {
+    const R = 3958.8; // Earth radius, miles
+    const toRad = (d) => (d * Math.PI) / 180;
+    const dLat = toRad(b.lat - a.lat);
+    const dLng = toRad(b.lng - a.lng);
+    const lat1 = toRad(a.lat);
+    const lat2 = toRad(b.lat);
+    const h =
+      Math.sin(dLat / 2) ** 2 +
+      Math.cos(lat1) * Math.cos(lat2) * Math.sin(dLng / 2) ** 2;
+    return 2 * R * Math.asin(Math.sqrt(h));
+  }
+
+  function formatMiles(d) {
+    if (d < 0.1) return "< 0.1 mi";
+    if (d < 10) return `${d.toFixed(1)} mi`;
+    return `${Math.round(d)} mi`;
+  }
+
+  // Build a Google Maps directions URL that opens navigation to the place. We pass a
+  // human-readable destination (name + address) plus the place ID when we have it, so
+  // Maps resolves to the exact listing rather than a fuzzy text search.
+  function mapsUrl(r) {
+    const dest = r.address || r.name || (r.lat != null && r.lng != null ? `${r.lat},${r.lng}` : "");
+    if (!dest && !r.placeId) return "";
+    const params = new URLSearchParams({ api: "1", destination: dest || r.name || "" });
+    if (r.placeId) params.set("destination_place_id", r.placeId);
+    return `https://www.google.com/maps/dir/?${params.toString()}`;
   }
 
   // ISO timestamp -> "May 29, 2026". Returns "" if missing/invalid.
@@ -161,15 +193,44 @@
     return d.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
   }
 
-  function cardHtml(r) {
+  function cardHtml(r, dist) {
     const badgeClass = r.type ? `badge--${r.type}` : "badge--none";
     const badgeText = r.type || "?";
+    // Distance chip, shown whenever location is known and the place has coordinates
+    // (both in "Near me" mode and the normal county view).
+    const distChip =
+      typeof dist === "number" && isFinite(dist)
+        ? `<span class="card__dist">📍 ${formatMiles(dist)} away</span>`
+        : "";
     const cityBits = [];
     if (r.city) cityBits.push(escapeHtml(r.city));
     if (r.cuisine) cityBits.push(escapeHtml(r.cuisine));
     const outdoor = r.outdoorSeating ? `<span class="dot">·</span><span class="chip-outdoor">🌿 Outdoor seating</span>` : "";
-    const link = r.website
-      ? `<a class="card__link" href="${escapeHtml(r.website)}" target="_blank" rel="noopener">${escapeHtml(hostname(r.website))}</a>`
+    // A rename (e.g. the place rebranded) keeps a subtle pointer to the old name so
+    // long-time regulars searching the former name still recognise it.
+    const former = r.formerName
+      ? `<div class="card__former">formerly ${escapeHtml(r.formerName)}</div>`
+      : "";
+    // Temporarily-closed (per Google Places). Permanently-closed places are dropped
+    // upstream in build-data; these we keep but flag, with the date we last checked.
+    let closed = "";
+    if (r.closedTemporarily) {
+      const since = formatCheckedDate(r.closedSince);
+      closed = `<div class="card__closed">⏸️ Temporarily closed${since ? ` · as of ${since}` : ""}</div>`;
+    }
+    // A website confirmed down (404) is hidden so we never link users to a dead page.
+    // The restaurant still shows — the place may well be open; only the link is gone.
+    const websiteLink = r.website && r.websiteStatus !== "down"
+      ? `<a class="card__link" href="${escapeHtml(r.website)}" target="_blank" rel="noopener">Website</a>`
+      : "";
+    // Google Maps directions link so people can navigate straight there. Prefer the
+    // place ID (exact listing); fall back to address, then coordinates.
+    const maps = mapsUrl(r);
+    const mapsLink = maps
+      ? `<a class="card__link card__link--maps" href="${escapeHtml(maps)}" target="_blank" rel="noopener">Directions</a>`
+      : "";
+    const links = websiteLink || mapsLink
+      ? `<div class="card__links">${websiteLink}${mapsLink}</div>`
       : "";
     return (
       `<article class="card ${r.type === "V" ? "card--v" : ""}">` +
@@ -177,8 +238,10 @@
           `<h3 class="card__name">${escapeHtml(r.name)}</h3>` +
           `<span class="badge ${badgeClass}" title="${escapeHtml(r.typeLabel || "Unknown")}">${badgeText}</span>` +
         `</div>` +
-        `<div class="card__row">${cityBits.join('<span class="dot">·</span>')}${outdoor}</div>` +
-        link +
+        former +
+        `<div class="card__row">${distChip}${distChip && cityBits.length ? '<span class="dot">·</span>' : ""}${cityBits.join('<span class="dot">·</span>')}${outdoor}</div>` +
+        closed +
+        links +
       `</article>`
     );
   }
@@ -189,6 +252,7 @@
     const type = $("#filter-type").value;
     const cuisine = $("#filter-cuisine").value;
     const outdoorOnly = $("#filter-outdoor").checked;
+    updateFilterCount();
 
     const filtered = RESTAURANTS.filter((r) => {
       if (county && r.county !== county) return false;
@@ -196,16 +260,31 @@
       if (cuisine && r.cuisine !== cuisine) return false;
       if (outdoorOnly && !r.outdoorSeating) return false;
       if (q) {
-        const hay = `${r.name} ${r.cuisine} ${r.city}`.toLowerCase();
+        const hay = `${r.name} ${r.formerName || ""} ${r.cuisine} ${r.city}`.toLowerCase();
         if (!hay.includes(q)) return false;
       }
       return true;
     });
 
-    countEl.textContent = `${filtered.length} of ${RESTAURANTS.length} places`;
+    countEl.textContent = nearActive
+      ? `${filtered.length} of ${RESTAURANTS.length} places · nearest first`
+      : `${filtered.length} of ${RESTAURANTS.length} places`;
 
     if (!filtered.length) {
       resultsEl.innerHTML = `<p class="empty">No restaurants match your filters.<br>Try clearing the search or filters.</p>`;
+      return;
+    }
+
+    // "Near me": one flat list sorted by distance (closest first). Places without
+    // coordinates sort to the end and show no distance chip.
+    if (nearActive && userLoc) {
+      const withDist = filtered
+        .map((r) => ({
+          r,
+          d: r.lat != null && r.lng != null ? distanceMiles(userLoc, r) : Infinity,
+        }))
+        .sort((a, b) => a.d - b.d);
+      resultsEl.innerHTML = withDist.map(({ r, d }) => cardHtml(r, d)).join("");
       return;
     }
 
@@ -219,7 +298,15 @@
       const list = groups.get(c);
       if (!list.length) continue;
       html += `<h2 class="county-head">${escapeHtml(c)} (${list.length})</h2>`;
-      html += list.map(cardHtml).join("");
+      // Once location is known, show the distance chip here too (not just in Near-me mode).
+      html += list
+        .map((r) =>
+          cardHtml(
+            r,
+            userLoc && r.lat != null && r.lng != null ? distanceMiles(userLoc, r) : undefined
+          )
+        )
+        .join("");
     }
     resultsEl.innerHTML = html;
   }
@@ -255,7 +342,9 @@
         return r.json();
       })
       .then((data) => {
-        RESTAURANTS = data.restaurants || [];
+        // Hidden rows (permanently closed or de-duplicated) stay in the JSON for the
+        // record but never surface in the app.
+        RESTAURANTS = (data.restaurants || []).filter((r) => !r.hidden);
         const bits = [`${RESTAURANTS.length} places`];
         if (data.sourceUpdated) bits.push(`list updated ${data.sourceUpdated}`);
         const checked = formatCheckedDate(data.checkedAt);
@@ -271,6 +360,104 @@
         console.error("Data load failed:", err);
       });
   }
+
+  /* -------------------------------------------------- *
+   *  "Near me" — sort by distance from the user
+   * -------------------------------------------------- */
+  const nearBtn = $("#filter-near");
+  const nearMsg = $("#near-msg");
+
+  function setNearMsg(text) {
+    if (!text) {
+      nearMsg.hidden = true;
+      nearMsg.textContent = "";
+      return;
+    }
+    nearMsg.textContent = text;
+    nearMsg.hidden = false;
+  }
+
+  function updateNearBtn() {
+    nearBtn.setAttribute("aria-pressed", String(nearActive));
+    nearBtn.classList.toggle("is-active", nearActive);
+    nearBtn.querySelector(".near-btn__label").textContent = nearActive ? "Near me · on" : "Near me";
+  }
+
+  function requestNearMe() {
+    if (!("geolocation" in navigator)) {
+      setNearMsg("Location isn’t available on this device.");
+      return;
+    }
+    nearBtn.disabled = true;
+    nearBtn.querySelector(".near-btn__label").textContent = "Locating…";
+    setNearMsg("");
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        userLoc = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+        nearActive = true;
+        nearBtn.disabled = false;
+        updateNearBtn();
+        applyFilters();
+      },
+      (err) => {
+        nearBtn.disabled = false;
+        nearActive = false;
+        updateNearBtn();
+        setNearMsg(
+          err && err.code === err.PERMISSION_DENIED
+            ? "Location permission denied. Allow location access to sort by distance."
+            : "Couldn’t get your location. Please try again."
+        );
+      },
+      { enableHighAccuracy: false, timeout: 10000, maximumAge: 300000 }
+    );
+  }
+
+  nearBtn.addEventListener("click", () => {
+    if (nearActive) {
+      // Toggle back to the default county-grouped view (keep userLoc cached).
+      nearActive = false;
+      updateNearBtn();
+      applyFilters();
+      return;
+    }
+    setNearMsg("");
+    if (userLoc) {
+      nearActive = true;
+      updateNearBtn();
+      applyFilters();
+      return;
+    }
+    requestNearMe();
+  });
+
+  /* -------------------------------------------------- *
+   *  Filters panel — collapsed by default to give the
+   *  listing more room. A badge shows how many are active.
+   * -------------------------------------------------- */
+  const filtersPanel = $("#filters");
+  const filtersToggle = $("#filters-toggle");
+  const filtersCount = $("#filters-count");
+
+  function updateFilterCount() {
+    let n = 0;
+    if ($("#filter-county").value) n++;
+    if ($("#filter-type").value) n++;
+    if ($("#filter-cuisine").value) n++;
+    if ($("#filter-outdoor").checked) n++;
+    if (n > 0) {
+      filtersCount.textContent = String(n);
+      filtersCount.hidden = false;
+    } else {
+      filtersCount.hidden = true;
+    }
+  }
+
+  filtersToggle.addEventListener("click", () => {
+    const show = filtersPanel.hidden;
+    filtersPanel.hidden = !show;
+    filtersToggle.setAttribute("aria-expanded", String(show));
+  });
 
   // Legend toggle
   $("#legend-toggle").addEventListener("click", (e) => {

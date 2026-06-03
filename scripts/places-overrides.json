@@ -1,0 +1,889 @@
+{
+  "basilicvietnamesegrill|bocaraton": {
+    "name": "Basilic Vietnamese Grill",
+    "city": "Boca Raton",
+    "reviewedAt": "2026-06-02T23:24:59.810Z",
+    "location": {
+      "decision": "approve",
+      "address": "14734 Biscayne Blvd, North Miami Beach, FL 33181",
+      "lat": 25.911711699999998,
+      "lng": -80.1578847,
+      "note": "yes google has this restaurant at 14734 Biscayne Blvd, North Miami Beach, FL 33181"
+    },
+    "website": {
+      "decision": "down",
+      "url": "https://basilic-vietnamese-cuisine-boca-raton.business.site/",
+      "note": ""
+    }
+  },
+  "cafelavie|bocaraton": {
+    "name": "Cafe La Vie",
+    "city": "Boca Raton",
+    "reviewedAt": "2026-06-02T23:26:13.441Z",
+    "location": {
+      "decision": "approve",
+      "address": "CV6G+6GR, 5030 Champion Blvd D8, Boca Raton, FL 33496",
+      "lat": 26.4107542,
+      "lng": -80.123924,
+      "note": ""
+    }
+  },
+  "guacogo|boyntonbeach": {
+    "name": "Guaco Go",
+    "city": "Boynton Beach",
+    "reviewedAt": "2026-06-02T23:26:44.805Z",
+    "location": {
+      "decision": "approve",
+      "address": "5064 W Atlantic Ave, Delray Beach, FL 33484",
+      "lat": 26.456766000000002,
+      "lng": -80.1243056,
+      "note": ""
+    }
+  },
+  "merakijuicekitchen|jupiter": {
+    "name": "Meraki Juice Kitchen",
+    "city": "Jupiter",
+    "reviewedAt": "2026-06-02T23:27:30.721Z",
+    "location": {
+      "decision": "approve",
+      "address": "4550 Donald Ross Rd Ste 105, Palm Beach Gardens, FL 33418",
+      "lat": 26.8815019,
+      "lng": -80.1054995,
+      "note": "This place is showing permanently closed in google maps. Flag it, I think we need to hide it."
+    }
+  },
+  "yenskitchen|lakeworth": {
+    "name": "Yen's Kitchen",
+    "city": "Lake Worth",
+    "reviewedAt": "2026-06-02T23:28:05.221Z",
+    "location": {
+      "decision": "approve",
+      "address": "7364 Lake Worth Rd, Greenacres, FL 33467",
+      "lat": 26.616169499999998,
+      "lng": -80.1625494,
+      "note": ""
+    }
+  },
+  "merakijuicekitchen|palmbeachgardens": {
+    "name": "Meraki Juice Kitchen",
+    "city": "Palm Beach Gardens",
+    "reviewedAt": "2026-06-02T23:29:18.288Z",
+    "location": {
+      "decision": "approve",
+      "address": "328 Fern St, West Palm Beach, FL 33401",
+      "lat": 26.7102325,
+      "lng": -80.0532061,
+      "note": "Google name: Meraki Juice Kitchen is NOW Christopher's Kitchen. Looks like they changed their name. Mention in the app."
+    },
+    "rename": "Christopher’s Kitchen"
+  },
+  "tikimarketsundaysonly|rivierabeach": {
+    "name": "Tiki Market - Sundays Only",
+    "city": "Riviera Beach",
+    "reviewedAt": "2026-06-02T23:36:51.884Z",
+    "location": {
+      "decision": "approve",
+      "address": "190 E 13th St, Riviera Beach, FL 33404",
+      "lat": 26.7741363,
+      "lng": -80.0528806,
+      "note": "temporarily closed. Should we mention that?"
+    }
+  },
+  "peppermint|royalpalmbeach": {
+    "name": "Peppermint",
+    "city": "Royal Palm Beach",
+    "reviewedAt": "2026-06-02T23:37:06.310Z",
+    "website": {
+      "decision": "down",
+      "url": "http://www.peppermintroyalpalm.com/",
+      "note": ""
+    }
+  },
+  "turningpoint|wellington": {
+    "name": "Turning Point",
+    "city": "Wellington",
+    "reviewedAt": "2026-06-02T23:37:48.995Z",
+    "location": {
+      "decision": "approve",
+      "address": "7375 Boynton Beach Blvd, Boynton Beach, FL 33437",
+      "lat": 26.528498499999998,
+      "lng": -80.162312,
+      "note": ""
+    }
+  },
+  "chunkay|westpalmbeach": {
+    "name": "Chunkay",
+    "city": "West Palm Beach",
+    "reviewedAt": "2026-06-02T23:44:00.501Z",
+    "location": {
+      "decision": "reject",
+      "address": "",
+      "lat": null,
+      "lng": null,
+      "note": "permanently closed. There is another restaurant at the reported location."
+    },
+    "closed": "permanent"
+  },
+  "leilamiddleeastern|westpalmbeach": {
+    "name": "Leila Middle Eastern",
+    "city": "West Palm Beach",
+    "reviewedAt": "2026-06-02T23:44:43.621Z",
+    "location": {
+      "decision": "approve",
+      "address": "120 S Dixie Hwy, West Palm Beach, FL 33401",
+      "lat": 26.7124493,
+      "lng": -80.0534784,
+      "note": ""
+    }
+  },
+  "gogijuicery|coopercity": {
+    "name": "Gogi Juicery",
+    "city": "Cooper City",
+    "reviewedAt": "2026-06-02T23:45:24.427Z",
+    "location": {
+      "decision": "approve",
+      "address": "236 US-1, Tequesta, FL 33469",
+      "lat": 26.957158999999997,
+      "lng": -80.0853762,
+      "note": ""
+    }
+  },
+  "honestindian|coralsprings": {
+    "name": "Honest indian",
+    "city": "Coral Springs",
+    "reviewedAt": "2026-06-02T23:45:37.554Z",
+    "website": {
+      "decision": "down",
+      "url": "https://honestindianrestaurantfl.business.site/",
+      "note": ""
+    }
+  },
+  "gojijuicery|daniabeach": {
+    "name": "Goji Juicery",
+    "city": "Dania Beach",
+    "reviewedAt": "2026-06-02T23:46:46.085Z",
+    "location": {
+      "decision": "approve",
+      "address": "386 E Dania Beach Blvd, Dania Beach, FL 33004",
+      "lat": 26.0513564,
+      "lng": -80.1370152,
+      "note": "The name changed to \"The Fresh Squeeze\" needs to be updated."
+    },
+    "rename": "The Fresh Squeeze"
+  },
+  "veganjunkie|daniabeach": {
+    "name": "Vegan Junkie",
+    "city": "Dania Beach",
+    "reviewedAt": "2026-06-02T23:47:38.341Z",
+    "location": {
+      "decision": "approve",
+      "address": "1620 W State Rd 84, Fort Lauderdale, FL 33315",
+      "lat": 26.0897567,
+      "lng": -80.1621986,
+      "note": "city is correct but permanently closed."
+    }
+  },
+  "deliciousrawkitchenandjuicebar|davie": {
+    "name": "Delicious Raw Kitchen and Juice Bar",
+    "city": "Davie",
+    "reviewedAt": "2026-06-02T23:48:26.612Z",
+    "location": {
+      "decision": "approve",
+      "address": "3732 Davie Rd, Davie, FL 33314",
+      "lat": 26.0756812,
+      "lng": -80.23156999999999,
+      "note": "Google's name is correct. Name changed."
+    },
+    "rename": "Swami Juice"
+  },
+  "gopho|davie": {
+    "name": "Go Pho",
+    "city": "Davie",
+    "reviewedAt": "2026-06-02T23:48:32.378Z",
+    "location": {
+      "decision": "approve",
+      "address": "2262 S University Dr, Davie, FL 33324",
+      "lat": 26.0942144,
+      "lng": -80.24944909999999,
+      "note": ""
+    }
+  },
+  "hanjsnowboba|davie": {
+    "name": "Hanj Snow Boba",
+    "city": "Davie",
+    "reviewedAt": "2026-06-02T23:49:13.642Z",
+    "location": {
+      "decision": "approve",
+      "address": "2215 S University Dr, Davie, FL 33324",
+      "lat": 26.093872599999997,
+      "lng": -80.25206109999999,
+      "note": "name is changed to: Jade Tea House - Davie"
+    },
+    "rename": "Jade Tea House"
+  },
+  "juicetherapy|davie": {
+    "name": "Juice Therapy",
+    "city": "Davie",
+    "reviewedAt": "2026-06-02T23:49:20.370Z",
+    "location": {
+      "decision": "approve",
+      "address": "8902 W State Rd 84, Davie, FL 33324",
+      "lat": 26.1002945,
+      "lng": -80.2679145,
+      "note": ""
+    }
+  },
+  "lemongrasshotpot|davie": {
+    "name": "Lemongrass Hot Pot",
+    "city": "Davie",
+    "reviewedAt": "2026-06-02T23:49:25.894Z",
+    "location": {
+      "decision": "approve",
+      "address": "5450 S State Rd 7, Davie, FL 33314",
+      "lat": 26.053211899999997,
+      "lng": -80.20678869999999,
+      "note": ""
+    }
+  },
+  "phobar|davie": {
+    "name": "Pho Bar",
+    "city": "Davie",
+    "reviewedAt": "2026-06-02T23:49:30.519Z",
+    "location": {
+      "decision": "approve",
+      "address": "6310 Griffin Rd, Davie, FL 33314",
+      "lat": 26.0646515,
+      "lng": -80.2308219,
+      "note": ""
+    }
+  },
+  "themodernrose|deerfieldbeach": {
+    "name": "The Modern Rose",
+    "city": "Deerfield Beach",
+    "reviewedAt": "2026-06-03T00:26:45.011Z",
+    "location": {
+      "decision": "reject",
+      "address": "331 SE 15th Terrace, Deerfield Beach, FL 33441",
+      "lat": 26.3137647,
+      "lng": -80.08505129999999,
+      "note": ""
+    }
+  },
+  "wontoms|deerfieldbeach": {
+    "name": "WonToms",
+    "city": "Deerfield Beach",
+    "reviewedAt": "2026-06-03T00:27:18.703Z",
+    "location": {
+      "decision": "approve",
+      "address": "1500 SE 3rd Ct Suite 102, Deerfield Beach, FL 33441",
+      "lat": 26.3133508,
+      "lng": -80.08513889999999,
+      "note": ""
+    }
+  },
+  "bigmikesglutenfreebakery|fortlauderdale": {
+    "name": "Big Mike's Gluten Free Bakery",
+    "city": "Fort Lauderdale",
+    "reviewedAt": "2026-06-03T00:27:23.655Z",
+    "location": {
+      "decision": "approve",
+      "address": "1637 SE 17th St, Fort Lauderdale, FL 33316",
+      "lat": 26.101774,
+      "lng": -80.12547599999999,
+      "note": ""
+    }
+  },
+  "bombaycafe|fortlauderdale": {
+    "name": "Bombay Cafe",
+    "city": "Fort Lauderdale",
+    "reviewedAt": "2026-06-03T00:28:11.450Z",
+    "location": {
+      "decision": "reject",
+      "address": "1672 E Oakland Park Blvd, Oakland Park, FL 33334",
+      "lat": 26.1666503,
+      "lng": -80.12454629999999,
+      "note": ""
+    }
+  },
+  "chilln|fortlauderdale": {
+    "name": "Chill'n",
+    "city": "Fort Lauderdale",
+    "reviewedAt": "2026-06-03T00:30:27.137Z",
+    "website": {
+      "decision": "ok",
+      "url": "https://order.toasttab.com/online/chill-n-nitrogen-ice-cream-fort-lauderdale-2422-n-federal-hwy",
+      "note": ""
+    }
+  },
+  "freshfirst|fortlauderdale": {
+    "name": "Fresh First",
+    "city": "Fort Lauderdale",
+    "reviewedAt": "2026-06-03T00:31:10.093Z",
+    "location": {
+      "decision": "approve",
+      "address": "1637 SE 17th St, Fort Lauderdale, FL 33316",
+      "lat": 26.101774,
+      "lng": -80.12547599999999,
+      "note": "Duplicate with \"Big Mike's Gluten Free Bakery\". One needs to be removed."
+    },
+    "duplicateOf": "bigmikesglutenfreebakery|fortlauderdale"
+  },
+  "livinggreenfreshmarket|fortlauderdale": {
+    "name": "Living Green Fresh Market",
+    "city": "Fort Lauderdale",
+    "reviewedAt": "2026-06-03T00:31:50.979Z",
+    "location": {
+      "decision": "approve",
+      "address": "1305 E Commercial Blvd, Oakland Park, FL 33334",
+      "lat": 26.1893704,
+      "lng": -80.1298716,
+      "note": ""
+    }
+  },
+  "bol|hollywood": {
+    "name": "Bol",
+    "city": "Hollywood",
+    "reviewedAt": "2026-06-03T00:31:59.180Z",
+    "location": {
+      "decision": "approve",
+      "address": "1 Seminole Way, Fort Lauderdale, FL 33314",
+      "lat": 26.0518091,
+      "lng": -80.212048,
+      "note": ""
+    }
+  },
+  "eattitude|hollywood": {
+    "name": "Eattitude",
+    "city": "Hollywood",
+    "reviewedAt": "2026-06-03T00:32:09.969Z",
+    "location": {
+      "decision": "approve",
+      "address": "3047 Johnson St, Hollywood, FL 33021",
+      "lat": 26.0192421,
+      "lng": -80.1693133,
+      "note": "PErmanently closed"
+    }
+  },
+  "elbayudewelasara|hollywood": {
+    "name": "El Bayu de Wela Sara",
+    "city": "Hollywood",
+    "reviewedAt": "2026-06-03T00:33:56.596Z",
+    "website": {
+      "decision": "ok",
+      "url": "https://elbayudewelasara.com/",
+      "note": "Website doesn't work but restaurant exists. We shouldn't hide it. Address: 1917 Hollywood Blvd, Hollywood, FL 33020"
+    }
+  },
+  "gaiatherapeat|hollywood": {
+    "name": "Gaia Therapeat",
+    "city": "Hollywood",
+    "reviewedAt": "2026-06-03T00:34:42.275Z",
+    "location": {
+      "decision": "approve",
+      "address": "4563 Weston Rd, Weston, FL 33331",
+      "lat": 26.0645921,
+      "lng": -80.3642989,
+      "note": "permanently closed"
+    },
+    "closed": "permanent"
+  },
+  "happeas|hollywood": {
+    "name": "Happeas",
+    "city": "Hollywood",
+    "reviewedAt": "2026-06-03T00:35:22.810Z",
+    "location": {
+      "decision": "approve",
+      "address": "1250 S Miami Ave Unit 4, Miami, FL 33130",
+      "lat": 25.762146599999998,
+      "lng": -80.1933442,
+      "note": ""
+    }
+  },
+  "fancyplantssaladcompany|hollywood": {
+    "name": "Fancy Plants Salad Company",
+    "city": "Hollywood",
+    "reviewedAt": "2026-06-03T00:35:28.372Z",
+    "location": {
+      "decision": "approve",
+      "address": "1940 N 30th Rd #119, Hollywood, FL 33021",
+      "lat": 26.0276976,
+      "lng": -80.1688853,
+      "note": ""
+    }
+  },
+  "woodlandsindiancuisine|lauderhill": {
+    "name": "Woodlands Indian Cuisine",
+    "city": "Lauderhill",
+    "reviewedAt": "2026-06-03T00:35:32.709Z",
+    "location": {
+      "decision": "approve",
+      "address": "4816 N University Dr, Lauderhill, FL 33351",
+      "lat": 26.1849764,
+      "lng": -80.2512189,
+      "note": ""
+    }
+  },
+  "cucinaalfresco|plantation": {
+    "name": "Cucina Al Fresco",
+    "city": "Plantation",
+    "reviewedAt": "2026-06-03T00:35:37.777Z",
+    "location": {
+      "decision": "approve",
+      "address": "6975 W Broward Blvd, Plantation, FL 33317",
+      "lat": 26.121547699999997,
+      "lng": -80.24025,
+      "note": ""
+    }
+  },
+  "10xvegan|pompanobeach": {
+    "name": "10xVegan",
+    "city": "Pompano Beach",
+    "reviewedAt": "2026-06-03T00:35:51.495Z",
+    "location": {
+      "decision": "approve",
+      "address": "1612 S Cypress Rd, Pompano Beach, FL 33060",
+      "lat": 26.210127999999997,
+      "lng": -80.1227983,
+      "note": ""
+    }
+  },
+  "chilln|pompanobeach": {
+    "name": "Chill'n",
+    "city": "Pompano Beach",
+    "reviewedAt": "2026-06-03T00:36:38.076Z",
+    "website": {
+      "decision": "ok",
+      "url": "https://order.toasttab.com/online/chill-n-nitrogen-pompano",
+      "note": ""
+    }
+  },
+  "fancyinaturals|pompanobeach": {
+    "name": "Fancy I Naturals",
+    "city": "Pompano Beach",
+    "reviewedAt": "2026-06-03T00:36:42.606Z",
+    "location": {
+      "decision": "approve",
+      "address": "1940 N 30th Rd #119, Hollywood, FL 33021",
+      "lat": 26.0276976,
+      "lng": -80.1688853,
+      "note": ""
+    }
+  },
+  "pitapita|sunrise": {
+    "name": "Pita Pita",
+    "city": "Sunrise",
+    "reviewedAt": "2026-06-03T00:37:00.331Z",
+    "location": {
+      "decision": "approve",
+      "address": "2275 S University Dr, Davie, FL 33324",
+      "lat": 26.0928506,
+      "lng": -80.2521584,
+      "note": ""
+    }
+  },
+  "rootzsoulcafe|tamarac": {
+    "name": "Rootz Soul Cafe",
+    "city": "Tamarac",
+    "reviewedAt": "2026-06-03T00:37:07.368Z",
+    "location": {
+      "decision": "approve",
+      "address": "1651 S State Rd 7, North Lauderdale, FL 33068",
+      "lat": 26.206366799999998,
+      "lng": -80.2045797,
+      "note": ""
+    }
+  },
+  "rolltogo|weston": {
+    "name": "Roll to GO",
+    "city": "Weston",
+    "reviewedAt": "2026-06-03T00:37:12.621Z",
+    "location": {
+      "decision": "approve",
+      "address": "1328 SW 160th Ave, Sunrise, FL 33326",
+      "lat": 26.104921899999997,
+      "lng": -80.36124,
+      "note": ""
+    }
+  },
+  "zaika|weston": {
+    "name": "Zaika",
+    "city": "Weston",
+    "reviewedAt": "2026-06-03T00:37:17.164Z",
+    "location": {
+      "decision": "approve",
+      "address": "1384 SW 160th Ave, Sunrise, FL 33326",
+      "lat": 26.1031308,
+      "lng": -80.36103229999999,
+      "note": ""
+    }
+  },
+  "treelion|westpark": {
+    "name": "Treelion",
+    "city": "West Park",
+    "reviewedAt": "2026-06-03T00:37:21.077Z",
+    "location": {
+      "decision": "approve",
+      "address": "18400 NW 2nd Ave, Miami Gardens, FL 33169",
+      "lat": 25.9443186,
+      "lng": -80.2061301,
+      "note": ""
+    }
+  },
+  "drsmood|coconutgrove": {
+    "name": "Dr Smood",
+    "city": "Coconut Grove",
+    "reviewedAt": "2026-06-03T00:38:29.522Z",
+    "location": {
+      "decision": "reject",
+      "address": "",
+      "lat": null,
+      "lng": null,
+      "note": "permanently closed."
+    },
+    "closed": "permanent"
+  },
+  "myrootsjuicebar|doral": {
+    "name": "My Roots Juice Bar",
+    "city": "Doral",
+    "reviewedAt": "2026-06-03T00:38:33.677Z",
+    "location": {
+      "decision": "approve",
+      "address": "8530 SW 124th Ave. STE 101, Miami, FL 33183",
+      "lat": 25.6885138,
+      "lng": -80.3941966,
+      "note": ""
+    }
+  },
+  "myrootsjuicebar|kendall": {
+    "name": "My Roots Juice Bar",
+    "city": "Kendall",
+    "reviewedAt": "2026-06-03T00:38:55.253Z",
+    "location": {
+      "decision": "approve",
+      "address": "8530 SW 124th Ave. STE 101, Miami, FL 33183",
+      "lat": 25.6885138,
+      "lng": -80.3941966,
+      "note": "duplicate with My Roots Juice Bar"
+    },
+    "duplicateOf": "myrootsjuicebar|doral"
+  },
+  "aguacate|miami": {
+    "name": "Aguacate",
+    "city": "Miami",
+    "reviewedAt": "2026-06-03T00:40:15.197Z",
+    "website": {
+      "decision": "ok",
+      "url": "https://www.mindbodyonline.com/explore/locations/aguacate-garden-of-love",
+      "note": ""
+    }
+  },
+  "angiesepicurian|miami": {
+    "name": "Angie’s Epicurian",
+    "city": "Miami",
+    "reviewedAt": "2026-06-03T00:41:36.985Z",
+    "location": {
+      "decision": "reject",
+      "address": "",
+      "lat": null,
+      "lng": null,
+      "note": "permanently closed."
+    },
+    "closed": "permanent"
+  },
+  "bunniecakes|miami": {
+    "name": "Bunnie Cakes",
+    "city": "Miami",
+    "reviewedAt": "2026-06-03T00:41:52.463Z",
+    "location": {
+      "decision": "approve",
+      "address": "8450 NW 53rd St Suite H101, Doral, FL 33166",
+      "lat": 25.819640500000002,
+      "lng": -80.3355182,
+      "note": "permanently closed"
+    }
+  },
+  "chocolatechipbakery|miami": {
+    "name": "Chocolate Chip Bakery",
+    "city": "Miami",
+    "reviewedAt": "2026-06-03T00:42:18.855Z",
+    "website": {
+      "decision": "down",
+      "url": "https://chocolatechipbakery.com/",
+      "note": "permanently closed"
+    }
+  },
+  "isabels|miami": {
+    "name": "Isabel's",
+    "city": "Miami",
+    "reviewedAt": "2026-06-03T00:42:44.477Z",
+    "website": {
+      "decision": "down",
+      "url": "https://www.isabelsmiami.com/",
+      "note": ""
+    }
+  },
+  "nabatiicecream|miami": {
+    "name": "Nabati Ice Cream",
+    "city": "Miami",
+    "reviewedAt": "2026-06-03T00:43:18.005Z",
+    "location": {
+      "decision": "approve",
+      "address": "3415 NE 1st Ave, Miami, FL 33137",
+      "lat": 25.808820299999997,
+      "lng": -80.19251919999999,
+      "note": "Name changed. Other details are correct"
+    },
+    "rename": "Banana Daddy"
+  },
+  "mannalife|miami": {
+    "name": "Manna Life",
+    "city": "Miami",
+    "reviewedAt": "2026-06-03T00:47:45.366Z",
+    "location": {
+      "decision": "reject",
+      "address": "200 S Biscayne Blvd Suite 145, Miami, FL 33131",
+      "lat": 39.5374379,
+      "lng": -76.3512482,
+      "note": ""
+    }
+  },
+  "olddayscoffee|miami": {
+    "name": "Old Days Coffee",
+    "city": "Miami",
+    "reviewedAt": "2026-06-03T00:48:02.220Z",
+    "location": {
+      "decision": "approve",
+      "address": "3301 NE 1st Ave, Miami, FL 33137",
+      "lat": 25.807999,
+      "lng": -80.1926969,
+      "note": ""
+    }
+  },
+  "psgreen|miami": {
+    "name": "PS Green",
+    "city": "Miami",
+    "reviewedAt": "2026-06-03T00:48:09.885Z",
+    "location": {
+      "decision": "approve",
+      "address": "2306 E Oakland Park Blvd, Fort Lauderdale, FL 33306",
+      "lat": 26.1668284,
+      "lng": -80.1160007,
+      "note": ""
+    }
+  },
+  "shido|miami": {
+    "name": "Shido",
+    "city": "Miami",
+    "reviewedAt": "2026-06-03T00:48:29.762Z",
+    "location": {
+      "decision": "approve",
+      "address": "239 NW 28th St, Miami, FL 33127",
+      "lat": 25.803108899999998,
+      "lng": -80.1996448,
+      "note": ""
+    }
+  },
+  "huahuastaqueria|miamibeach": {
+    "name": "Huahuas Taqueria",
+    "city": "Miami Beach",
+    "reviewedAt": "2026-06-03T00:49:17.408Z",
+    "location": {
+      "decision": "approve",
+      "address": "820 Collins Ave, Miami Beach, FL 33139",
+      "lat": 25.778544,
+      "lng": -80.1322776,
+      "note": "name changed"
+    },
+    "rename": "Abuela’s Tacos"
+  },
+  "nirvanaplantbasedbistro|miamibeach": {
+    "name": "Nirvana Plant Based Bistro",
+    "city": "Miami Beach",
+    "reviewedAt": "2026-06-03T00:49:45.070Z",
+    "location": {
+      "decision": "approve",
+      "address": "2320 NE 2nd Ave, Miami, FL 33137",
+      "lat": 25.7993632,
+      "lng": -80.1910573,
+      "note": "name changed"
+    },
+    "rename": "Vegan Planet"
+  },
+  "basilicvietnamesegrill|miamigardens": {
+    "name": "Basilic Vietnamese Grill",
+    "city": "Miami Gardens",
+    "reviewedAt": "2026-06-03T00:49:51.741Z",
+    "location": {
+      "decision": "approve",
+      "address": "14734 Biscayne Blvd, North Miami Beach, FL 33181",
+      "lat": 25.911711699999998,
+      "lng": -80.1578847,
+      "note": ""
+    }
+  },
+  "drsmood|southmiami": {
+    "name": "Dr Smood",
+    "city": "South Miami",
+    "reviewedAt": "2026-06-03T00:50:09.385Z",
+    "location": {
+      "decision": "approve",
+      "address": "2616 NW 5th Ave, Miami, FL 33127",
+      "lat": 25.8014708,
+      "lng": -80.20337310000001,
+      "note": ""
+    }
+  },
+  "rawaddiction|southmiami": {
+    "name": "Raw Addiction",
+    "city": "South Miami",
+    "reviewedAt": "2026-06-03T00:50:15.701Z",
+    "location": {
+      "decision": "approve",
+      "address": "10834 Pines Blvd, Pembroke Pines, FL 33026",
+      "lat": 26.0062098,
+      "lng": -80.2919902,
+      "note": ""
+    }
+  },
+  "reggaebeets|": {
+    "name": "Reggae Beets",
+    "city": "",
+    "reviewedAt": "2026-06-03T00:50:24.767Z",
+    "location": {
+      "decision": "approve",
+      "address": "1620 W State Rd 84, Fort Lauderdale, FL 33315",
+      "lat": 26.0897567,
+      "lng": -80.1621986,
+      "note": ""
+    }
+  },
+  "seasideeaterykeylargo|": {
+    "name": "Seaside Eatery Key Largo",
+    "city": "",
+    "reviewedAt": "2026-06-03T00:50:31.707Z",
+    "location": {
+      "decision": "approve",
+      "address": "99900 Overseas Hwy, Key Largo, FL 33037",
+      "lat": 25.0981788,
+      "lng": -80.4373143,
+      "note": ""
+    }
+  },
+  "vegancubancuisine|": {
+    "name": "Vegan Cuban Cuisine",
+    "city": "",
+    "reviewedAt": "2026-06-03T00:50:38.668Z",
+    "location": {
+      "decision": "approve",
+      "address": "9640 SW 72nd St, Miami, FL 33173",
+      "lat": 25.7008355,
+      "lng": -80.34914839999999,
+      "note": ""
+    }
+  },
+  "pamelawasabi|": {
+    "name": "Pamela Wasabi",
+    "city": "",
+    "reviewedAt": "2026-06-03T00:50:47.811Z",
+    "location": {
+      "decision": "approve",
+      "address": "1602 NW 20th St, Miami, FL 33142",
+      "lat": 25.7945089,
+      "lng": -80.221897,
+      "note": ""
+    }
+  },
+  "caribevegan|": {
+    "name": "Caribe Vegan",
+    "city": "",
+    "reviewedAt": "2026-06-03T00:53:42.299Z",
+    "location": {
+      "decision": "approve",
+      "address": "",
+      "lat": null,
+      "lng": null,
+      "note": "permanently closed. it was a mobile food truck anyway."
+    },
+    "website": {
+      "decision": "down",
+      "url": "https://thecaribevegan.com/",
+      "note": ""
+    },
+    "closed": "permanent"
+  },
+  "kravekitchen|": {
+    "name": "Krave Kitchen",
+    "city": "",
+    "reviewedAt": "2026-06-03T00:55:17.085Z",
+    "location": {
+      "decision": "approve",
+      "address": "6350 Pembroke Rd, Miramar, FL 33023",
+      "lat": 25.9951303,
+      "lng": -80.214676,
+      "note": ""
+    },
+    "website": {
+      "decision": "down",
+      "url": "https://thekravekitchen.com/",
+      "note": "the place exists but website down."
+    }
+  },
+  "dubandgrub|": {
+    "name": "Dub and Grub",
+    "city": "",
+    "reviewedAt": "2026-06-03T00:55:24.779Z",
+    "location": {
+      "decision": "approve",
+      "address": "Suit 5 inside treelion, 18400 NW 2nd Ave, Miami Gardens, FL 33169",
+      "lat": 25.9443208,
+      "lng": -80.20611780000002,
+      "note": ""
+    }
+  },
+  "gardendivahummus|": {
+    "name": "Garden Diva Hummus",
+    "city": "",
+    "reviewedAt": "2026-06-03T00:56:11.028Z",
+    "location": {
+      "decision": "approve",
+      "address": "1940 N 30th Rd #303, Hollywood, FL 33021",
+      "lat": 26.028698,
+      "lng": -80.168801,
+      "note": ""
+    },
+    "website": {
+      "decision": "ok",
+      "url": "https://gardendivahummus.com/store-locator/",
+      "note": ""
+    }
+  },
+  "menchies|multiplelocations": {
+    "name": "Menchies",
+    "city": "Multiple Locations",
+    "reviewedAt": "2026-06-03T00:56:17.784Z",
+    "location": {
+      "decision": "approve",
+      "address": "18839b Biscayne Blvd #150, Aventura, FL 33180",
+      "lat": 25.9501785,
+      "lng": -80.1442153,
+      "note": ""
+    }
+  },
+  "ittlelitaly|coralgables": {
+    "name": "Ittle Litaly",
+    "city": "Coral Gables",
+    "reviewedAt": "2026-06-03T00:56:58.364Z",
+    "location": {
+      "decision": "approve",
+      "address": "3808 SW 8th St, Coral Gables, FL 33134",
+      "lat": 25.7645134,
+      "lng": -80.2575567,
+      "note": ""
+    },
+    "website": {
+      "decision": "ok",
+      "url": "https://www.veganlitaly.com/",
+      "note": ""
+    }
+  }
+}

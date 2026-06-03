@@ -68,7 +68,20 @@
         <input type="search" id="search" placeholder="Search name, cuisine, or city…" autocomplete="off" enterkeyhint="search" />
       </div>
 
-      <div class="filters">
+      <div class="actions">
+        <button type="button" class="near-btn" id="filter-near" aria-pressed="false">
+          <span class="near-btn__icon" aria-hidden="true">📍</span>
+          <span class="near-btn__label">Near me</span>
+        </button>
+        <button type="button" class="filters-toggle" id="filters-toggle" aria-expanded="false" aria-controls="filters">
+          <span>Filters</span>
+          <span class="filters-toggle__count" id="filters-count" hidden></span>
+        </button>
+      </div>
+
+      <p class="near-msg" id="near-msg" role="status" hidden></p>
+
+      <div class="filters" id="filters" hidden>
         <select id="filter-county" class="filter" aria-label="Filter by county"></select>
         <select id="filter-type" class="filter" aria-label="Filter by vegan type"></select>
         <select id="filter-cuisine" class="filter" aria-label="Filter by cuisine"></select>

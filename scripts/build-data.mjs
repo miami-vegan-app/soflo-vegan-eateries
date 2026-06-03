@@ -13,6 +13,10 @@ import { fileURLToPath } from "node:url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT_PATH = resolve(__dirname, "../public/data/restaurants.json");
+// Human-review corrections (location/website/rename/duplicate/closed), recorded by
+// scripts/review-server.mjs and COMMITTED to git. Re-applied on every build so they
+// survive the daily sheet sync. Keyed by name+city (restaurantKey).
+const OVERRIDES_PATH = resolve(__dirname, "places-overrides.json");
 
 const SHEET_ID = "1DQ5ys0MHw22qWXmwC_rAbLs7gQfDjFpASDii9beP9zE";
 // The master list, grouped "By County".
@@ -47,6 +51,11 @@ const LEGEND = [
   { code: "V1", label: "Mostly Vegan", description: "Mostly vegan — has honey on the menu." },
   { code: "VO", label: "Vegan Options", description: "Ask for vegan options." },
 ];
+
+// Fields owned by scripts/enrich-places.mjs (Google Places API), not the sheet. The
+// daily rebuild must carry these forward from the previous restaurants.json or it would
+// wipe them. Keep this list in sync with ENRICHED_FIELDS in enrich-places.mjs.
+const ENRICHED_FIELDS = ["address", "lat", "lng", "businessStatus", "businessStatusAt", "placeId", "matchConfidence"];
 
 // --- Minimal but correct CSV parser (handles quoted fields, escaped quotes, CRLF) ---
 function parseCsv(text) {
@@ -89,13 +98,24 @@ function titleCaseCity(s) {
     .replace(/\bFt\b/g, "Ft.");
 }
 
+// Known-bad website hostnames in the sheet -> the correct hostname. The sheet owners
+// sometimes leave a typo'd URL up; we serve the working one regardless. Keyed by lowercase
+// hostname (without scheme), so it applies no matter how the cell is otherwise formatted.
+const WEBSITE_HOST_FIXES = new Map([
+  // "mearket" typo — the typo'd domain doesn't resolve; the corrected one returns 200.
+  ["ygfarmersmearket.com", "ygfarmersmarket.com"],
+]);
+
 function normalizeWebsite(raw) {
   let w = cleanCell(raw);
   if (!w) return "";
   if (!/^https?:\/\//i.test(w)) w = "https://" + w.replace(/^\/+/, "");
   try {
     // Validate; return normalized form.
-    return new URL(w).href;
+    const url = new URL(w);
+    const fixed = WEBSITE_HOST_FIXES.get(url.hostname.toLowerCase());
+    if (fixed) url.hostname = fixed;
+    return url.href;
   } catch {
     return "";
   }
@@ -238,9 +258,126 @@ function main() {
     });
 }
 
+// Layers the human-review corrections and Google business-status on top of the freshly
+// parsed sheet rows. Runs AFTER the enrichment carry-forward, so it overrides the cached
+// address/website where a human made a call. Mutates `restaurants` in place.
+//
+// Outputs (consumed by public/app.js):
+//   r.hidden / r.hiddenReason   — drop from the list (permanently closed or duplicate)
+//   r.closedTemporarily / r.closedSince — show a "temporarily closed (as of …)" tag
+//   r.formerName                — show a subtle "formerly …" note after a rename
+function applyOverridesAndStatus(restaurants) {
+  let overrides = {};
+  if (existsSync(OVERRIDES_PATH)) {
+    try { overrides = JSON.parse(readFileSync(OVERRIDES_PATH, "utf8")); }
+    catch { console.warn("Warning: places-overrides.json is unreadable — skipping overrides."); }
+  }
+
+  let renamed = 0;
+  for (const r of restaurants) {
+    // 1) Closure straight from Google Places (status was carried forward onto the row).
+    if (r.businessStatus === "CLOSED_PERMANENTLY") {
+      r.hidden = true;
+      r.hiddenReason = "closed_permanently";
+    } else if (r.businessStatus === "CLOSED_TEMPORARILY") {
+      r.closedTemporarily = true;
+      r.closedSince = r.businessStatusAt || "";
+    }
+
+    // Match on the ORIGINAL sheet name+city — compute the key before any rename below.
+    const o = overrides[restaurantKey(r)];
+    if (!o) continue;
+
+    if (o.location) {
+      const L = o.location;
+      if (L.decision === "approve") {
+        if (L.address) r.address = L.address;
+        if (typeof L.lat === "number") r.lat = L.lat;
+        if (typeof L.lng === "number") r.lng = L.lng;
+        r.matchConfidence = "verified"; // a human confirmed the pin
+      } else if (L.decision === "reject") {
+        // No trustworthy location — drop the (possibly wrong) pin so it can't feed
+        // distance sorting or a map marker. The card still shows unless also hidden.
+        r.address = "";
+        r.lat = null;
+        r.lng = null;
+        r.matchConfidence = "rejected";
+      }
+    }
+
+    if (o.website) {
+      if (o.website.decision === "ok") {
+        delete r.websiteStatus;                 // human confirmed it works — restore the link
+        if (o.website.url) r.website = o.website.url;
+      } else if (o.website.decision === "down") {
+        r.websiteStatus = "down";
+      }
+    }
+
+    // 2) Manual closure for places Google still lists as open (food trucks, wrong-match pins).
+    if (o.closed === "permanent") {
+      r.hidden = true;
+      r.hiddenReason = "closed_permanently";
+    } else if (o.closed === "temporary") {
+      r.closedTemporarily = true;
+      if (!r.closedSince) r.closedSince = o.reviewedAt || "";
+    }
+
+    // 3) Duplicate row — hide the loser, keep the canonical one it points at.
+    if (o.duplicateOf) {
+      r.hidden = true;
+      r.hiddenReason = "duplicate";
+    }
+
+    // 4) Rename to a clean display name; keep the former name for a "formerly …" note.
+    if (o.rename && o.rename !== r.name) {
+      r.formerName = r.name;
+      r.name = o.rename;
+      renamed++;
+    }
+  }
+
+  const hidden = restaurants.filter((r) => r.hidden).length;
+  const temp = restaurants.filter((r) => r.closedTemporarily && !r.hidden).length;
+  console.log(
+    `Overrides + status applied: ${hidden} hidden (closed/dupe), ` +
+      `${temp} temporarily-closed (tagged), ${renamed} renamed.`
+  );
+}
+
 function finalize(restaurants, sourceUpdated) {
   const counties = [...new Set(restaurants.map((r) => r.county))];
   const now = new Date().toISOString();
+
+  // Carry forward Places-API enrichment (address/lat/lng/status) from the previous
+  // build — those fields come from enrich-places.mjs, not the sheet, so a fresh sheet
+  // parse must not erase them. Matched by name+city via restaurantKey().
+  if (existsSync(OUT_PATH)) {
+    try {
+      const prev = JSON.parse(readFileSync(OUT_PATH, "utf8"));
+      const byKey = new Map((prev.restaurants || []).map((r) => [restaurantKey(r), r]));
+      for (const r of restaurants) {
+        const old = byKey.get(restaurantKey(r));
+        if (!old) continue;
+        for (const f of ENRICHED_FIELDS) {
+          if (old[f] !== undefined) r[f] = old[f];
+        }
+        // Carry forward the website down-flag (set by scripts/check-websites.mjs --write),
+        // but ONLY while the URL is unchanged. If the sheet now has a different website,
+        // the old verdict no longer applies — drop it so the new URL gets re-checked fresh.
+        if (old.websiteStatus === "down" && old.website === r.website) {
+          r.websiteStatus = old.websiteStatus;
+          if (old.websiteCheckedAt !== undefined) r.websiteCheckedAt = old.websiteCheckedAt;
+        }
+      }
+    } catch {
+      /* no usable previous file — nothing to carry forward */
+    }
+  }
+
+  // Layer human-review corrections + Google business-status on top (after carry-forward,
+  // so a human verdict overrides the cached enrichment).
+  applyOverridesAndStatus(restaurants);
 
   // Everything except the timestamps — used to detect whether the list actually changed.
   const data = {

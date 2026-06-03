@@ -192,6 +192,76 @@ select, .browser-pick select {
 }
 .toggle input { width: 18px; height: 18px; accent-color: var(--teal); }
 
+.actions {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+  margin-top: 9px;
+}
+.near-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.96);
+  color: var(--teal-deep);
+  border: 1.5px solid transparent;
+  border-radius: 12px;
+  padding: 11px 12px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.filters-toggle {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  border: 1.5px solid rgba(255, 255, 255, 0.35);
+  border-radius: 12px;
+  padding: 11px 16px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.filters-toggle[aria-expanded="true"] {
+  background: rgba(255, 255, 255, 0.96);
+  color: var(--teal-deep);
+  border-color: transparent;
+}
+.filters-toggle__count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 999px;
+  background: var(--teal-deep);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+.filters-toggle[aria-expanded="true"] .filters-toggle__count {
+  background: var(--teal-deep);
+}
+.near-btn:disabled { opacity: 0.7; cursor: default; }
+.near-btn.is-active {
+  background: var(--teal-deep);
+  color: #fff;
+  border-color: var(--teal-deep);
+}
+.near-msg {
+  margin: 8px 0 0;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.18);
+  border-radius: 10px;
+  padding: 8px 11px;
+}
+
 .meta-row {
   display: flex;
   align-items: center;
@@ -256,6 +326,18 @@ select, .browser-pick select {
 .card__cuisine { font-size: 0.86rem; color: var(--ink-soft); }
 .card__row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 0.82rem; color: var(--ink-soft); }
 .card__row .dot { opacity: 0.4; }
+.card__dist { font-weight: 700; color: var(--teal-deep); }
+.card__former { font-size: 0.78rem; color: var(--ink-soft); font-style: italic; margin: 1px 0 2px; }
+.card__closed {
+  display: inline-block;
+  margin: 4px 0 2px;
+  padding: 2px 8px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #8a5a00;
+  background: #fdf0d5;
+  border-radius: 999px;
+}
 
 .badge {
   flex: 0 0 auto;
@@ -275,8 +357,14 @@ select, .browser-pick select {
 
 .chip-outdoor { color: var(--teal-deep); font-weight: 600; }
 
-.card__link {
+.card__links {
   margin-top: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 14px;
+}
+.card__link {
   font-size: 0.88rem;
   font-weight: 600;
   text-decoration: none;
@@ -284,6 +372,8 @@ select, .browser-pick select {
   word-break: break-word;
 }
 .card__link::after { content: " ↗"; opacity: 0.7; }
+.card__link--maps::before { content: "📍 "; }
+.card__link--maps::after { content: ""; }
 
 .empty {
   text-align: center;
@@ -316,6 +406,6 @@ select, .browser-pick select {
   .appbar { padding-left: 22px; padding-right: 22px; }
   .filters { grid-template-columns: 1fr 1fr 1fr; }
   .toggle { grid-column: auto; }
-  .appbar__row, .search, .filters, .meta-row, .legend { max-width: 720px; margin-left: auto; margin-right: auto; }
-  .search, .filters, .meta-row, .legend { margin-top: 10px; }
+  .appbar__row, .search, .actions, .filters, .near-msg, .meta-row, .legend { max-width: 720px; margin-left: auto; margin-right: auto; }
+  .search, .actions, .filters, .meta-row, .legend { margin-top: 10px; }
 }
