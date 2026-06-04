@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-03T20:29:11.541Z",
-  "checkedAt": "2026-06-03T20:29:11.541Z",
+  "updatedAt": "2026-06-04T17:58:05.461Z",
+  "checkedAt": "2026-06-04T17:58:05.461Z",
   "sourceUpdated": "May 9, 2026",
   "source": "https://docs.google.com/spreadsheets/d/1DQ5ys0MHw22qWXmwC_rAbLs7gQfDjFpASDii9beP9zE/edit",
   "count": 310,
@@ -1054,9 +1054,6 @@
       "address": "328 Fern St, West Palm Beach, FL 33401",
       "lat": 26.7102325,
       "lng": -80.0532061,
-      "businessStatus": "OPERATIONAL",
-      "businessStatusAt": "2026-06-02T20:48:00.133Z",
-      "placeId": "ChIJYx65DIrW2IgRpT-agsInzRs",
       "matchConfidence": "verified"
     },
     {
