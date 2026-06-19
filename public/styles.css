@@ -491,10 +491,24 @@ select, .browser-pick select {
   word-break: break-word;
 }
 
-/* Comment form */
+/* Comment form toggle + form */
+.comment-form__toggle {
+  margin-top: 18px;
+  width: 100%;
+  padding: 12px 14px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--teal-deep);
+  text-align: left;
+}
+.comment-form__toggle:hover { background: #e8f0f4; }
+
 .comment-form {
-  margin-top: 20px;
-  padding-top: 18px;
+  margin-top: 12px;
+  padding-top: 16px;
   border-top: 1px solid var(--line);
 }
 .comment-form__heading {

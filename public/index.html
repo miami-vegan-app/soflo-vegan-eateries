@@ -129,9 +129,11 @@
       </div>
       <div class="modal__body">
         <div id="comments-list"></div>
-        <form id="comment-form" class="comment-form" novalidate>
-          <h3 class="comment-form__heading">Leave a comment</h3>
-          <!-- Honeypot: must stay empty; bots fill it and get silently dropped -->
+        <button type="button" class="comment-form__toggle" id="comment-form-toggle" aria-expanded="false">
+          + Leave a comment
+        </button>
+        <form id="comment-form" class="comment-form" novalidate hidden>
+          <!-- Honeypot: bots fill hidden fields; we drop those submissions silently -->
           <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0" />
           <div class="comment-form__field">
             <label for="comment-author">Your name</label>

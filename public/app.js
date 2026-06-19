@@ -454,6 +454,7 @@
   const commentForm = $("#comment-form");
   const commentFormMsg = $("#comment-form-msg");
   let currentCommentKey = null;
+  const commentFormToggle = $("#comment-form-toggle");
 
   function starsHtml(rating) {
     if (!rating) return "";
@@ -504,12 +505,22 @@
     }
   }
 
+  commentFormToggle.addEventListener("click", () => {
+    const expanded = commentForm.hidden === false;
+    commentForm.hidden = expanded;
+    commentFormToggle.setAttribute("aria-expanded", String(!expanded));
+    commentFormToggle.textContent = expanded ? "+ Leave a comment" : "− Leave a comment";
+  });
+
   function openCommentsModal(key, name) {
     currentCommentKey = key;
     modalTitle.textContent = name;
     commentsModal.hidden = false;
     document.body.style.overflow = "hidden";
     commentForm.reset();
+    commentForm.hidden = true;
+    commentFormToggle.textContent = "+ Leave a comment";
+    commentFormToggle.setAttribute("aria-expanded", "false");
     commentFormMsg.hidden = true;
     fetchComments(key);
   }
