@@ -119,6 +119,46 @@
     </footer>
   </div>
 
+  <!-- Comments bottom sheet -->
+  <div id="comments-modal" class="modal" hidden role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal__backdrop"></div>
+    <div class="modal__sheet">
+      <div class="modal__header">
+        <h2 class="modal__title" id="modal-title"></h2>
+        <button class="modal__close" id="modal-close" aria-label="Close comments">✕</button>
+      </div>
+      <div class="modal__body">
+        <div id="comments-list"></div>
+        <form id="comment-form" class="comment-form" novalidate>
+          <h3 class="comment-form__heading">Leave a comment</h3>
+          <!-- Honeypot: must stay empty; bots fill it and get silently dropped -->
+          <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0" />
+          <div class="comment-form__field">
+            <label for="comment-author">Your name</label>
+            <input type="text" id="comment-author" maxlength="80" placeholder="Anonymous" autocomplete="name" />
+          </div>
+          <div class="comment-form__field">
+            <label for="comment-rating">Rating <span class="comment-form__optional">(optional)</span></label>
+            <select id="comment-rating">
+              <option value="">No rating</option>
+              <option value="5">★★★★★</option>
+              <option value="4">★★★★☆</option>
+              <option value="3">★★★☆☆</option>
+              <option value="2">★★☆☆☆</option>
+              <option value="1">★☆☆☆☆</option>
+            </select>
+          </div>
+          <div class="comment-form__field">
+            <label for="comment-body">Comment <span class="comment-form__req">*</span></label>
+            <textarea id="comment-body" maxlength="500" rows="3" placeholder="Share your experience…"></textarea>
+          </div>
+          <div id="comment-form-msg" class="comment-form__msg" hidden></div>
+          <button type="submit" class="btn btn--primary">Post comment</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
   <script src="app.js"></script>
 </body>
 </html>

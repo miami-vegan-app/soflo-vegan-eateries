@@ -134,6 +134,11 @@
       ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])
     );
 
+  function restaurantKey(r) {
+    const norm = (s) => (s ?? "").toString().toLowerCase().replace(/[^a-z0-9]/g, "");
+    return `${norm(r.name)}|${norm(r.city)}`;
+  }
+
   function fillSelect(el, items, allLabel) {
     el.innerHTML =
       `<option value="">${allLabel}</option>` +
@@ -229,9 +234,8 @@
     const mapsLink = maps
       ? `<a class="card__link card__link--maps" href="${escapeHtml(maps)}" target="_blank" rel="noopener">Directions</a>`
       : "";
-    const links = websiteLink || mapsLink
-      ? `<div class="card__links">${websiteLink}${mapsLink}</div>`
-      : "";
+    const commentsBtn = `<button class="card__comments-btn" data-key="${escapeHtml(restaurantKey(r))}" data-name="${escapeHtml(r.name)}">💬 Comments</button>`;
+    const links = `<div class="card__links">${websiteLink}${mapsLink}${commentsBtn}</div>`;
     return (
       `<article class="card ${r.type === "V" ? "card--v" : ""}">` +
         `<div class="card__top">` +
@@ -432,6 +436,133 @@
   });
 
   /* -------------------------------------------------- *
+   *  Comments modal
+   * -------------------------------------------------- */
+  const commentsModal = $("#comments-modal");
+  const modalTitle = $("#modal-title");
+  const commentsList = $("#comments-list");
+  const commentForm = $("#comment-form");
+  const commentFormMsg = $("#comment-form-msg");
+  let currentCommentKey = null;
+
+  function starsHtml(rating) {
+    if (!rating) return "";
+    return `<span class="comment__stars">${"★".repeat(rating)}${"☆".repeat(5 - rating)}</span>`;
+  }
+
+  function timeAgo(iso) {
+    const diff = Date.now() - new Date(iso).getTime();
+    const mins = Math.floor(diff / 60000);
+    if (mins < 1) return "just now";
+    if (mins < 60) return `${mins}m ago`;
+    const hrs = Math.floor(mins / 60);
+    if (hrs < 24) return `${hrs}h ago`;
+    const days = Math.floor(hrs / 24);
+    if (days < 30) return `${days}d ago`;
+    return new Date(iso).toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
+  }
+
+  function renderComments(comments) {
+    if (!comments.length) {
+      commentsList.innerHTML = `<p class="comments-empty">No comments yet — be the first!</p>`;
+      return;
+    }
+    commentsList.innerHTML = comments
+      .map(
+        (c) =>
+          `<div class="comment">` +
+            `<div class="comment__meta">` +
+              `<span class="comment__author">${escapeHtml(c.author)}</span>` +
+              starsHtml(c.rating) +
+              `<span class="comment__time">${timeAgo(c.created_at)}</span>` +
+            `</div>` +
+            `<p class="comment__body">${escapeHtml(c.body)}</p>` +
+          `</div>`
+      )
+      .join("");
+  }
+
+  async function fetchComments(key) {
+    commentsList.innerHTML = `<p class="comments-loading">Loading…</p>`;
+    try {
+      const res = await fetch(`/api/comments?key=${encodeURIComponent(key)}`);
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      const data = await res.json();
+      renderComments(data.comments || []);
+    } catch {
+      commentsList.innerHTML = `<p class="comments-empty">Could not load comments. Please try again.</p>`;
+    }
+  }
+
+  function openCommentsModal(key, name) {
+    currentCommentKey = key;
+    modalTitle.textContent = name;
+    commentsModal.hidden = false;
+    document.body.style.overflow = "hidden";
+    commentForm.reset();
+    commentFormMsg.hidden = true;
+    fetchComments(key);
+  }
+
+  function closeCommentsModal() {
+    commentsModal.hidden = true;
+    document.body.style.overflow = "";
+    currentCommentKey = null;
+  }
+
+  $("#modal-close").addEventListener("click", closeCommentsModal);
+  commentsModal.addEventListener("click", (e) => {
+    if (e.target === commentsModal || e.target.classList.contains("modal__backdrop")) {
+      closeCommentsModal();
+    }
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !commentsModal.hidden) closeCommentsModal();
+  });
+
+  commentForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const honeypot = commentForm.querySelector('[name="website"]').value;
+    const body = $("#comment-body").value.trim();
+    const author = $("#comment-author").value.trim() || "Anonymous";
+    const ratingVal = $("#comment-rating").value ? parseInt($("#comment-rating").value, 10) : null;
+
+    if (!body) {
+      commentFormMsg.textContent = "Please write a comment before posting.";
+      commentFormMsg.className = "comment-form__msg comment-form__msg--error";
+      commentFormMsg.hidden = false;
+      return;
+    }
+
+    const submitBtn = commentForm.querySelector('[type="submit"]');
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Posting…";
+    commentFormMsg.hidden = true;
+
+    try {
+      const res = await fetch("/api/comments", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ key: currentCommentKey, author, rating: ratingVal, body, honeypot }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Unknown error");
+      commentForm.reset();
+      commentFormMsg.textContent = "Comment posted!";
+      commentFormMsg.className = "comment-form__msg comment-form__msg--ok";
+      commentFormMsg.hidden = false;
+      fetchComments(currentCommentKey);
+    } catch (err) {
+      commentFormMsg.textContent = err.message || "Failed to post. Please try again.";
+      commentFormMsg.className = "comment-form__msg comment-form__msg--error";
+      commentFormMsg.hidden = false;
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Post comment";
+    }
+  });
+
+  /* -------------------------------------------------- *
    *  Filters panel — collapsed by default to give the
    *  listing more room. A badge shows how many are active.
    * -------------------------------------------------- */
@@ -470,6 +601,13 @@
   /* -------------------------------------------------- *
    *  Boot
    * -------------------------------------------------- */
+  // Event delegation for comments buttons — cards are re-rendered on every filter
+  // change so we can't attach listeners directly to buttons.
+  resultsEl.addEventListener("click", (e) => {
+    const btn = e.target.closest(".card__comments-btn");
+    if (btn) openCommentsModal(btn.dataset.key, btn.dataset.name);
+  });
+
   $("#app").hidden = false;
   maybeShowSetup();
   loadData();

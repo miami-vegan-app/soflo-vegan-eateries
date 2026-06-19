@@ -4,7 +4,15 @@
   // connected Cloudflare account, so no token is needed in the build.
   "name": "soflo-vegan-eateries",
   "compatibility_date": "2026-05-28",
+  "main": "worker.js",
   "assets": {
     "directory": "./public"
-  }
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "soflo-comments",
+      "database_id": "3de325b8-3dad-48d4-81c6-2f8c081c7951"
+    }
+  ]
 }

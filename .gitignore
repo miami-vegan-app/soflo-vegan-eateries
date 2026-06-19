@@ -7,5 +7,6 @@ scripts/.places-cache.json
 website-report.html
 *.local
 .env
+places_API_key.txt
 vegan app.txt
 .wrangler/
