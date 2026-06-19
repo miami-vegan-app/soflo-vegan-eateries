@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-04T17:58:05.461Z",
-  "checkedAt": "2026-06-19T17:03:37.226Z",
+  "updatedAt": "2026-06-19T20:16:54.642Z",
+  "checkedAt": "2026-06-19T20:16:54.642Z",
   "sourceUpdated": "May 9, 2026",
   "source": "https://docs.google.com/spreadsheets/d/1DQ5ys0MHw22qWXmwC_rAbLs7gQfDjFpASDii9beP9zE/edit",
   "count": 310,
@@ -1281,7 +1281,9 @@
       "businessStatus": "OPERATIONAL",
       "businessStatusAt": "2026-06-02T20:48:04.494Z",
       "placeId": "ChIJWw21e84p34gReYPQf9wXi9k",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
       "name": "AGLIOLIO",

@@ -1,4 +1,10 @@
 {
+  "mood|tequesta": {
+    "name": "MOOD",
+    "city": "Tequesta",
+    "reviewedAt": "2026-06-19T00:00:00.000Z",
+    "closed": "permanent"
+  },
   "basilicvietnamesegrill|bocaraton": {
     "name": "Basilic Vietnamese Grill",
     "city": "Boca Raton",
