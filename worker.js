@@ -11,6 +11,16 @@ function json(data, status = 200) {
   });
 }
 
+async function handleGetCounts(env) {
+  const { results } = await env.DB.prepare(
+    "SELECT restaurant_key, COUNT(*) as count FROM comments GROUP BY restaurant_key"
+  ).all();
+
+  const counts = {};
+  for (const row of results) counts[row.restaurant_key] = row.count;
+  return json({ counts });
+}
+
 async function handleGetComments(url, env) {
   const key = url.searchParams.get("key") || "";
   if (!key) return json({ error: "Missing restaurant key" }, 400);
@@ -61,6 +71,10 @@ export default {
 
     if (request.method === "OPTIONS") {
       return new Response(null, { status: 204, headers: CORS });
+    }
+
+    if (url.pathname === "/api/comment-counts" && request.method === "GET") {
+      return handleGetCounts(env);
     }
 
     if (url.pathname === "/api/comments") {

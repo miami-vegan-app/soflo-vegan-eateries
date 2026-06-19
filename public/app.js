@@ -123,6 +123,7 @@
   const resultsEl = $("#results");
   const countEl = $("#result-count");
   let RESTAURANTS = [];
+  let commentCounts = new Map();
 
   // "Near me" state: the user's location (once granted) and whether we're currently
   // sorting by distance. userLoc is cached so toggling off/on doesn't re-prompt.
@@ -234,7 +235,9 @@
     const mapsLink = maps
       ? `<a class="card__link card__link--maps" href="${escapeHtml(maps)}" target="_blank" rel="noopener">Directions</a>`
       : "";
-    const commentsBtn = `<button class="card__comments-btn" data-key="${escapeHtml(restaurantKey(r))}" data-name="${escapeHtml(r.name)}">💬 Comments</button>`;
+    const key = restaurantKey(r);
+    const count = commentCounts.get(key) || 0;
+    const commentsBtn = `<button class="card__comments-btn" data-key="${escapeHtml(key)}" data-name="${escapeHtml(r.name)}">💬 ${count > 0 ? `Comments (${count})` : "Comments"}</button>`;
     const links = `<div class="card__links">${websiteLink}${mapsLink}${commentsBtn}</div>`;
     return (
       `<article class="card ${r.type === "V" ? "card--v" : ""}">` +
@@ -357,6 +360,13 @@
         renderLegend(data.legend || []);
         initFilters(data);
         applyFilters();
+        fetch("/api/comment-counts")
+          .then((r) => r.json())
+          .then((data) => {
+            commentCounts = new Map(Object.entries(data.counts || {}));
+            applyFilters();
+          })
+          .catch(() => {});
       })
       .catch((err) => {
         $("#updated-note").textContent = "Could not load data.";
@@ -551,6 +561,11 @@
       commentFormMsg.textContent = "Comment posted!";
       commentFormMsg.className = "comment-form__msg comment-form__msg--ok";
       commentFormMsg.hidden = false;
+      const newCount = (commentCounts.get(currentCommentKey) || 0) + 1;
+      commentCounts.set(currentCommentKey, newCount);
+      document.querySelectorAll(`.card__comments-btn[data-key="${currentCommentKey}"]`).forEach((btn) => {
+        btn.textContent = `💬 Comments (${newCount})`;
+      });
       fetchComments(currentCommentKey);
     } catch (err) {
       commentFormMsg.textContent = err.message || "Failed to post. Please try again.";
