@@ -259,6 +259,7 @@
     const type = $("#filter-type").value;
     const cuisine = $("#filter-cuisine").value;
     const outdoorOnly = $("#filter-outdoor").checked;
+    const reviewsOnly = $("#filter-has-reviews").checked;
     updateFilterCount();
 
     const filtered = RESTAURANTS.filter((r) => {
@@ -266,6 +267,7 @@
       if (type && r.type !== type) return false;
       if (cuisine && r.cuisine !== cuisine) return false;
       if (outdoorOnly && !r.outdoorSeating) return false;
+      if (reviewsOnly && !commentCounts.get(restaurantKey(r))) return false;
       if (q) {
         const hay = `${r.name} ${r.formerName || ""} ${r.cuisine} ${r.city}`.toLowerCase();
         if (!hay.includes(q)) return false;
@@ -336,7 +338,7 @@
     });
     fillSelect($("#filter-cuisine"), cuisines, "All cuisines");
 
-    ["search", "filter-county", "filter-type", "filter-cuisine", "filter-outdoor"].forEach((id) => {
+    ["search", "filter-county", "filter-type", "filter-cuisine", "filter-outdoor", "filter-has-reviews"].forEach((id) => {
       const el = document.getElementById(id);
       el.addEventListener(el.tagName === "INPUT" && el.type !== "checkbox" ? "input" : "change", applyFilters);
     });
@@ -602,6 +604,7 @@
     if ($("#filter-type").value) n++;
     if ($("#filter-cuisine").value) n++;
     if ($("#filter-outdoor").checked) n++;
+    if ($("#filter-has-reviews").checked) n++;
     if (n > 0) {
       filtersCount.textContent = String(n);
       filtersCount.hidden = false;
