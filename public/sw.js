@@ -2,7 +2,7 @@
  * App shell: cache-first. Data: stale-while-revalidate.
  * Bump CACHE_VERSION to force clients to pick up new shell assets.
  */
-const CACHE_VERSION = "v1";
+const CACHE_VERSION = "v2";
 const SHELL_CACHE = `soflo-shell-${CACHE_VERSION}`;
 const DATA_CACHE = `soflo-data-${CACHE_VERSION}`;
 
