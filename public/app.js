@@ -5,6 +5,9 @@
   const SETUP_KEY = "sofloveg_setup_done";
 
   const $ = (sel) => document.querySelector(sel);
+  const track = (name, params) => {
+    if (typeof gtag === "function") gtag("event", name, params || {});
+  };
 
   /* -------------------------------------------------- *
    *  Standalone / install detection
@@ -95,6 +98,7 @@
     renderSteps();
     setupScreen.hidden = false;
     document.documentElement.scrollTop = 0;
+    track("install_instructions_viewed");
   }
 
   function closeSetup(remember) {
@@ -342,6 +346,21 @@
       const el = document.getElementById(id);
       el.addEventListener(el.tagName === "INPUT" && el.type !== "checkbox" ? "input" : "change", applyFilters);
     });
+
+    const filterLabels = { "filter-county": "county", "filter-type": "type", "filter-cuisine": "cuisine", "filter-outdoor": "outdoor_seating", "filter-has-reviews": "has_reviews" };
+    ["filter-county", "filter-type", "filter-cuisine", "filter-outdoor", "filter-has-reviews"].forEach((id) => {
+      const el = document.getElementById(id);
+      el.addEventListener("change", () => {
+        const val = el.type === "checkbox" ? el.checked : el.value;
+        if (val) track("filter_applied", { filter_name: filterLabels[id], filter_value: String(val) });
+      });
+    });
+    let searchDebounce;
+    document.getElementById("search").addEventListener("input", () => {
+      clearTimeout(searchDebounce);
+      const q = document.getElementById("search").value.trim();
+      if (q.length >= 2) searchDebounce = setTimeout(() => track("search", { search_term: q }), 800);
+    });
   }
 
   function loadData() {
@@ -414,6 +433,7 @@
         nearBtn.disabled = false;
         updateNearBtn();
         applyFilters();
+        track("near_me_toggled", { active: true });
       },
       (err) => {
         nearBtn.disabled = false;
@@ -435,6 +455,7 @@
       nearActive = false;
       updateNearBtn();
       applyFilters();
+      track("near_me_toggled", { active: false });
       return;
     }
     setNearMsg("");
@@ -442,6 +463,7 @@
       nearActive = true;
       updateNearBtn();
       applyFilters();
+      track("near_me_toggled", { active: true });
       return;
     }
     requestNearMe();
@@ -525,6 +547,7 @@
     commentFormToggle.setAttribute("aria-expanded", "false");
     commentFormMsg.hidden = true;
     fetchComments(key);
+    track("comments_opened", { restaurant_name: name });
   }
 
   function closeCommentsModal() {
@@ -580,6 +603,7 @@
         btn.textContent = `💬 Comments (${newCount})`;
       });
       fetchComments(currentCommentKey);
+      track("comment_submitted", { restaurant_name: modalTitle.textContent });
     } catch (err) {
       commentFormMsg.textContent = err.message || "Failed to post. Please try again.";
       commentFormMsg.className = "comment-form__msg comment-form__msg--error";
@@ -634,12 +658,18 @@
   // change so we can't attach listeners directly to buttons.
   resultsEl.addEventListener("click", (e) => {
     const btn = e.target.closest(".card__comments-btn");
-    if (btn) openCommentsModal(btn.dataset.key, btn.dataset.name);
+    if (btn) { openCommentsModal(btn.dataset.key, btn.dataset.name); return; }
+    const link = e.target.closest(".card__link");
+    if (link) {
+      const name = link.closest(".card")?.querySelector(".card__name")?.textContent || "";
+      track(link.classList.contains("card__link--maps") ? "directions_clicked" : "website_clicked", { restaurant_name: name });
+    }
   });
 
   $("#app").hidden = false;
   maybeShowSetup();
   loadData();
+  if (typeof gtag === "function") gtag("set", "user_properties", { pwa_mode: isStandalone() ? "standalone" : "browser" });
 
   // Service worker for offline support
   if ("serviceWorker" in navigator) {
