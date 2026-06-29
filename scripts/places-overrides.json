@@ -1,4 +1,27 @@
 {
+  "ontherun|miami": {
+    "name": "On the Run",
+    "city": "Miami",
+    "reviewedAt": "2026-06-29T00:00:00.000Z",
+    "rename": "On the Run Vegan",
+    "website": {
+      "decision": "ok",
+      "url": "https://on-the-run-vegan.gofoodtruck.net/",
+      "note": "Official food truck site. Clover ordering link was the old sheet entry."
+    },
+    "location": {
+      "decision": "approve",
+      "address": "34 NW 29th St, Miami, FL 33127",
+      "lat": 25.803766099999997,
+      "lng": -80.1956738,
+      "note": "Original auto-match (placeId ChIJoeYXHbW22YgRTwjuaSPJBxc) was wrong — pointed to 'Subs On The Run', an unrelated brick-and-mortar deli. Correct place is the On the Run Vegan food truck. Coordinates verified via enrich-places 2026-06-29."
+    },
+    "set": {
+      "cuisine": "Food Truck / Burgers / Tacos",
+      "placeId": "ChIJFTogcxKx2YgRitqY0RfItc8",
+      "businessStatus": "OPERATIONAL"
+    }
+  },
   "mood|tequesta": {
     "name": "MOOD",
     "city": "Tequesta",

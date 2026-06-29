@@ -335,6 +335,13 @@ function applyOverridesAndStatus(restaurants) {
       r.name = o.rename;
       renamed++;
     }
+
+    // 5) Generic field overrides — set any scalar field the sheet got wrong.
+    if (o.set && typeof o.set === "object") {
+      for (const [key, val] of Object.entries(o.set)) {
+        r[key] = val;
+      }
+    }
   }
 
   const hidden = restaurants.filter((r) => r.hidden).length;

@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-19T20:16:54.642Z",
-  "checkedAt": "2026-06-28T12:19:45.778Z",
+  "updatedAt": "2026-06-29T07:36:31.796Z",
+  "checkedAt": "2026-06-29T07:36:31.796Z",
   "sourceUpdated": "May 9, 2026",
   "source": "https://docs.google.com/spreadsheets/d/1DQ5ys0MHw22qWXmwC_rAbLs7gQfDjFpASDii9beP9zE/edit",
   "count": 310,
@@ -4779,21 +4779,21 @@
       "matchConfidence": "verified"
     },
     {
-      "name": "On the Run",
+      "name": "On the Run Vegan",
       "city": "Miami",
       "county": "Miami / Dade County",
-      "cuisine": "Restaurant",
+      "cuisine": "Food Truck / Burgers / Tacos",
       "type": "V",
       "typeLabel": "Vegan",
-      "website": "https://www.clover.com/online-ordering/on-the-run-vegan-miami",
+      "website": "https://on-the-run-vegan.gofoodtruck.net/",
       "outdoorSeating": false,
-      "address": "2801 NW 7th Ave, Miami, FL 33127",
-      "lat": 25.802760499999998,
-      "lng": -80.2071248,
-      "businessStatus": "OPERATIONAL",
-      "businessStatusAt": "2026-06-02T20:49:31.717Z",
-      "placeId": "ChIJoeYXHbW22YgRTwjuaSPJBxc",
-      "matchConfidence": "high"
+      "address": "34 NW 29th St, Miami, FL 33127",
+      "lat": 25.803766099999997,
+      "lng": -80.1956738,
+      "matchConfidence": "verified",
+      "formerName": "On the Run",
+      "placeId": "ChIJFTogcxKx2YgRitqY0RfItc8",
+      "businessStatus": "OPERATIONAL"
     },
     {
       "name": "Plant Miami",
