@@ -382,6 +382,46 @@ function finalize(restaurants, sourceUpdated) {
     }
   }
 
+  // Inject new restaurants from scripts/new-restaurants.json (added by verify-happycow-missing.mjs).
+  // Entries are merged in by restaurantKey so re-running never creates duplicates.
+  const NEW_PATH = resolve(__dirname, "new-restaurants.json");
+  if (existsSync(NEW_PATH)) {
+    try {
+      const newEntries = JSON.parse(readFileSync(NEW_PATH, "utf8"));
+      const existingKeys = new Set(restaurants.map(restaurantKey));
+      let added = 0;
+      for (const r of newEntries) {
+        if (!r.name || !r.city) continue;
+        const k = restaurantKey(r);
+        if (existingKeys.has(k)) continue;
+        // Fill in any fields the sheet normally provides but new entries may omit.
+        const entry = {
+          name: r.name,
+          city: r.city,
+          county: r.county || "",
+          cuisine: r.cuisine || "",
+          type: r.type || "V",
+          typeLabel: TYPE_LABELS[r.type || "V"] || "",
+          website: r.website || "",
+          outdoorSeating: r.outdoorSeating ?? false,
+          // Enrichment fields (pre-filled from Places API, carried forward on future builds).
+          address: r.address || "",
+          lat: r.lat || null,
+          lng: r.lng || null,
+          placeId: r.placeId || "",
+          businessStatus: r.businessStatus || "",
+          matchConfidence: r.matchConfidence || "verified",
+        };
+        restaurants.push(entry);
+        existingKeys.add(k);
+        added++;
+      }
+      if (added) console.log(`Injected ${added} new restaurants from ${NEW_PATH}`);
+    } catch (e) {
+      console.warn(`Warning: could not load ${NEW_PATH}: ${e.message}`);
+    }
+  }
+
   // Layer human-review corrections + Google business-status on top (after carry-forward,
   // so a human verdict overrides the cached enrichment).
   applyOverridesAndStatus(restaurants);
