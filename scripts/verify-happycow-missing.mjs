@@ -249,7 +249,7 @@ async function main() {
       name: v.googleName || v.name,
       city: v.city,
       county: v.county,
-      type: 'V',
+      type: 'VF',
       website: v.googleWebsite || v.happyCowWebsite || '',
       address: v.verifiedAddress,
       lat: v.lat,

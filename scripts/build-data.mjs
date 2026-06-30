@@ -383,25 +383,29 @@ function finalize(restaurants, sourceUpdated) {
   }
 
   // Inject new restaurants from scripts/new-restaurants.json (added by verify-happycow-missing.mjs).
-  // Entries are merged in by restaurantKey so re-running never creates duplicates.
+  // De-duped by both name+city (restaurantKey) AND placeId so re-running is always safe.
   const NEW_PATH = resolve(__dirname, "new-restaurants.json");
   if (existsSync(NEW_PATH)) {
     try {
       const newEntries = JSON.parse(readFileSync(NEW_PATH, "utf8"));
       const existingKeys = new Set(restaurants.map(restaurantKey));
+      const existingPlaceIds = new Set(restaurants.map((r) => r.placeId).filter(Boolean));
       let added = 0;
+      let skipped = 0;
       for (const r of newEntries) {
         if (!r.name || !r.city) continue;
         const k = restaurantKey(r);
-        if (existingKeys.has(k)) continue;
+        if (existingKeys.has(k)) { skipped++; continue; }
+        if (r.placeId && existingPlaceIds.has(r.placeId)) { skipped++; continue; }
         // Fill in any fields the sheet normally provides but new entries may omit.
+        const type = r.type || "VF";
         const entry = {
           name: r.name,
           city: r.city,
           county: r.county || "",
           cuisine: r.cuisine || "",
-          type: r.type || "V",
-          typeLabel: TYPE_LABELS[r.type || "V"] || "",
+          type,
+          typeLabel: TYPE_LABELS[type] || "",
           website: r.website || "",
           outdoorSeating: r.outdoorSeating ?? false,
           // Enrichment fields (pre-filled from Places API, carried forward on future builds).
@@ -414,12 +418,33 @@ function finalize(restaurants, sourceUpdated) {
         };
         restaurants.push(entry);
         existingKeys.add(k);
+        if (r.placeId) existingPlaceIds.add(r.placeId);
         added++;
       }
-      if (added) console.log(`Injected ${added} new restaurants from ${NEW_PATH}`);
+      if (added || skipped) console.log(`Injected ${added} new restaurants from ${NEW_PATH} (${skipped} skipped as duplicates)`);
     } catch (e) {
       console.warn(`Warning: could not load ${NEW_PATH}: ${e.message}`);
     }
+  }
+
+  // Deduplicate by Google Places ID. Two entries with the same placeId are the same physical
+  // location; the first occurrence (sheet order) wins and later ones are hidden automatically.
+  // This catches renames, city-label mismatches, and cross-source duplicates that name+city
+  // matching cannot see. Manual overrides.json entries still take precedence via duplicateOf.
+  {
+    const placeIdFirst = new Map(); // placeId → name of first entry seen
+    let autoDupeCount = 0;
+    for (const r of restaurants) {
+      if (!r.placeId || r.hidden) continue;
+      if (placeIdFirst.has(r.placeId)) {
+        r.hidden = true;
+        r.hiddenReason = "duplicate";
+        autoDupeCount++;
+      } else {
+        placeIdFirst.set(r.placeId, r.name);
+      }
+    }
+    if (autoDupeCount) console.log(`Auto-hidden ${autoDupeCount} placeId duplicates.`);
   }
 
   // Layer human-review corrections + Google business-status on top (after carry-forward,
