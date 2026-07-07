@@ -1,4 +1,11 @@
 {
+  "merakijuicekitchen|westpalmbeach": {
+    "name": "Meraki Juice Kitchen",
+    "city": "West Palm Beach",
+    "reviewedAt": "2026-07-06T00:00:00.000Z",
+    "duplicateOf": "christopherskitchen|palmbeachgardens",
+    "note": "Same restaurant at 328 Fern St, West Palm Beach as the Christopher's Kitchen / Meraki Juice Kitchen rows filed under Palm Beach Gardens — the sheet lists this location three times under different city labels."
+  },
   "ontherun|miami": {
     "name": "On the Run",
     "city": "Miami",

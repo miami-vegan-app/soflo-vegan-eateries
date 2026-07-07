@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-30T19:42:13.708Z",
-  "checkedAt": "2026-07-06T12:09:51.633Z",
+  "updatedAt": "2026-07-07T02:12:02.480Z",
+  "checkedAt": "2026-07-07T02:12:02.480Z",
   "sourceUpdated": "May 9, 2026",
   "source": "https://docs.google.com/spreadsheets/d/1DQ5ys0MHw22qWXmwC_rAbLs7gQfDjFpASDii9beP9zE/edit",
   "count": 440,
@@ -1088,7 +1088,9 @@
       "lat": 26.7102325,
       "lng": -80.0532061,
       "matchConfidence": "verified",
-      "formerName": "Meraki Juice Kitchen"
+      "formerName": "Meraki Juice Kitchen",
+      "hidden": true,
+      "hiddenReason": "duplicate"
     },
     {
       "name": "Plant Based Mafia",
@@ -1541,7 +1543,9 @@
       "businessStatus": "OPERATIONAL",
       "businessStatusAt": "2026-06-02T20:48:11.232Z",
       "placeId": "ChIJYx65DIrW2IgRpT-agsInzRs",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "hidden": true,
+      "hiddenReason": "duplicate"
     },
     {
       "name": "Mestizo",
@@ -5104,7 +5108,9 @@
       "lat": 25.7993632,
       "lng": -80.1910573,
       "matchConfidence": "verified",
-      "formerName": "Nirvana Plant Based Bistro"
+      "formerName": "Nirvana Plant Based Bistro",
+      "hidden": true,
+      "hiddenReason": "duplicate"
     },
     {
       "name": "Awash Ethiopian",

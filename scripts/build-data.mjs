@@ -139,6 +139,14 @@ function isEmptyRow(row) {
   return row.every((c) => cleanCell(c) === "");
 }
 
+// Approximate flat-earth distance in meters — plenty accurate at South Florida's scale and
+// latitude, used only to detect same-location duplicates within a ~75m radius.
+function distanceMeters(lat1, lng1, lat2, lng2) {
+  const dLat = (lat1 - lat2) * 111320;
+  const dLng = (lng1 - lng2) * 111320 * Math.cos((lat1 * Math.PI) / 180);
+  return Math.sqrt(dLat * dLat + dLng * dLng);
+}
+
 // Name+city identity for de-duping a restaurant across the two tabs.
 function restaurantKey(r) {
   const norm = (s) => cleanCell(s).toLowerCase().replace(/[^a-z0-9]/g, "");
@@ -450,6 +458,53 @@ function finalize(restaurants, sourceUpdated) {
   // Layer human-review corrections + Google business-status on top (after carry-forward,
   // so a human verdict overrides the cached enrichment).
   applyOverridesAndStatus(restaurants);
+
+  // Deduplicate by identical name + near-identical coordinates (within ~75m). Runs AFTER
+  // overrides so a rename (e.g. "Meraki Juice Kitchen" -> "Christopher's Kitchen") is already
+  // applied — this catches the same place listed twice in the sheet under different city
+  // labels that placeId matching misses (e.g. a row corrected via the human review tool, which
+  // sets address/lat/lng but not placeId). First occurrence wins.
+  {
+    const normName = (s) => cleanCell(s).toLowerCase().replace(/[^a-z0-9]/g, "");
+    const seen = [];
+    let coordDupeCount = 0;
+    for (const r of restaurants) {
+      if (r.hidden || typeof r.lat !== "number" || typeof r.lng !== "number") continue;
+      const name = normName(r.name);
+      if (!name) continue;
+      const match = seen.find((s) => s.name === name && distanceMeters(s.lat, s.lng, r.lat, r.lng) < 75);
+      if (match) {
+        r.hidden = true;
+        r.hiddenReason = "duplicate";
+        coordDupeCount++;
+      } else {
+        seen.push({ name, lat: r.lat, lng: r.lng });
+      }
+    }
+    if (coordDupeCount) console.log(`Auto-hidden ${coordDupeCount} same-name/same-location duplicates.`);
+  }
+
+  // Different-name entries at the exact same address are NOT auto-hidden — that's often a
+  // legitimate multi-tenant address (food hall, shared plaza), not a duplicate. Just flag them
+  // here so a human can add a `duplicateOf` override in places-overrides.json if warranted.
+  {
+    const normAddr = (s) => cleanCell(s).toLowerCase();
+    const byAddr = new Map();
+    for (const r of restaurants) {
+      if (r.hidden || !r.address) continue;
+      const a = normAddr(r.address);
+      if (!byAddr.has(a)) byAddr.set(a, []);
+      byAddr.get(a).push(r);
+    }
+    for (const [addr, group] of byAddr) {
+      if (group.length > 1) {
+        console.log(
+          `Possible duplicate at "${addr}": ${group.map((r) => r.name).join(" / ")} — ` +
+            `review and add a duplicateOf override if these are the same place.`
+        );
+      }
+    }
+  }
 
   // Everything except the timestamps — used to detect whether the list actually changed.
   const data = {
