@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-17T02:51:32.574Z",
-  "checkedAt": "2026-08-17T02:51:32.574Z",
+  "updatedAt": "2026-08-17T08:50:36.233Z",
+  "checkedAt": "2026-08-17T08:50:36.233Z",
   "sourceUpdated": "May 9, 2026",
   "source": "https://docs.google.com/spreadsheets/d/1DQ5ys0MHw22qWXmwC_rAbLs7gQfDjFpASDii9beP9zE/edit",
   "count": 440,
@@ -1055,13 +1055,10 @@
       "typeLabel": "Mostly Vegan (has honey)",
       "website": "https://christopherskitchenfl.com/",
       "outdoorSeating": true,
-      "address": "4783 PGA Blvd, Palm Beach Gardens, FL 33418",
-      "lat": 26.839166700000003,
-      "lng": -80.1097222,
-      "businessStatus": "OPERATIONAL",
-      "businessStatusAt": "2026-06-02T20:47:59.429Z",
-      "placeId": "ChIJtZQCfk_V3ogRxdV-rP77Zsk",
-      "matchConfidence": "high"
+      "address": "328 Fern St, West Palm Beach, FL 33401",
+      "lat": 26.7102325,
+      "lng": -80.0532061,
+      "matchConfidence": "verified"
     },
     {
       "name": "Lynora's",
@@ -1093,7 +1090,9 @@
       "lat": 26.7102325,
       "lng": -80.0532061,
       "matchConfidence": "verified",
-      "formerName": "Meraki Juice Kitchen"
+      "formerName": "Meraki Juice Kitchen",
+      "hidden": true,
+      "hiddenReason": "duplicate"
     },
     {
       "name": "Plant Based Mafia",
