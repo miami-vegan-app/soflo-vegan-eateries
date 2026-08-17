@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-07T02:12:02.480Z",
-  "checkedAt": "2026-08-16T08:35:54.353Z",
+  "updatedAt": "2026-08-17T02:51:32.574Z",
+  "checkedAt": "2026-08-17T02:51:32.574Z",
   "sourceUpdated": "May 9, 2026",
   "source": "https://docs.google.com/spreadsheets/d/1DQ5ys0MHw22qWXmwC_rAbLs7gQfDjFpASDii9beP9zE/edit",
   "count": 440,
@@ -748,10 +748,12 @@
       "address": "45 NE 2nd Ave, Delray Beach, FL 33444",
       "lat": 26.4627038,
       "lng": -80.0708666,
-      "businessStatus": "OPERATIONAL",
-      "businessStatusAt": "2026-06-02T20:47:51.767Z",
+      "businessStatus": "CLOSED_PERMANENTLY",
+      "businessStatusAt": "2026-08-17T02:47:53.876Z",
       "placeId": "ChIJOQkNRcPf2IgR_IuHXvQmpFg",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
       "name": "Olive U Grill",
@@ -1053,10 +1055,13 @@
       "typeLabel": "Mostly Vegan (has honey)",
       "website": "https://christopherskitchenfl.com/",
       "outdoorSeating": true,
-      "address": "328 Fern St, West Palm Beach, FL 33401",
-      "lat": 26.7102325,
-      "lng": -80.0532061,
-      "matchConfidence": "verified"
+      "address": "4783 PGA Blvd, Palm Beach Gardens, FL 33418",
+      "lat": 26.839166700000003,
+      "lng": -80.1097222,
+      "businessStatus": "OPERATIONAL",
+      "businessStatusAt": "2026-06-02T20:47:59.429Z",
+      "placeId": "ChIJtZQCfk_V3ogRxdV-rP77Zsk",
+      "matchConfidence": "high"
     },
     {
       "name": "Lynora's",
@@ -1088,9 +1093,7 @@
       "lat": 26.7102325,
       "lng": -80.0532061,
       "matchConfidence": "verified",
-      "formerName": "Meraki Juice Kitchen",
-      "hidden": true,
-      "hiddenReason": "duplicate"
+      "formerName": "Meraki Juice Kitchen"
     },
     {
       "name": "Plant Based Mafia",
@@ -1750,10 +1753,12 @@
       "address": "9162 Wiles Rd, Coral Springs, FL 33067",
       "lat": 26.285503,
       "lng": -80.24794,
-      "businessStatus": "OPERATIONAL",
-      "businessStatusAt": "2026-06-02T20:48:16.513Z",
+      "businessStatus": "CLOSED_TEMPORARILY",
+      "businessStatusAt": "2026-08-17T02:48:03.180Z",
       "placeId": "ChIJRWhzZ_Mb2YgRxcCV5N2-d6s",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "closedTemporarily": true,
+      "closedSince": "2026-08-17T02:48:03.180Z"
     },
     {
       "name": "Bolay",
@@ -3024,10 +3029,12 @@
       "address": "1115 NE 9th Ave Unit 104, Fort Lauderdale, FL 33304",
       "lat": 26.139436900000003,
       "lng": -80.134759,
-      "businessStatus": "OPERATIONAL",
-      "businessStatusAt": "2026-06-02T20:48:49.466Z",
+      "businessStatus": "CLOSED_TEMPORARILY",
+      "businessStatusAt": "2026-08-17T02:48:15.506Z",
       "placeId": "ChIJAebcdZMB2YgRTa3Gfmouofc",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "closedTemporarily": true,
+      "closedSince": "2026-08-17T02:48:15.506Z"
     },
     {
       "name": "Wine Garden",
@@ -3883,10 +3890,12 @@
       "address": "418 N Federal Hwy, Pompano Beach, FL 33062",
       "lat": 26.2364255,
       "lng": -80.1026437,
-      "businessStatus": "OPERATIONAL",
-      "businessStatusAt": "2026-06-02T20:49:10.105Z",
+      "businessStatus": "CLOSED_PERMANENTLY",
+      "businessStatusAt": "2026-08-17T02:48:23.608Z",
       "placeId": "ChIJizL1WgID2YgR0XRzPF0WnV8",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "hidden": true,
+      "hiddenReason": "closed_permanently"
     },
     {
       "name": "Chef Rose Jamaican Cuisine",
@@ -5319,12 +5328,14 @@
       "address": "6350 Pembroke Rd, Miramar, FL 33023",
       "lat": 25.9951303,
       "lng": -80.214676,
-      "businessStatus": "OPERATIONAL",
-      "businessStatusAt": "2026-06-02T20:49:44.066Z",
+      "businessStatus": "CLOSED_TEMPORARILY",
+      "businessStatusAt": "2026-08-17T02:48:36.653Z",
       "placeId": "ChIJo0bG1UGp2YgRwEreIaAxxQM",
       "matchConfidence": "verified",
       "websiteStatus": "down",
-      "websiteCheckedAt": "2026-06-02"
+      "websiteCheckedAt": "2026-06-02",
+      "closedTemporarily": true,
+      "closedSince": "2026-08-17T02:48:36.653Z"
     },
     {
       "name": "Dub and Grub",
